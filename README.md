@@ -40,3 +40,10 @@ Trade-offs são escolhas que a gente faz em engenharia de software, pesando pró
    - *Exemplo*: Economizar agora, mas preparar o bolso pra refazer tudo depois.
  
 ---
+
+## Estudo de Classe
+
+### Estacionamento
+
+
+
