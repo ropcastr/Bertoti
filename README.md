@@ -41,9 +41,108 @@ Trade-offs são escolhas que a gente faz em engenharia de software, pesando pró
  
 ---
 
-## Estudo de Classe
+## Java - Estudo de Classes 
 
 ### Estacionamento
 
 
+#### Classe Carro
+~~~java
+package estacionamento;
 
+public class Carro {
+	private String placa;
+    private String marca;
+    private String modelo;
+    private String corCarro;
+
+    public Carro(String placa, String marca, String modelo, String corCarro) {
+    	this.placa = placa;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.corCarro = corCarro;
+    }
+    
+    public String getPlaca() {
+        return placa;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getCorCarro() {
+        return corCarro;
+    }
+
+    public void setCorCarro(String corCarro) {
+        this.corCarro = corCarro;
+    }
+
+}
+~~~
+
+
+#### Classe Estacionamento
+~~~java
+package estacionamento;
+
+import java.util.LinkedList;
+import java.util.List;
+
+
+public class Estacionamento {
+	private List<Carro> carros = new LinkedList<Carro>();
+	
+	public void cadastrarCarro(Carro carro) {
+		carros.add(carro);
+	
+	}
+	
+	public Carro buscarCarroPorPlaca(String placa) {
+		for (Carro carro:carros) {
+			if (carro.getPlaca().equals(placa)) {
+				return carro;
+			}
+		}
+		return null;
+	}
+	
+	public List<Carro> getCarros(){
+		return this.carros;
+	}
+}
+~~~
+
+
+### Teste JUnit
+~~~java
+package estacionamento;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class teste {
+
+	@Test
+	void test() {
+		Estacionamento estacionamento = new Estacionamento();
+		assertEquals(estacionamento.getCarros().size(), 0);
+		
+	}
+
+}
+~~~
