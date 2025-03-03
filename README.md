@@ -1,4 +1,4 @@
-# Engenharia de Software - Prof. Betoti 
+# Engenharia de Software 💻 - Prof. Betoti 👨‍🏫
 Bem-vindo ao meu repositório do curso Tecnológia em Banco de Dados na FATE SJC, exploro conceitos da matéria de engenharia de software. Aqui você vai encontrar minhas impressões, estudos, exemplos práticos e afins. Bora mergulhar nisso?
  
 ---
@@ -8,7 +8,7 @@ Esse repositório é um exercício de reflexão sobre as aulas, exercícios, tra
  
 ---
  
-## Comentários sobre o Livro Software Engineering at Google, Oreilly  
+## Comentários sobre o Livro Software Engineering at Google, Oreilly  :book:
  
 ### Trecho 1: O que é Engenharia de Software?  
 Neste trecho o livro tenta separar qual a diferença entre só "codar" e ser "engenheiro" de software, tentando mostrar como o software mexe com a vida real, que "programar" é tipo aprender a andar de bicicleta e em contra partida a "engenharia" tem um peso maior, tipo subir de nível, usando a teoria pra criar algo sólido e que não te deixa na mão. O texto ainda faz uma analogia com áreas tipo pontes e aviões, e nos faz pensar sobre a responsabilidade e o peso que temos em mãos, pois se uma ponte cai ou um avião despenca, a coisa fica feia e na minha visão, achei interessante como comparam os engenheiros "clássicos", que seguem regras rígidas pra não derrubar pontes, com programadores que segundo dizem, foram mais relaxados. Como o software tá em tudo hoje (pensa no teu celular ou num Tesla), eles dizem que precisamos de mais rigor e práticas confiáveis!
@@ -41,10 +41,9 @@ Trade-offs são escolhas que a gente faz em engenharia de software, pesando pró
  
 ---
 
-## Java - Estudo de Classes 
+##  Estudo de Classes - ![Static Badge](https://img.shields.io/badge/Java-code-brightgreen?style=plastic&logo=Java&logoSize=auto&labelColor=%23FFFF00) 
 
 ### Estacionamento
-
 
 #### Classe Carro
 ~~~java
