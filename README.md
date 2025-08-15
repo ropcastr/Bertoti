@@ -22,22 +22,75 @@ O livro foca em três pilares:
 - **Trade-offs e Custos**: como decidir o que vale a pena fazer.  
  
 Isso me traz a reflexão de que programar pode não ser só técnica, mas também estratégia!
----
+
  
 ## Exemplos de Trade-offs  
 Trade-offs são escolhas que a gente faz em engenharia de software, pesando prós e contras.
  
-1. **Velocidade vs. Qualidade**  
-   - *Descrição*: Quer entregar um projeto rápido? Pode mandar um código simples, mas talvez ele vire uma gambiarra difícil de consertar depois. Ou capricha, testa tudo, mas demora mais.  
-   - *Exemplo*: Um experimento no Google pode priorizar velocidade, mas depois refatorar pra qualidade.
- 
-2. **Escalabilidade vs. Simplicidade**  
-   - *Descrição*: Tá fazendo um app pequeno? Um banco de dados básico resolve. Mas se ele pode bombar (tipo virar um Instagram), melhor investir numa solução mais complexa desde o início.  
-   - *Exemplo*: Começar simples e depois escalar quando o número de usuários explodir.
- 
-3. **Custo vs. Manutenção**  
-   - *Descrição*: Com orçamento curto, usa uma biblioteca barata, mas limitada. Ou gasta mais numa solução sob medida, que facilita ajustes futuros.  
-   - *Exemplo*: Economizar agora, mas preparar o bolso pra refazer tudo depois.
+### 1. Velocidade vs Qualidade
+
+**Descrição:**  
+Optar pela entrega rápida (MVP) pode significar código menos testado ou mais frágil; apostar na qualidade exige testes, revisão e boas práticas, mas reduz defeitos e custo de manutenção no longo prazo.
+
+**Exemplos:**
+- **MVP com frameworks ágeis**  
+  Usar **Ruby on Rails** ou **Django** permite lançar um protótipo rápido. Por outro lado, sistemas críticos podem demandar **Java com Spring** ou **Go**, que oferecem desempenho, segurança, escalabilidade e tipagem forte.
+- **Dívida técnica e testes**  
+  Negligenciar testes automatizados acelera a entrega, mas gera complicações futuras. Um estudo mostrou que **códigos de baixa qualidade têm 15× mais defeitos e levam 124 % mais tempo para corrigir** ([arxiv.org](https://arxiv.org/abs/2203.04374?utm_source=chatgpt.com)).
+- **Qualidade gera velocidade**  
+  Relatórios do DORA e análises de [Jeff Kolesky](https://medium.com/%40jeffkole/the-fallacy-of-the-speed-cost-quality-trade-off-fdcd83b1c2a5?utm_source=chatgpt.com) mostram que equipes que priorizam qualidade tendem a evoluir mais rápido — velocidade e qualidade podem formar um ciclo virtuoso.
+
+
+### 2. Escalabilidade vs Simplicidade
+
+**Descrição:**  
+Sistemas simples são rápidos de desenvolver e fáceis de entender, mas às vezes, para escalar, é preciso arquiteturas ou tecnologias mais complexas.
+
+**Exemplos:**
+- **SQL vs NoSQL**  
+  - **SQL (PostgreSQL, MySQL):** robustos, conhecidos, ótimos para consistência.  
+  - **NoSQL (MongoDB, Cassandra):** facilitam escalabilidade horizontal e alta flexibilidade, ideais para grandes volumes de dados.
+- **Monolito vs Microsserviços**  
+  - **Monolítico:** tudo num único deploy — simples inicialmente.  
+  - **Microsserviços:** permitem escalar partes isoladamente, mas exigem orquestração, comunicação e rastreamento distribuído.
+- **Exemplo real no Google**  
+  Ao adicionar qualidade nos resultados de busca (imagens, features), o Google aumentou a latência. Isso os levou a reavaliar os trade-offs entre **qualidade**, **latência** e **capacidade** ([abseil.io](https://abseil.io/resources/swe-book/html/ch06.html?utm_source=chatgpt.com)).
+
+
+### 3. Custo vs Manutenção
+
+**Descrição:**  
+Ferramentas baratas ou soluções “build in-house” podem parecer econômicas no curto prazo, mas trazem custos ocultos como manutenção, segurança e evolução do código.
+
+**Exemplos:**
+- **Build vs Buy**  
+  - **Build:** usar código aberto ou construir internamente evita licenças, mas requer manutenção contínua.  
+  - **Buy:** contratar solução (API/SaaS) custa mais hoje, mas oferece suporte, atualizações e menor ônus interno.  
+  - [Exemplo real](https://aakashgupta.medium.com/the-product-leaders-guide-to-buying-vs-building-software-a67a87bfca04?utm_source=chatgpt.com): equipe construiu sistema interno e depois percebeu que estava "recriando a roda".
+- **Infraestrutura gerenciada vs autogerenciada**  
+  - **Serverless/PaaS (Google App Engine, AWS Lambda):** abstraem infraestrutura; menor manutenção operacional, mas custo unitário maior.  
+  - **IaaS (Google Compute Engine, AWS EC2):** mais controle e menor custo de longo prazo, mas exige manutenção e gestão de escala.
+- **Simplicidade operacional**  
+  Segundo o [SRE do Google](https://sre.google/sre-book/simplicity/?utm_source=chatgpt.com), menos complexidade acidental aumenta a confiabilidade.
+
+
+## Tabela Resumo
+
+| Trade-off                 | Exemplo Rápido                                              | Implicação                                                      |
+|---------------------------|-------------------------------------------------------------|-----------------------------------------------------------------|
+| Velocidade vs Qualidade   | MVP com Rails vs sistema robusto em Go/Java + testes        | Qualidade reduz custos e acelera manutenção                     |
+| Escalabilidade vs Simplicidade | SQL vs NoSQL; Monolito vs Microsserviços              | Mais complexidade permite escala, mas exige mais esforço        |
+| Custo vs Manutenção       | Build (open-source) vs Buy (SaaS/API)                       | Build: baixo custo inicial, alto custo de manutenção            |
+| Infraestrutura            | Serverless/PaaS vs IaaS                                     | PaaS reduz manutenção, IaaS custa menos mas exige mais gestão   |
+
+---
+
+## Conclusão
+A ideia de que **programar é técnica, engenharia é estratégia** é central no livro.  
+A beleza dos trade-offs está justamente em reconhecer que não existe “a melhor solução”, mas sim **a melhor escolha para o contexto atual**, com disposição para revisitar e adaptar conforme o cenário evolui.
+
+> Mais detalhes podem ser vistos no capítulo de trade-offs do [Software Engineering at Google](https://abseil.io/resources/swe-book/html/ch06.html?utm_source=chatgpt.com).
+
  
 ---
 
