@@ -1,97 +1,119 @@
-# Engenharia de Software 💻 - Prof. Betoti 👨‍🏫
-Bem-vindo ao meu repositório do curso Tecnológia em Banco de Dados na FATE SJC, exploro conceitos da matéria de engenharia de software. Aqui você vai encontrar minhas impressões, estudos, exemplos práticos e afins. Bora mergulhar nisso?
- 
+# Engenharia de Software 💻 — Prof. Betoti 👨‍🏫
+
+Bem-vindo ao meu repositório do curso **Tecnologia em Banco de Dados** na **FATEC SJC**.  
+Aqui compartilho reflexões, estudos, exemplos práticos e interpretações sobre os conteúdos de **Engenharia de Software**.
+
+> _"Programar é técnica. Engenharia é estratégia."_ — Adaptado de *Software Engineering at Google*
+
 ---
- 
-## Sobre o Projeto  
-Esse repositório é um exercício de reflexão sobre as aulas, exercícios, trabahos e interpretações sobre os conteúdos propostos em aula.
- 
+
+## 📑 Índice
+1. [Sobre o Projeto](#sobre-o-projeto)
+2. [Comentários sobre o Livro *Software Engineering at Google*](#comentários-sobre-o-livro-software-engineering-at-google-oreilly)
+   - [Trecho 1: O que é Engenharia de Software?](#trecho-1-o-que-é-engenharia-de-software)
+   - [Trecho 2: Programação ao Longo do Tempo](#trecho-2-programação-ao-longo-do-tempo)
+3. [Exemplos de Trade-offs](#exemplos-de-trade-offs)
+   - [1. Velocidade vs Qualidade](#1-velocidade-vs-qualidade)
+   - [2. Escalabilidade vs Simplicidade](#2-escalabilidade-vs-simplicidade)
+   - [3. Custo vs Manutenção](#3-custo-vs-manutenção)
+4. [Tabela Resumo](#tabela-resumo)
+5. [Conclusão](#conclusão)
+
 ---
- 
-## Comentários sobre o Livro Software Engineering at Google, Oreilly  :book:
- 
-### Trecho 1: O que é Engenharia de Software?  
-Neste trecho o livro tenta separar qual a diferença entre só "codar" e ser "engenheiro" de software, tentando mostrar como o software mexe com a vida real, que "programar" é tipo aprender a andar de bicicleta e em contra partida a "engenharia" tem um peso maior, tipo subir de nível, usando a teoria pra criar algo sólido e que não te deixa na mão. O texto ainda faz uma analogia com áreas tipo pontes e aviões, e nos faz pensar sobre a responsabilidade e o peso que temos em mãos, pois se uma ponte cai ou um avião despenca, a coisa fica feia e na minha visão, achei interessante como comparam os engenheiros "clássicos", que seguem regras rígidas pra não derrubar pontes, com programadores que segundo dizem, foram mais relaxados. Como o software tá em tudo hoje (pensa no teu celular ou num Tesla), eles dizem que precisamos de mais rigor e práticas confiáveis!
- 
-### Trecho 2: Programação ao Longo do Tempo  
-O segundo trecho me fez repensar o que é "fazer software". Não é só codar um *Hello World* e pronto — envolve ferramentas e processos, tem um mundo de coisas, quase um ritual pra fazer o código durar. Os três mandamentos do livro – Tempo e Mudança, Tamanho e Boom, e Escolhas e Grana – Fazem lembrar como os softwares mudam, crescem, conflitam, se você escolhe desempenho, robustez ou tenta equilibrar isso damelhor forma possível (queria saber como o Google e as grandes empresas fazem isso, devem ter uns truques sinistros com aqueles sistemas gigantes deles). Isso me anima como aluno, mostra que software (e dados também) é um "bicho" que não para de mudar.
- 
-O livro foca em três pilares:  
-- **Tempo e Mudança**: como o código se adapta ao futuro.  
-- **Escala e Crescimento**: como lidar quando o sistema fica gigante.  
-- **Trade-offs e Custos**: como decidir o que vale a pena fazer.  
- 
-Isso me traz a reflexão de que programar pode não ser só técnica, mas também estratégia!
 
- 
-## Exemplos de Trade-offs  
-Trade-offs são escolhas que a gente faz em engenharia de software, pesando prós e contras.
- 
-### 1. Velocidade vs Qualidade
+## 📌 Sobre o Projeto
+Este repositório é um exercício de reflexão sobre as aulas, trabalhos e conteúdos de **Engenharia de Software**, incluindo análises de livros, práticas e exemplos.
 
+---
+
+## 📚 Comentários sobre o Livro *Software Engineering at Google*, Oreilly
+
+### 📖 Trecho 1: O que é Engenharia de Software?
+O livro diferencia “apenas programar” de **ser engenheiro de software**.  
+- Programar é como aprender a andar de bicicleta: útil, mas limitado.  
+- Engenharia de software é como projetar uma ponte ou avião: exige rigor, teoria e responsabilidade.  
+- Hoje, o software está em tudo — de smartphones a carros autônomos — e isso exige **boas práticas e confiabilidade**.
+
+> “Engenheiros clássicos seguem regras rígidas para não derrubar pontes; no software, precisamos do mesmo nível de rigor.”
+
+---
+
+### ⏳ Trecho 2: Programação ao Longo do Tempo
+Fazer software não é só escrever um *Hello World*.  
+Envolve **ferramentas**, **processos** e **estratégia** para garantir que o código dure.  
+O livro traz três pilares fundamentais:
+
+1. **Tempo e Mudança** — como o código se adapta ao futuro.  
+2. **Escala e Crescimento** — como lidar quando o sistema fica gigante.  
+3. **Trade-offs e Custos** — como decidir o que vale a pena fazer.
+
+💡 **Reflexão:** Programar pode não ser só técnica, mas também estratégia!
+
+---
+
+## ⚖️ Exemplos de Trade-offs
+
+### 1️⃣ Velocidade vs Qualidade
 **Descrição:**  
-Optar pela entrega rápida (MVP) pode significar código menos testado ou mais frágil; apostar na qualidade exige testes, revisão e boas práticas, mas reduz defeitos e custo de manutenção no longo prazo.
+Optar por entregar rápido pode significar menos testes e mais riscos. Focar na qualidade demanda tempo, mas reduz problemas no futuro.
 
-**Exemplos:**
-- **MVP com frameworks ágeis**  
-  Usar **Ruby on Rails** ou **Django** permite lançar um protótipo rápido. Por outro lado, sistemas críticos podem demandar **Java com Spring** ou **Go**, que oferecem desempenho, segurança, escalabilidade e tipagem forte.
-- **Dívida técnica e testes**  
-  Negligenciar testes automatizados acelera a entrega, mas gera complicações futuras. Um estudo mostrou que **códigos de baixa qualidade têm 15× mais defeitos e levam 124 % mais tempo para corrigir** ([arxiv.org](https://arxiv.org/abs/2203.04374?utm_source=chatgpt.com)).
-- **Qualidade gera velocidade**  
-  Relatórios do DORA e análises de [Jeff Kolesky](https://medium.com/%40jeffkole/the-fallacy-of-the-speed-cost-quality-trade-off-fdcd83b1c2a5?utm_source=chatgpt.com) mostram que equipes que priorizam qualidade tendem a evoluir mais rápido — velocidade e qualidade podem formar um ciclo virtuoso.
+**Exemplos práticos:**
+- **MVP com frameworks ágeis** → **Ruby on Rails** ou **Django** para lançar rápido.  
+- **Sistemas críticos** → **Java com Spring** ou **Go** para desempenho e segurança.  
+- **Dívida técnica** → Ignorar testes acelera entrega, mas aumenta custo futuro.  
+- [Estudo](https://arxiv.org/abs/2203.04374?utm_source=chatgpt.com): código de baixa qualidade tem 15× mais defeitos.
 
+---
 
-### 2. Escalabilidade vs Simplicidade
-
+### 2️⃣ Escalabilidade vs Simplicidade
 **Descrição:**  
-Sistemas simples são rápidos de desenvolver e fáceis de entender, mas às vezes, para escalar, é preciso arquiteturas ou tecnologias mais complexas.
+Soluções simples são rápidas de implementar, mas podem não suportar crescimento massivo.
 
-**Exemplos:**
-- **SQL vs NoSQL**  
-  - **SQL (PostgreSQL, MySQL):** robustos, conhecidos, ótimos para consistência.  
-  - **NoSQL (MongoDB, Cassandra):** facilitam escalabilidade horizontal e alta flexibilidade, ideais para grandes volumes de dados.
-- **Monolito vs Microsserviços**  
-  - **Monolítico:** tudo num único deploy — simples inicialmente.  
-  - **Microsserviços:** permitem escalar partes isoladamente, mas exigem orquestração, comunicação e rastreamento distribuído.
-- **Exemplo real no Google**  
-  Ao adicionar qualidade nos resultados de busca (imagens, features), o Google aumentou a latência. Isso os levou a reavaliar os trade-offs entre **qualidade**, **latência** e **capacidade** ([abseil.io](https://abseil.io/resources/swe-book/html/ch06.html?utm_source=chatgpt.com)).
+**Exemplos práticos:**
+- **SQL (PostgreSQL, MySQL)** → Consistência e robustez.  
+- **NoSQL (MongoDB, Cassandra)** → Escalabilidade horizontal e flexibilidade.  
+- **Monolito** → Mais simples no início.  
+- **Microsserviços** → Mais complexos, mas escalam melhor.  
+- [Caso Google](https://abseil.io/resources/swe-book/html/ch06.html?utm_source=chatgpt.com): melhorias de qualidade nos resultados aumentaram a latência, exigindo reavaliação.
 
+---
 
-### 3. Custo vs Manutenção
-
+### 3️⃣ Custo vs Manutenção
 **Descrição:**  
-Ferramentas baratas ou soluções “build in-house” podem parecer econômicas no curto prazo, mas trazem custos ocultos como manutenção, segurança e evolução do código.
+Escolhas de baixo custo inicial podem gerar alto custo de manutenção no futuro.
 
-**Exemplos:**
+**Exemplos práticos:**
 - **Build vs Buy**  
-  - **Build:** usar código aberto ou construir internamente evita licenças, mas requer manutenção contínua.  
-  - **Buy:** contratar solução (API/SaaS) custa mais hoje, mas oferece suporte, atualizações e menor ônus interno.  
-  - [Exemplo real](https://aakashgupta.medium.com/the-product-leaders-guide-to-buying-vs-building-software-a67a87bfca04?utm_source=chatgpt.com): equipe construiu sistema interno e depois percebeu que estava "recriando a roda".
+  - Build → Open-source ou solução interna (baixo custo inicial, alta manutenção).  
+  - Buy → SaaS/API (custo mensal, suporte e atualização garantidos).  
+  - [Exemplo real](https://aakashgupta.medium.com/the-product-leaders-guide-to-buying-vs-building-software-a67a87bfca04?utm_source=chatgpt.com).
 - **Infraestrutura gerenciada vs autogerenciada**  
-  - **Serverless/PaaS (Google App Engine, AWS Lambda):** abstraem infraestrutura; menor manutenção operacional, mas custo unitário maior.  
-  - **IaaS (Google Compute Engine, AWS EC2):** mais controle e menor custo de longo prazo, mas exige manutenção e gestão de escala.
-- **Simplicidade operacional**  
-  Segundo o [SRE do Google](https://sre.google/sre-book/simplicity/?utm_source=chatgpt.com), menos complexidade acidental aumenta a confiabilidade.
-
-
-## Tabela Resumo
-
-| Trade-off                 | Exemplo Rápido                                              | Implicação                                                      |
-|---------------------------|-------------------------------------------------------------|-----------------------------------------------------------------|
-| Velocidade vs Qualidade   | MVP com Rails vs sistema robusto em Go/Java + testes        | Qualidade reduz custos e acelera manutenção                     |
-| Escalabilidade vs Simplicidade | SQL vs NoSQL; Monolito vs Microsserviços              | Mais complexidade permite escala, mas exige mais esforço        |
-| Custo vs Manutenção       | Build (open-source) vs Buy (SaaS/API)                       | Build: baixo custo inicial, alto custo de manutenção            |
-| Infraestrutura            | Serverless/PaaS vs IaaS                                     | PaaS reduz manutenção, IaaS custa menos mas exige mais gestão   |
+  - Serverless/PaaS (AWS Lambda, GCP App Engine) → Menos manutenção, mais custo unitário.  
+  - IaaS (AWS EC2, GCP Compute Engine) → Mais controle, exige manutenção.
 
 ---
 
-## Conclusão
-A ideia de que **programar é técnica, engenharia é estratégia** é central no livro.  
-A beleza dos trade-offs está justamente em reconhecer que não existe “a melhor solução”, mas sim **a melhor escolha para o contexto atual**, com disposição para revisitar e adaptar conforme o cenário evolui.
+## 📊 Tabela Resumo
 
-> Mais detalhes podem ser vistos no capítulo de trade-offs do [Software Engineering at Google](https://abseil.io/resources/swe-book/html/ch06.html?utm_source=chatgpt.com).
+| Trade-off                   | Exemplo Rápido                                        | Implicação                                          |
+|-----------------------------|-------------------------------------------------------|-----------------------------------------------------|
+| Velocidade vs Qualidade     | MVP com Rails vs Go/Java + testes                     | Qualidade reduz custo e acelera manutenção          |
+| Escalabilidade vs Simplicidade | SQL vs NoSQL; Monolito vs Microsserviços            | Complexidade permite escala, mas exige mais esforço |
+| Custo vs Manutenção         | Build (open-source) vs Buy (SaaS/API)                  | Build é barato no início, caro no longo prazo       |
+| Infraestrutura              | Serverless/PaaS vs IaaS                               | PaaS reduz manutenção, IaaS exige mais gestão       |
 
- 
+---
+
+## 🎯 Conclusão
+A essência do livro é clara:  
+> **Não existe solução perfeita — existe a solução certa para o momento e contexto.**
+
+Engenharia de software exige **equilíbrio**, **estratégia** e **capacidade de adaptação**.  
+Os trade-offs não são obstáculos, mas sim decisões que moldam o futuro do sistema.
+
+📌 Mais detalhes no capítulo de trade-offs do  
+[Software Engineering at Google](https://abseil.io/resources/swe-book/html/ch06.html?utm_source=chatgpt.com)
+
 ---
 
 ##  Estudo de Classes - ![Static Badge](https://img.shields.io/badge/Java-code-brightgreen?style=plastic&logo=Java&logoSize=auto&labelColor=%23FFFF00) 
