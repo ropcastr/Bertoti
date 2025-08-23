@@ -19,7 +19,7 @@
      - [Classe Carro](#classe-carro)
      - [Classe Estacionamento](#classe-estacionamento)
      - [Teste Junit](#teste-junit)
-6. [Relatório de Testes[(#relatório-de-testes---Surefire)
+6. [Relatório de Testes](#relatório-de-testes---Surefire)
 
 ---
 
