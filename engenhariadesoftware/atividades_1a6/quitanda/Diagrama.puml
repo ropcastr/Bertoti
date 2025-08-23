@@ -1,0 +1,28 @@
+@startuml
+class Produto {
+  - nome : String
+  - preco : double
+  - quantidade : int
+  --
+  + Produto(nome:String, preco:double, quantidade:int)
+  + getNome() : String
+  + getPreco() : double
+  + getQuantidade() : int
+}
+
+class Quitanda {
+  - produtos : List<Produto>
+  --
+  + Quitanda()
+  + adicionarProduto(p:Produto) : void
+  + venderProduto(nome:String, qtd:int) : void
+  + listarProdutos() : void
+}
+
+Quitanda " (0,n) " o-- " (1,1) " Produto : contém >
+
+note on link
+Uma quitanda pode conter 0 ou muitos produtos (0,n).
+Um produto só pertence a uma quitanda (1,1).
+end note
+@enduml
