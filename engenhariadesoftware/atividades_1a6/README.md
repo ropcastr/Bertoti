@@ -1,6 +1,11 @@
 # Atividades de 1 a 6 - Engenharia de Software 💻
 
+## 📌 Sobre o Projeto
+Este repositório contém as atividades de 1 a 6 da disciplina de Engenharia de Software, ministrada pelo Prof. Betoti na Fatec, explorando os conceitos apresentados no livro *Software Engineering at Google* (O'Reilly) por meio de reflexões teóricas, análise de trade-offs e implementações práticas.
+Um exemplo é o sistema de estacionamento modelado em Java, que inclui classes, testes unitários e modelagem UML, demonstrando a aplicação de boas práticas de engenharia de software.
 
+---
+<br>
 
 ### 📑 Índice
 1. [Comentários sobre o Livro Software Engineering at Google, O'Reilly](#-comentários-sobre-o-livro-software-engineering-at-google-oreilly)
@@ -21,12 +26,7 @@
 6. [Relatório de Testes](#relatório-de-testes---surefire)
 
 ---
-
-## 📌 Sobre o Projeto
-Este repositório contém as atividades de 1 a 6 da disciplina de Engenharia de Software, ministrada pelo Prof. Betoti na Fatec, explorando os conceitos apresentados no livro *Software Engineering at Google* (O'Reilly) por meio de reflexões teóricas, análise de trade-offs e implementações práticas.
-Um exemplo é o sistema de estacionamento modelado em Java, que inclui classes, testes unitários e modelagem UML, demonstrando a aplicação de boas práticas de engenharia de software.
-
----
+<br>
 
 ## 📚 Comentários sobre o Livro *Software Engineering at Google*, O'Reilly
 
