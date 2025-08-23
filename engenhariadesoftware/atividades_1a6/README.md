@@ -1,7 +1,6 @@
-# Engenharia de Software 💻 — Prof. Betoti 👨‍🏫
----
+# Atividades de 1 a 6 - Engenharia de Software 💻
 
-## Atividades de 1 a 6
+
 
 ### 📑 Índice
 1. [Comentários sobre o Livro Software Engineering at Google, O'Reilly](#-comentários-sobre-o-livro-software-engineering-at-google-oreilly)
@@ -19,12 +18,13 @@
      - [Classe Carro](#classe-carro)
      - [Classe Estacionamento](#classe-estacionamento)
      - [Teste Junit](#teste-junit)
-6. [Relatório de Testes](#relatório-de-testes---Surefire)
+6. [Relatório de Testes](#relatório-de-testes---surefire)
 
 ---
 
 ## 📌 Sobre o Projeto
-Este repositório contém as atividades práticas da disciplina de Engenharia de Software, ministrada pelo Prof. Betoti na Fatec. O objetivo é explorar os conceitos apresentados no livro *Software Engineering at Google* (O'Reilly) por meio de reflexões teóricas, análise de trade-offs e implementações práticas. Um exemplo é o sistema de estacionamento modelado em Java, que inclui classes, testes unitários e modelagem UML, demonstrando a aplicação de boas práticas de engenharia de software. As atividades visam preparar os alunos para tomar decisões técnicas conscientes, considerando fatores como escalabilidade, qualidade e manutenção. O público-alvo inclui colegas de classe, o professor e potenciais recrutadores interessados em projetos acadêmicos que combinem teoria e prática.
+Este repositório contém as atividades de 1 a 6 da disciplina de Engenharia de Software, ministrada pelo Prof. Betoti na Fatec, explorando os conceitos apresentados no livro *Software Engineering at Google* (O'Reilly) por meio de reflexões teóricas, análise de trade-offs e implementações práticas.
+Um exemplo é o sistema de estacionamento modelado em Java, que inclui classes, testes unitários e modelagem UML, demonstrando a aplicação de boas práticas de engenharia de software.
 
 ---
 
