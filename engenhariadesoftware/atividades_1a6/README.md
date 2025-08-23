@@ -51,6 +51,7 @@ Envolve a utilização de **ferramentas**, **processos** e **estratégias** para
 💡 **Reflexão:** Engenharia de software combina técnica com estratégia, exigindo uma visão de longo prazo.
 
 ---
+<br>
 
 ## ⚖️ Exemplos de Trade-offs
 
@@ -102,6 +103,7 @@ Escolhas de baixo custo inicial podem resultar em altos custos de manutenção n
 O Dropbox inicialmente desenvolveu sua própria infraestrutura de armazenamento para reduzir custos. Com o aumento da escala, a manutenção tornou-se insustentável, levando à migração para o AWS S3, uma solução “buy” que reduziu a carga de gerenciamento, mas introduziu custos recorrentes previsíveis.
 
 ---
+<br>
 
 ## 📊 Tabela Resumo
 
@@ -113,6 +115,7 @@ O Dropbox inicialmente desenvolveu sua própria infraestrutura de armazenamento 
 | Infraestrutura              | Serverless/PaaS vs IaaS                               | PaaS reduz manutenção, IaaS exige mais gestão       |
 
 ---
+<br>
 
 ## 🎯 Conclusão
 A leitura de *Software Engineering at Google* foi transformadora, destacando que a engenharia de software vai além da codificação, exigindo decisões estratégicas que equilibram trade-offs com base no contexto do projeto. A implementação do sistema de estacionamento me permitiu aplicar conceitos práticos como encapsulamento, testes unitários e modelagem UML, consolidando a importância de práticas rigorosas. Refletindo sobre projetos anteriores, percebi que priorizar velocidade sem qualidade muitas vezes resultou em refatorações demoradas, o que reforçou a necessidade de planejamento cuidadoso. Os trade-offs não são barreiras, mas sim ferramentas para moldar sistemas sustentáveis e escaláveis, e este projeto me ajudou a internalizar essa visão estratégica, essencial para minha formação como engenheiro de software.
@@ -121,6 +124,7 @@ A leitura de *Software Engineering at Google* foi transformadora, destacando que
 [Software Engineering at Google](https://abseil.io/resources/swe-book/html/ch06.html)
 
 ---
+<br>
 
 ## Diagramas e Estudo de Classes
 
@@ -274,6 +278,7 @@ class Teste_Estacionamento {
     }
 }
 ```
+<br>
 
 ### Relatório de Testes - Surefire
 📊 [Testes das classes - Surefire](https://ropcastr.github.io/Bertoti/surefire.html)
