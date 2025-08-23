@@ -129,7 +129,7 @@ A leitura de *Software Engineering at Google* foi transformadora, destacando que
 ## Diagramas e Estudo de Classes
 
 ### Diagrama UML para um estacionamento - ![Static Badge](https://img.shields.io/badge/Plant-UML-blue?style=plastic&logo=UML&logoSize=auto&labelColor=b22222)
-<img src="estacionamento/Diagrama_Estacionamento.png" alt="Diagrama UML do sistema de estacionamento" width="400"/>
+<img src="estacionamento/Diagrama_Estacionamento.png" alt="Diagrama UML do sistema de estacionamento" width="500"/>
 
 ### Classes para um estacionamento - ![Static Badge](https://img.shields.io/badge/Java-code-brightgreen?style=plastic&logo=Java&logoSize=auto&labelColor=%23FFFF00) 
 
