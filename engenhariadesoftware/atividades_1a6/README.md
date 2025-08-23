@@ -13,7 +13,7 @@
    - [3. Custo vs Manutenção](#3-custo-vs-manutenção)
 3. [Tabela Resumo](#tabela-resumo)
 4. [Conclusão](#conclusão)
-5. [Diagramas e Classes](#Estudo-de-Classes)
+5. [Diagramas e Classes](#Diagramas-e-Estudo-de-Classes)
 
 ---
 
@@ -112,37 +112,38 @@ Os trade-offs não são obstáculos, mas sim decisões que moldam o futuro do si
 
 ---
 
-##  Estudo de Classes - ![Static Badge](https://img.shields.io/badge/Java-code-brightgreen?style=plastic&logo=Java&logoSize=auto&labelColor=%23FFFF00) 
+## Diagramas e Estudo de Classes
 
-### Estacionamento
+### Diagrama UML para um estacionamento - ![Static Badge](https://img.shields.io/badge/Plant-UML-blue?style=plastic&logo=UML&logoSize=auto&labelColor=b22222)
+<img src="estacionamento/Diagrama_Estacionamento.png" alt="Texto alternativo" width="400"/>
+
+### Classes para um estacionamento - ![Static Badge](https://img.shields.io/badge/Java-code-brightgreen?style=plastic&logo=Java&logoSize=auto&labelColor=%23FFFF00) 
 
 #### Classe Carro
 ~~~java
-package estacionamento;
+package fatec.gov.br.atividades.estacionamento;
+
+import java.util.Objects;
 
 public class Carro {
-	private String placa;
-    private String marca;
+    private String placa;
     private String modelo;
-    private String corCarro;
+    private String cor;
+    private int ano;
 
-    public Carro(String placa, String marca, String modelo, String corCarro) {
-    	this.placa = placa;
-        this.marca = marca;
+    public Carro(String placa, String modelo, String cor, int ano) {
+        this.placa = placa;
         this.modelo = modelo;
-        this.corCarro = corCarro;
+        this.cor = cor;
+        this.ano = ano;
     }
-    
+
     public String getPlaca() {
         return placa;
     }
 
-    public String getMarca() {
-        return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setPlaca(String placa) {
+        this.placa = placa;
     }
 
     public String getModelo() {
@@ -153,66 +154,119 @@ public class Carro {
         this.modelo = modelo;
     }
 
-    public String getCorCarro() {
-        return corCarro;
+    public String getCor() {
+        return cor;
     }
 
-    public void setCorCarro(String corCarro) {
-        this.corCarro = corCarro;
+    public void setCor(String cor) {
+        this.cor = cor;
     }
 
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
+    @Override
+    public String toString() {
+        return "Carro [placa=" + placa + ", modelo=" + modelo + ", cor=" + cor + ", ano=" + ano + "]";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Carro)) return false;
+        Carro carro = (Carro) o;
+        return Objects.equals(placa, carro.placa);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(placa);
+    }
 }
+
 ~~~
 
 
 #### Classe Estacionamento
 ~~~java
-package estacionamento;
+package fatec.gov.br.atividades.estacionamento;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
-
 public class Estacionamento {
-	private List<Carro> carros = new LinkedList<Carro>();
-	
-	public void cadastrarCarro(Carro carro) {
-		carros.add(carro);
-	
-	}
-	
-	public Carro buscarCarroPorPlaca(String placa) {
-		for (Carro carro:carros) {
-			if (carro.getPlaca().equals(placa)) {
-				return carro;
-			}
-		}
-		return null;
-	}
-	
-	public List<Carro> getCarros(){
-		return this.carros;
-	}
+    private List<Carro> carros = new ArrayList<>();
+
+    public void adicionarCarro(Carro carro) {
+        carros.add(carro);
+    }
+
+    public boolean removerCarro(String placa) {
+        return carros.removeIf(c -> c.getPlaca().equals(placa));
+    }
+
+    public Carro buscarCarro(String placa) {
+        return carros.stream()
+                     .filter(c -> c.getPlaca().equals(placa))
+                     .findFirst()
+                     .orElse(null);
+    }
+
+    public List<Carro> getCarros() {
+        return carros;
+    }
 }
+
 ~~~
 
 
-### Teste JUnit
+#### Teste JUnit
 ~~~java
-package estacionamento;
-
-import static org.junit.jupiter.api.Assertions.*;
+package fatec.gov.br.atividades.estacionamento;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-class teste {
+class Teste_Estacionamento {
 
-	@Test
-	void test() {
-		Estacionamento estacionamento = new Estacionamento();
-		assertEquals(estacionamento.getCarros().size(), 0);
-		
-	}
+    @Test
+    void testAdicionarCarro() {
+        Estacionamento est = new Estacionamento();
+        est.adicionarCarro(new Carro("ABC1234", "Fusca", "Azul", 1976));
+        assertEquals(1, est.getCarros().size());
+    }
 
+    @Test
+    void testRemoverCarro() {
+        Estacionamento est = new Estacionamento();
+        est.adicionarCarro(new Carro("XYZ9876", "Civic", "Prata", 2020));
+        boolean removido = est.removerCarro("XYZ9876");
+        assertTrue(removido);
+        assertEquals(0, est.getCarros().size());
+    }
+
+    @Test
+    void testBuscarCarro() {
+        Estacionamento est = new Estacionamento();
+        Carro c = new Carro("AAA1111", "Corolla", "Preto", 2019);
+        est.adicionarCarro(c);
+
+        Carro encontrado = est.buscarCarro("AAA1111");
+        assertNotNull(encontrado);
+        assertEquals("Corolla", encontrado.getModelo());
+    }
 }
+
 ~~~
+
+### Relatório de Teste - Surefire
+
+📊 [Relatório de Testes - Surefire](https://ropcastr.github.io/Bertoti/surefire.html)
+
+
+![Build Status](https://github.com/ropcastr/Bertoti/actions/workflows/maven.yml/badge.svg)
