@@ -5,15 +5,20 @@
 
 ### 📑 Índice
 1. [Comentários sobre o Livro Software Engineering at Google, O'Reilly](#-comentários-sobre-o-livro-software-engineering-at-google-oreilly)
-   - [Trecho 1: O que é Engenharia de Software?](#trecho-1-o-que-e-engenharia-de-software)
-   - [Trecho 2: Programação ao Longo do Tempo](#trecho-2-programacao-ao-longo-do-tempo)
+   - [Trecho 1: O que é Engenharia de Software?](#-trecho-1-o-que-é-engenharia-de-software)
+   - [Trecho 2: Programação ao Longo do Tempo](#-trecho-2-programação-ao-longo-do-tempo)
 2. [Exemplos de Trade-offs](#%EF%B8%8F-exemplos-de-trade-offs)
-   - [1. Velocidade vs Qualidade](#1-velocidade-vs-qualidade)
-   - [2. Escalabilidade vs Simplicidade](#2-escalabilidade-vs-simplicidade)
-   - [3. Custo vs Manutenção](#3-custo-vs-manutencao)
-3. [Tabela Resumo](#tabela-resumo)
-4. [Conclusão](#conclusao)
+   - [1. Velocidade vs Qualidade](#1%EF%B8%8F⃣-velocidade-vs-qualidade)
+   - [2. Escalabilidade vs Simplicidade](#2%EF%B8%8F⃣-escalabilidade-vs-simplicidade)
+   - [3. Custo vs Manutenção](#3%EF%B8%8F⃣-custo-vs-manutenção)
+3. [Tabela Resumo](#-tabela-resumo)
+4. [Conclusão](#-conclusão)
 5. [Diagramas e Classes](#diagramas-e-estudo-de-classes)
+   - [Diagrama UML para um estacionamento](#diagrama-uml-para-um-estacionamento---)
+   - [Classes para um estacionamento](#classes-para-um-estacionamento---)
+     - [Classe Carro](#classe-carro)
+     - [Classe Estacionamento](#classe-estacionamento)
+     - [Teste Junit](#teste-junit)
 6. [Relatório de Testes[(#relatório-de-testes---Surefire)
 
 ---
