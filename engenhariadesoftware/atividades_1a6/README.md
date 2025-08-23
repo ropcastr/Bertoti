@@ -281,5 +281,5 @@ class Teste_Estacionamento {
 <br>
 
 ### Relatório de Testes - Surefire
-📊 <a href="https://ropcastr.github.io/Bertoti/surefire.html" target="_blank" rel="noopener noreferrer">Testes das classes - Surefire</a>
+📊 [Testes das classes - Surefire](https://ropcastr.github.io/Bertoti/surefire.html)
 
