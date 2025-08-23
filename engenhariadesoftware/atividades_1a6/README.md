@@ -4,7 +4,7 @@
 ## Atividades de 1 a 6
 
 ### 📑 Índice
-1. [Comentários sobre o Livro Software Engineering at Google, O'Reilly](#comentarios-sobre-o-livro-software-engineering-at-google-oreilly)
+1. [Comentários sobre o Livro Software Engineering at Google, O'Reilly](#-comentários-sobre-o-livro-software-engineering-at-google-oreilly)
    - [Trecho 1: O que é Engenharia de Software?](#trecho-1-o-que-e-engenharia-de-software)
    - [Trecho 2: Programação ao Longo do Tempo](#trecho-2-programacao-ao-longo-do-tempo)
 2. [Exemplos de Trade-offs](#exemplos-de-trade-offs)
@@ -14,6 +14,7 @@
 3. [Tabela Resumo](#tabela-resumo)
 4. [Conclusão](#conclusao)
 5. [Diagramas e Classes](#diagramas-e-estudo-de-classes)
+6. [Relatório de Testes[(#relatório-de-testes---Surefire)
 
 ---
 
@@ -269,7 +270,7 @@ class Teste_Estacionamento {
 }
 ```
 
-### Relatório de Teste - Surefire
+### Relatório de Testes - Surefire
 📊 [Testes das classes - Surefire](https://ropcastr.github.io/Bertoti/surefire.html)
 
 
