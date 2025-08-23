@@ -4,7 +4,7 @@
 ## Atividades de 1 a 6
 
 ### 📑 Índice
-1. [Comentários sobre o Livro *Software Engineering at Google*](#comentarios-sobre-o-livro-software-engineering-at-google-oreilly)
+1. [Comentários sobre o Livro Software Engineering at Google, O'Reilly](#comentarios-sobre-o-livro-software-engineering-at-google-oreilly)
    - [Trecho 1: O que é Engenharia de Software?](#trecho-1-o-que-e-engenharia-de-software)
    - [Trecho 2: Programação ao Longo do Tempo](#trecho-2-programacao-ao-longo-do-tempo)
 2. [Exemplos de Trade-offs](#exemplos-de-trade-offs)
