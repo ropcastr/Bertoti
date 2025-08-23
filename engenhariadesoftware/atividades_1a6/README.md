@@ -270,6 +270,6 @@ class Teste_Estacionamento {
 ```
 
 ### Relatório de Teste - Surefire
-📊 [Relatório de Testes - Surefire](https://ropcastr.github.io/Bertoti/surefire.html)
+📊 [Testes das classes - Surefire](https://ropcastr.github.io/Bertoti/surefire.html)
 
-![Build Status](https://github.com/ropcastr/Bertoti/actions/workflows/maven.yml/badge.svg)
+
