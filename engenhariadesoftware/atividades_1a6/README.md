@@ -23,7 +23,12 @@ Um exemplo é o sistema de estacionamento modelado em Java, que inclui classes, 
      - [Classe Carro](#classe-carro)
      - [Classe Estacionamento](#classe-estacionamento)
      - [Teste Junit](#teste-junit)
-6. [Relatório de Testes](#relatório-de-testes---surefire)
+   - [Diagrama UML para uma quitanda](#diagrama-uml-para-uma-quitanda---)
+   - [Classes para uma quitanda](#classes-para-uma-quitanda---)
+     - [Classe Carro](#classe-carro)
+     - [Classe Estacionamento](#classe-estacionamento)
+     - [Teste Junit](#teste-junit)
+7. [Relatório de Testes](#relatório-de-testes---surefire)
 
 ---
 <br>
@@ -278,6 +283,161 @@ class Teste_Estacionamento {
     }
 }
 ```
+
+### Diagrama UML para uma quitanda - ![Static Badge](https://img.shields.io/badge/Plant-UML-blue?style=plastic&logo=UML&logoSize=auto&labelColor=b22222)
+<img src="quitanda/Diagrama_Quitanda.png" alt="Diagrama UML do sistema de estacionamento" width="500"/>
+
+#### Classe Produto
+Esses testes unitários validam as funcionalidades principais da classe `Produto`, verificando adição, remoção e busca de produtos. As asserções do JUnit garantem o comportamento correto, reforçando a importância de testes automatizados para assegurar a qualidade do software.
+
+```java
+package fatec.gov.br.atividades.quitanda;
+
+import java.util.Objects;
+
+public class Produto {
+    private String nome;
+    private double preco;
+    private int quantidade;
+
+    public Produto(String nome, double preco, int quantidade) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidade = quantidade;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    @Override
+    public String toString() {
+        return "Produto [nome=" + nome + ", preco=" + preco + ", quantidade=" + quantidade + "]";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Produto)) return false;
+        Produto produto = (Produto) o;
+        return Objects.equals(nome, produto.nome);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome);
+    }
+}
+```
+
+#### Classe Quitanda
+Essa classe gerencia uma lista de produtos usando uma `ArrayList`, permitindo operações como adicionar, remover e buscar produtos. Utiliza Java Streams para buscas eficientes e reflete boas práticas de manipulação de coleções.
+
+```java
+package fatec.gov.br.atividades.quitanda;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Quitanda {
+    private List<Produto> produtos = new ArrayList<>();
+
+    public void adicionarProduto(Produto produto) {
+        produtos.add(produto);
+    }
+
+    public boolean removerProduto(String nome) {
+        return produtos.removeIf(p -> p.getNome().equalsIgnoreCase(nome));
+    }
+
+    public Produto buscarProduto(String nome) {
+        return produtos.stream()
+                       .filter(p -> p.getNome().equalsIgnoreCase(nome))
+                       .findFirst()
+                       .orElse(null);
+    }
+
+    public double calcularValorTotal() {
+        return produtos.stream()
+                       .mapToDouble(p -> p.getPreco() * p.getQuantidade())
+                       .sum();
+    }
+
+    public List<Produto> getProdutos() {
+        return produtos;
+    }
+}
+```
+
+#### Teste JUnit
+Esses testes unitários validam as funcionalidades principais da classe `Estacionamento`, verificando adição, remoção e busca de carros. As asserções do JUnit garantem o comportamento correto, reforçando a importância de testes automatizados para assegurar a qualidade do software.
+
+```java
+package fatec.gov.br.atividades.quitanda;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class Teste_Quitanda {
+
+    @Test
+    void testAdicionarProduto() {
+        Quitanda q = new Quitanda();
+        q.adicionarProduto(new Produto("Maçã", 2.5, 10));
+        assertEquals(1, q.getProdutos().size());
+    }
+
+    @Test
+    void testRemoverProduto() {
+        Quitanda q = new Quitanda();
+        q.adicionarProduto(new Produto("Banana", 3.0, 5));
+        boolean removido = q.removerProduto("Banana");
+        assertTrue(removido);
+        assertEquals(0, q.getProdutos().size());
+    }
+
+    @Test
+    void testBuscarProduto() {
+        Quitanda q = new Quitanda();
+        Produto p = new Produto("Laranja", 4.0, 8);
+        q.adicionarProduto(p);
+
+        Produto encontrado = q.buscarProduto("Laranja");
+        assertNotNull(encontrado);
+        assertEquals("Laranja", encontrado.getNome());
+    }
+
+    @Test
+    void testCalcularValorTotal() {
+        Quitanda q = new Quitanda();
+        q.adicionarProduto(new Produto("Tomate", 5.0, 2)); // 10.0
+        q.adicionarProduto(new Produto("Batata", 4.0, 3)); // 12.0
+
+        assertEquals(22.0, q.calcularValorTotal());
+    }
+}
+```
+
 <br>
 
 ### Relatório de Testes - Surefire
