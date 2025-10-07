@@ -1,0 +1,28 @@
+@startuml
+class Carro {
+  - placa : String
+  - modelo : String
+  - cor : String
+  --
+  + Carro(placa:String, modelo:String, cor:String)
+  + getPlaca() : String
+  + getModelo() : String
+  + getCor() : String
+}
+
+class Estacionamento {
+  - vagas : List<Carro>
+  --
+  + Estacionamento()
+  + adicionarCarro(c:Carro) : void
+  + removerCarro(placa:String) : void
+  + listarCarros() : void
+}
+
+Estacionamento " (0,n) " o-- " (1,1) " Carro : contém >
+
+note on link
+Um estacionamento pode ter 0 ou muitos carros (0,n).
+Um carro deve pertencer a exatamente um estacionamento (1,1).
+end note
+@enduml
