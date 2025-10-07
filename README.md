@@ -7,6 +7,13 @@ Aqui compartilho reflexões, estudos, exemplos práticos e interpretações sobr
 
 <br>
 
+## 📑 Índice
+1. [Sobre o Projeto](#-sobre-o-projeto)
+2. [Atividades](#%EF%B8%8F-exemplos-de-trade-offs)
+   - [Atividades](#atividades)
+
+<br>
+
 ## 📌 Sobre o Projeto
 Este repositório contém as atividades práticas da disciplina de Engenharia de Software, ministrada pelo Prof. Betoti na Fatec. O objetivo é explorar os conceitos e implementações práticas da linguagem Java, modelagem UML, demonstrando a aplicação de boas práticas de engenharia de software.
 As atividades visam preparar os alunos para tomar decisões técnicas conscientes, considerando fatores como escalabilidade, qualidade e manutenção.
@@ -15,8 +22,8 @@ O público-alvo inclui colegas de classe, o professor e potenciais recrutadores 
 ---
 <br>
 
-## Engenharia de Software
-- [Leia o README](engenhariadesoftware/README.md)
+## Atividades
+- [Leia o README das atividades](Atividades.md)
 
 ---
 <br>
