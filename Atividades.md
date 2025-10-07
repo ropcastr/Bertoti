@@ -1,4 +1,4 @@
-# Atividades de 1 a 6 - Engenharia de Software 💻
+# Atividades de 1 a 7 - Engenharia de Software 💻
 
 ## 📌 Sobre o Projeto
 Este repositório contém as atividades de 1 a 6 da disciplina de Engenharia de Software, ministrada pelo Prof. Betoti na Fatec, explorando os conceitos apresentados no livro *Software Engineering at Google* (O'Reilly) por meio de reflexões teóricas, análise de trade-offs e implementações práticas.
