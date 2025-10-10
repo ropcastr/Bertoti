@@ -28,8 +28,10 @@ Um exemplo é o sistema de estacionamento modelado em Java, que inclui classes, 
      - [Classe Carro](#classe-carro)
      - [Classe Estacionamento](#classe-estacionamento)
      - [Teste Junit](#teste-junit)
-7. [Relatório de Testes](#relatório-de-testes---surefire)
-
+6. [Relatório de Testes](#relatório-de-testes---surefire)
+7. [Criar interação com IA](#atividade-7)
+   - [Chat interativo](#classe-conversar)
+   - [Gerênciamento de BD](#classe-estacionamento-ia)
 ---
 <br>
 
@@ -440,7 +442,14 @@ public class Teste_Quitanda {
 
 <br>
 
-##Atividade 7
+### Relatório de Testes - Surefire
+📊 [Testes das classes - Surefire](https://ropcastr.github.io/Bertoti/surefire.html)
+
+---
+
+<br>
+
+## Atividade 7
 Criar uma classe usando Ollama4J com um modelo de IA de sua escolha e implementar uma interação com o usuário.
 
 ### Classe Conversar
@@ -900,10 +909,4 @@ public class EstacionamentoIA {
 }
 ```
 <br>
-
----
-
-
-### Relatório de Testes - Surefire
-📊 [Testes das classes - Surefire](https://ropcastr.github.io/Bertoti/surefire.html)
 
