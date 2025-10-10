@@ -443,7 +443,7 @@ public class Teste_Quitanda {
 ##Atividade 7
 Criar uma classe usando Ollama4J com um modelo de IA de sua escolha e implementar uma interação com o usuário.
 
-###Classe Conversar
+### Classe Conversar
 
 ```java
 package fatec.gov.br.atividades.iachat;
@@ -543,7 +543,8 @@ public class Conversar {
 
 <br>
 
-###Classe Estacionamento IA
+### Classe Estacionamento IA
+
 Aqui  foi feito uma interação da IA com o Banco de Dados da Classe Estacionamento das atividades anteriores, onde a IA interage com o banco conforme pedido do usuário e retorna um resultado.
 
 ```java
