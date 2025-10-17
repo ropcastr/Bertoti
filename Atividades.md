@@ -146,8 +146,8 @@ A leitura de *Software Engineering at Google* foi transformadora, destacando que
 <br>
 
 #### Classe Carro
-Essa classe representa um veículo no sistema de estacionamento, armazenando atributos como placa, modelo, cor e ano. Inclui métodos getters e setters para manipulação segura dos dados, além de sobrescrita de `toString()`, `equals()` e `hashCode()` para garantir exibição clara e comparação única pela placa.
 
+**Descrição:** Representa um veículo com atributos essenciais (placa, modelo, cor e ano). Fornece getters/setters para encapsulamento, e sobrescreve `toString()`, `equals()` e `hashCode()` para facilitar exibição legível e comparação por placa (identificador único no contexto).
 ```java
 package fatec.gov.br.atividades.estacionamento;
 
@@ -219,8 +219,8 @@ public class Carro {
 ```
 
 #### Classe Estacionamento
-Essa classe gerencia uma lista de carros usando uma `ArrayList`, permitindo operações como adicionar, remover e buscar veículos por placa. Utiliza Java Streams para buscas eficientes e reflete boas práticas de manipulação de coleções.
 
+**Descrição:** Gerencia uma coleção de objetos `Carro` usando uma `ArrayList`. Oferece operações básicas: adicionar, remover e buscar por placa. A implementação usa Streams para buscas eficientes e expõe a lista via `getCarros()` para testes e integração com outras camadas (ex.: UI ou persistência).
 ```java
 package fatec.gov.br.atividades.estacionamento;
 
@@ -301,8 +301,8 @@ class Teste_Estacionamento {
 <br>
 
 #### Classe Produto
-Esses testes unitários validam as funcionalidades principais da classe `Produto`, verificando adição, remoção e busca de produtos. As asserções do JUnit garantem o comportamento correto, reforçando a importância de testes automatizados para assegurar a qualidade do software.
 
+**Descrição:** Representa um item comercial com nome, preço e quantidade em estoque. Inclui getters/setters, `toString()` para exibição e `equals()`/`hashCode()` baseados no nome para garantir comportamento consistente em coleções.
 ```java
 package fatec.gov.br.atividades.quitanda;
 
@@ -364,8 +364,8 @@ public class Produto {
 ```
 
 #### Classe Quitanda
-Essa classe gerencia uma lista de produtos usando uma `ArrayList`, permitindo operações como adicionar, remover e buscar produtos. Utiliza Java Streams para buscas eficientes e reflete boas práticas de manipulação de coleções.
 
+**Descrição:** Gerencia uma lista de `Produto` com operações para adicionar, remover, buscar e calcular o valor total do estoque. Ideal para demonstrar manipulação de coleções, uso de Streams e lógica simples de negócio para um sistema de vendas/controle de estoque.
 ```java
 package fatec.gov.br.atividades.quitanda;
 
@@ -468,6 +468,8 @@ Este exercício foi implementado no *Package Estacionamento*.
 
 ### Classe Repositório
 
+
+**Descrição:** Responsável por toda a interação com o banco de dados SQLite via JDBC. Cria a tabela quando necessário e fornece operações CRUD (inserir, buscar, remover, listar). Trata conexões, statements e exceções, incluindo verificação de constraint UNIQUE para placas duplicadas.
 ```java
 package fatec.gov.br.atividades.estacionamento;
 
@@ -589,6 +591,8 @@ public class Repositorio {
 
 ### Classe Main
 
+
+**Descrição:** Fornece uma interface de linha de comando (menu) para o usuário interagir com o sistema. Inicializa `Repositorio` e `Estacionamento`, cria a tabela do banco se necessário e executa um loop com opções: adicionar, buscar, remover, listar e sair. Contém validação de entrada e tratamento de erros para operações do usuário.
 ```java
 package fatec.gov.br.atividades.estacionamento;
 
@@ -727,6 +731,8 @@ Este exercício usa o Banco de dados do *Package Estacionamento*.
 
 #### Classe Conversar
 
+
+**Descrição:** Cliente simples de chat que conecta-se a um servidor Ollama local. Configura o nome do modelo, inicializa o `Ollama` client, prepara um `OllamaChatRequestBuilder` com uma mensagem de sistema e executa um loop para ler entradas do usuário, enviar ao modelo e imprimir as respostas. Mantém o histórico de mensagens no builder para permitir contexto entre interações.
 ```java
 package fatec.gov.br.atividades.iachat;
 
@@ -827,8 +833,8 @@ public class Conversar {
 
 #### Classe Estacionamento IA
 
-Aqui  foi feito uma interação da IA com o Banco de Dados da Classe Estacionamento das atividades anteriores, onde a IA interage com o banco conforme pedido do usuário e retorna um resultado.
 
+**Descrição:** Integra a IA (via Ollama4J) com o backend do estacionamento. Define um `SYSTEM_PROMPT` rígido que obriga o modelo a responder com JSON de ação (`add`/`remove`/`list`/`help`/`none`). Recebe a resposta JSON, faz `parse` com Gson e executa a ação correspondente no `Estacionamento` (adicionar, remover, listar, consultar), tratando filtros e normalização de texto (remoção de acentos, lowercase). Mantém `ultimaListaExibida` para suportar remoções por índice, registra resultados no histórico de chat e trata erros de parsing/execução, retornando mensagens amigáveis ao usuário.
 ```java
 package fatec.gov.br.atividades.iachat;
 
