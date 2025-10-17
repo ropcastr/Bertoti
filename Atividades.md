@@ -29,7 +29,10 @@ Um exemplo é o sistema de estacionamento modelado em Java, que inclui classes, 
      - [Classe Estacionamento](#classe-estacionamento)
      - [Teste Junit](#teste-junit)
 6. [Relatório de Testes](#relatório-de-testes---surefire)
-7. [Criar interação com IA](#atividade-7)
+7. [Implementar um BD com SQLite](#atividade-7)
+   - [Classe do Banco - Repositório](#classe-repositorio)
+   - [Clase de gestão do Banco - Main](#classe-main)
+8. [Criar interação com IA](#atividade-8)
    - [Chat interativo](#classe-conversar)
    - [Gerênciamento de BD](#classe-estacionamento-ia)
 ---
@@ -139,6 +142,8 @@ A leitura de *Software Engineering at Google* foi transformadora, destacando que
 <img src="estacionamento/Diagrama_Estacionamento.png" alt="Diagrama UML do sistema de estacionamento" width="500"/>
 
 ### Classes para um estacionamento - ![Static Badge](https://img.shields.io/badge/Java-code-brightgreen?style=plastic&logo=Java&logoSize=auto&labelColor=%23FFFF00) 
+
+<br>
 
 #### Classe Carro
 Essa classe representa um veículo no sistema de estacionamento, armazenando atributos como placa, modelo, cor e ano. Inclui métodos getters e setters para manipulação segura dos dados, além de sobrescrita de `toString()`, `equals()` e `hashCode()` para garantir exibição clara e comparação única pela placa.
@@ -286,8 +291,14 @@ class Teste_Estacionamento {
 }
 ```
 
+<br>
+
 ### Diagrama UML para uma quitanda - ![Static Badge](https://img.shields.io/badge/Plant-UML-blue?style=plastic&logo=UML&logoSize=auto&labelColor=b22222)
 <img src="quitanda/Diagrama_Quitanda.png" alt="Diagrama UML do sistema de estacionamento" width="500"/>
+
+### Classes para uma Quitanda - ![Static Badge](https://img.shields.io/badge/Java-code-brightgreen?style=plastic&logo=Java&logoSize=auto&labelColor=%23FFFF00) 
+
+<br>
 
 #### Classe Produto
 Esses testes unitários validam as funcionalidades principais da classe `Produto`, verificando adição, remoção e busca de produtos. As asserções do JUnit garantem o comportamento correto, reforçando a importância de testes automatizados para assegurar a qualidade do software.
@@ -442,6 +453,8 @@ public class Teste_Quitanda {
 
 <br>
 
+---
+
 ### Relatório de Testes - Surefire
 📊 [Testes das classes - Surefire](https://ropcastr.github.io/Bertoti/surefire.html)
 
@@ -450,9 +463,269 @@ public class Teste_Quitanda {
 <br>
 
 ## Atividade 7
+Implementar um BD em um dos exercícioos usando o SQLite.
+Este exercício foi implementado no *Package Estacionamento*.
+
+### Classe Repositorio
+
+```java
+package fatec.gov.br.atividades.estacionamento;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Repositorio {
+    public static final String URL = "jdbc:sqlite:estacionamento.db";
+
+    static {
+        try {
+            Class.forName("org.sqlite.JDBC");
+        } catch (ClassNotFoundException e) {
+            System.err.println("Driver SQLite não encontrado: " + e.getMessage());
+        }
+    }
+
+    private Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(URL);
+    }
+
+    public void criarTabelaVeiculo() throws SQLException {
+        String sql = "CREATE TABLE IF NOT EXISTS veiculo (" +
+                     "id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                     "tipo TEXT NOT NULL," +
+                     "modelo TEXT NOT NULL," +
+                     "placa TEXT NOT NULL UNIQUE," +
+                     "cor TEXT NOT NULL," +
+                     "ano INTEGER NOT NULL" +
+                     ");";
+        try (Connection conn = getConnection();
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("Tabela criada/verificada com sucesso.");
+        }
+    }
+
+    public void inserirVeiculo(Veiculo veiculo) throws SQLException {
+    String sql = "INSERT INTO veiculo(tipo, modelo, placa, cor, ano) VALUES (?, ?, ?, ?, ?)";
+    try (Connection conn = getConnection();
+        PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+        pstmt.setString(1, veiculo.getTipo());
+        pstmt.setString(2, veiculo.getModelo());
+        pstmt.setString(3, veiculo.getPlaca());
+        pstmt.setString(4, veiculo.getCor());
+        pstmt.setInt(5, veiculo.getAno());
+
+        pstmt.executeUpdate();
+        System.out.println("Veículo inserido com sucesso: " + veiculo);
+    } catch (SQLException e) {
+        if (e.getErrorCode() == 19 && e.getMessage().contains("UNIQUE constraint failed")) {
+            throw new SQLException("Já existe um veículo com a placa " + veiculo.getPlaca(), e);
+        }
+        throw e;
+        }
+    }
+
+    public Veiculo buscarVeiculo(String placa) throws SQLException {
+        String sql = "SELECT * FROM veiculo WHERE placa = ? COLLATE NOCASE";
+        try (Connection conn = getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, placa);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                if (rs.next()) {
+                    return new Veiculo(
+                        rs.getString("tipo"),
+                        rs.getString("modelo"),
+                        rs.getString("placa"),
+                        rs.getString("cor"),
+                        rs.getInt("ano")
+                    );
+                }
+                return null;
+            }
+        }
+    }
+
+    public boolean removerVeiculo(String placa) throws SQLException {
+        String sql = "DELETE FROM veiculo WHERE placa = ? COLLATE NOCASE";
+        try (Connection conn = getConnection();
+            PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, placa);
+            int rowsAffected = pstmt.executeUpdate();
+            System.out.println("Remoção de veículo com placa " + placa + ": " + (rowsAffected > 0 ? "Sucesso" : "Não encontrado"));
+            return rowsAffected > 0;
+        }
+    }
+
+    public List<Veiculo> listarVeiculos() throws SQLException {
+        List<Veiculo> veiculos = new ArrayList<>();
+        String sql = "SELECT * FROM veiculo";
+        try (Connection conn = getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql);
+             ResultSet rs = pstmt.executeQuery()) {
+            while (rs.next()) {
+                veiculos.add(new Veiculo(
+                    rs.getString("tipo"),
+                    rs.getString("modelo"),
+                    rs.getString("placa"),
+                    rs.getString("cor"),
+                    rs.getInt("ano")
+                ));
+            }
+            System.out.println("Total de veículos encontrados: " + veiculos.size());
+        }
+        return veiculos;
+    }
+}
+```
+
+<br>
+
+### Classe Main
+
+```java
+package fatec.gov.br.atividades.estacionamento;
+
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Repositorio repositorio = new Repositorio();
+        Estacionamento estacionamento = new Estacionamento(repositorio);
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            repositorio.criarTabelaVeiculo();
+            System.out.println("Banco de dados inicializado com sucesso.");
+        } catch (Exception e) {
+            System.err.println("Erro ao inicializar o banco de dados: " + e.getMessage());
+            return;
+        }
+
+        while (true) {
+            System.out.println("\n=== Sistema de Gerenciamento de Estacionamento ===");
+            System.out.println("1. Adicionar veículo");
+            System.out.println("2. Buscar veículo por placa");
+            System.out.println("3. Remover veículo por placa");
+            System.out.println("4. Listar todos os veículos");
+            System.out.println("5. Sair");
+            System.out.print("Escolha uma opção: ");
+
+            int opcao;
+            try {
+                opcao = Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException e) {
+                System.out.println("Opção inválida. Por favor, digite um número entre 1 e 5.");
+                continue;
+            }
+
+            switch (opcao) {
+                case 1: //adiciona o veículo
+                    try {
+                        System.out.print("Digite a placa (ex.: ABC1234): ");
+                        String placa = scanner.nextLine();
+                        System.out.print("Digite o modelo: ");
+                        String modelo = scanner.nextLine();
+                        System.out.print("Digite a cor: ");
+                        String cor = scanner.nextLine();
+                        System.out.print("Digite o ano: ");
+                        int ano = Integer.parseInt(scanner.nextLine());
+                        System.out.print("Digite o tipo (ex.: Carro, Moto, Onibus, Caminhonete): ");
+                        String tipo = scanner.nextLine();
+
+                        Veiculo veiculo = new Veiculo(tipo, modelo, placa, cor, ano);
+                        estacionamento.adicionarVeiculo(veiculo);
+                        System.out.println("Veículo adicionado com sucesso: " + veiculo);
+                    } catch (NumberFormatException e) {
+                        System.out.println("Erro: Ano deve ser um número válido.");
+                    } catch (IllegalArgumentException e) {
+                        System.out.println("Erro: " + e.getMessage());
+                    } catch (RuntimeException e) {
+                        System.out.println("Erro ao adicionar veículo: " + e.getMessage());
+                    }
+                    break;
+
+                case 2: //busca veículo
+                    try {
+                        System.out.print("Digite a placa para busca: ");
+                        String placaBusca = scanner.nextLine();
+                        Veiculo veiculo = estacionamento.buscarVeiculo(placaBusca);
+                        if (veiculo != null) {
+                            System.out.println("Veículo encontrado: " + veiculo);
+                        } else {
+                            System.out.println("Veículo com placa " + placaBusca + " não encontrado.");
+                        }
+                    } catch (RuntimeException e) {
+                        System.out.println("Erro ao buscar veículo: " + e.getMessage());
+                    }
+                    break;
+
+                case 3: //remove veículo
+                    try {
+                        System.out.print("Digite a placa para remover: ");
+                        String placaRemover = scanner.nextLine();
+                        boolean removido = estacionamento.removerVeiculo(placaRemover);
+                        if (removido) {
+                            System.out.println("Veículo com placa " + placaRemover + " removido com sucesso.");
+                        } else {
+                            System.out.println("Veículo com placa " + placaRemover + " não encontrado.");
+                        }
+                    } catch (RuntimeException e) {
+                        System.out.println("Erro ao remover veículo: " + e.getMessage());
+                    }
+                    break;
+
+                case 4: //Lista os veículos
+                    try {
+                        List<Veiculo> veiculos = estacionamento.getVeiculos();
+                        if (veiculos.isEmpty()) {
+                            System.out.println("Nenhum veículo cadastrado.");
+                        } else {
+                            System.out.println("Veículos cadastrados:");
+                            for (Veiculo v : veiculos) {
+                                System.out.println(v);
+                            }
+                        }
+                    } catch (RuntimeException e) {
+                        System.out.println("Erro ao listar veículos: " + e.getMessage());
+                    }
+                    break;
+
+                case 5: //para sair
+                    System.out.println("Saindo do sistema...");
+                    scanner.close();
+                    return;
+
+                default:
+                    System.out.println("Opção inválida. Por favor, escolha entre 1 e 5.");
+            }
+        }
+    }
+}
+```
+
+<br>
+
+---
+
+<br>
+
+## Atividade 8
 Criar uma classe usando Ollama4J com um modelo de IA de sua escolha e implementar uma interação com o usuário.
 
-### Classe Conversar
+### Package iachat
+Este exercício usa o Banco de dados do *Package Estacionamento*.
+
+<br>
+
+#### Classe Conversar
 
 ```java
 package fatec.gov.br.atividades.iachat;
@@ -552,7 +825,7 @@ public class Conversar {
 
 <br>
 
-### Classe Estacionamento IA
+#### Classe Estacionamento IA
 
 Aqui  foi feito uma interação da IA com o Banco de Dados da Classe Estacionamento das atividades anteriores, onde a IA interage com o banco conforme pedido do usuário e retorna um resultado.
 
@@ -904,9 +1177,12 @@ public class EstacionamentoIA {
     //para converter para minúsculas, remove acentos e espaços extras
     String normalized = Normalizer.normalize(input, Normalizer.Form.NFD);
     return normalized.replaceAll("\\p{InCombiningDiacriticalMarks}+", "").toLowerCase().trim();
-}
+   }
 
 }
+
 ```
+
 <br>
 
+---
