@@ -1,13 +1,13 @@
 # Atividades de 1 a 7 - Engenharia de Software 💻
 
-## 📌 Sobre o Projeto
+## 🧩 Sobre o Projeto
 Este repositório contém as atividades de 1 a 6 da disciplina de Engenharia de Software, ministrada pelo Prof. Betoti na Fatec, explorando os conceitos apresentados no livro *Software Engineering at Google* (O'Reilly) por meio de reflexões teóricas, análise de trade-offs e implementações práticas.
 Um exemplo é o sistema de estacionamento modelado em Java, que inclui classes, testes unitários e modelagem UML, demonstrando a aplicação de boas práticas de engenharia de software.
 
 ---
 <br>
 
-### 📑 Índice
+## 🗂️ Índice
 1. [Comentários sobre o Livro Software Engineering at Google, O'Reilly](#-comentários-sobre-o-livro-software-engineering-at-google-oreilly)
    - [Trecho 1: O que é Engenharia de Software?](#-trecho-1-o-que-é-engenharia-de-software)
    - [Trecho 2: Programação ao Longo do Tempo](#-trecho-2-programação-ao-longo-do-tempo)
@@ -38,7 +38,7 @@ Um exemplo é o sistema de estacionamento modelado em Java, que inclui classes, 
 ---
 <br>
 
-## 📚 Comentários sobre o Livro *Software Engineering at Google*, O'Reilly
+## 📘 Comentários sobre o Livro *Software Engineering at Google*, O'Reilly
 
 ### 📖 Trecho 1: O que é Engenharia de Software?
 O livro faz uma distinção clara entre “apenas programar” e **ser engenheiro de software**.  
@@ -63,7 +63,7 @@ Envolve a utilização de **ferramentas**, **processos** e **estratégias** para
 ---
 <br>
 
-## ⚖️ Exemplos de Trade-offs
+## ⚙️ Exemplos de Trade-offs
 
 ### 1️⃣ Velocidade vs Qualidade
 **Descrição:**  
@@ -115,7 +115,7 @@ O Dropbox inicialmente desenvolveu sua própria infraestrutura de armazenamento 
 ---
 <br>
 
-## 📊 Tabela Resumo
+## 🧮 Tabela Resumo
 
 | Trade-off                   | Exemplo Rápido                                        | Consequência                                        |
 |-----------------------------|-------------------------------------------------------|-----------------------------------------------------|
@@ -127,7 +127,7 @@ O Dropbox inicialmente desenvolveu sua própria infraestrutura de armazenamento 
 ---
 <br>
 
-## 🎯 Conclusão
+## 🏁 Conclusão
 A leitura de *Software Engineering at Google* foi transformadora, destacando que a engenharia de software vai além da codificação, exigindo decisões estratégicas que equilibram trade-offs com base no contexto do projeto. A implementação do sistema de estacionamento me permitiu aplicar conceitos práticos como encapsulamento, testes unitários e modelagem UML, consolidando a importância de práticas rigorosas. Refletindo sobre projetos anteriores, percebi que priorizar velocidade sem qualidade muitas vezes resultou em refatorações demoradas, o que reforçou a necessidade de planejamento cuidadoso. Os trade-offs não são barreiras, mas sim ferramentas para moldar sistemas sustentáveis e escaláveis, e este projeto me ajudou a internalizar essa visão estratégica, essencial para minha formação como engenheiro de software.
 
 📌 Mais detalhes no capítulo de trade-offs do  
@@ -136,7 +136,7 @@ A leitura de *Software Engineering at Google* foi transformadora, destacando que
 ---
 <br>
 
-## Diagramas e Estudo de Classes
+## 🧱 Diagramas e Estudo de Classes
 
 ### Diagrama UML para um estacionamento - ![Static Badge](https://img.shields.io/badge/Plant-UML-blue?style=plastic&logo=UML&logoSize=auto&labelColor=b22222)
 <img src="estacionamento/Diagrama_Estacionamento.png" alt="Diagrama UML do sistema de estacionamento" width="500"/>
@@ -455,18 +455,18 @@ public class Teste_Quitanda {
 
 ---
 
-### Relatório de Testes - Surefire
+## 📋 Relatório de Testes - Surefire
 📊 [Testes das classes - Surefire](https://ropcastr.github.io/Bertoti/surefire.html)
 
 ---
 
 <br>
 
-## Atividade 7
-Implementar um BD em um dos exercícioos usando o SQLite.
+## 🧠 Atividade 7 – Integração com Banco de Dados
+Implementar um banco de dados (BD) em um dos exercícios anteriores usando o SQLite.
 Este exercício foi implementado no *Package Estacionamento*.
 
-### Classe Repositorio
+### Classe Repositório
 
 ```java
 package fatec.gov.br.atividades.estacionamento;
@@ -717,7 +717,7 @@ public class Main {
 
 <br>
 
-## Atividade 8
+## 🤖 Atividade 8 – Interação com IA (Ollama4J)
 Criar uma classe usando Ollama4J com um modelo de IA de sua escolha e implementar uma interação com o usuário.
 
 ### Package iachat
@@ -1186,3 +1186,9 @@ public class EstacionamentoIA {
 <br>
 
 ---
+
+
+---
+
+## 🧾 Considerações Finais
+Este conjunto de atividades representa uma evolução gradual da aplicação prática dos conceitos de **Engenharia de Software**, abrangendo desde fundamentos teóricos até a integração com banco de dados e inteligência artificial. A documentação foi organizada de forma modular e clara, visando facilitar a avaliação e o entendimento do professor. Cada atividade foi acompanhada de exemplos práticos, diagramas UML, código Java comentado e testes unitários, seguindo as boas práticas de documentação e versionamento no GitHub.
