@@ -139,7 +139,7 @@ A leitura de *Software Engineering at Google* foi transformadora, destacando que
 ## 🧱 Diagramas e Estudo de Classes
 
 ### Diagrama UML para um estacionamento - ![Static Badge](https://img.shields.io/badge/Plant-UML-blue?style=plastic&logo=UML&logoSize=auto&labelColor=b22222)
-<img src="estacionamento/Diagrama_Estacionamento.png" alt="Diagrama UML do sistema de estacionamento" width="500"/>
+<img src="Engenharia_Software/src/main/java/fatec/gov/br/atividades/estacionamento/Diagrama_Estacionamento.png" alt="Diagrama UML do sistema de estacionamento" width="500"/>
 
 ### Classes para um estacionamento - ![Static Badge](https://img.shields.io/badge/Java-code-brightgreen?style=plastic&logo=Java&logoSize=auto&labelColor=%23FFFF00) 
 
@@ -294,7 +294,7 @@ class Teste_Estacionamento {
 <br>
 
 ### Diagrama UML para uma quitanda - ![Static Badge](https://img.shields.io/badge/Plant-UML-blue?style=plastic&logo=UML&logoSize=auto&labelColor=b22222)
-<img src="quitanda/Diagrama_Quitanda.png" alt="Diagrama UML do sistema de estacionamento" width="500"/>
+<img src="Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama_Quitanda.png" alt="Diagrama UML do sistema de estacionamento" width="500"/>
 
 ### Classes para uma Quitanda - ![Static Badge](https://img.shields.io/badge/Java-code-brightgreen?style=plastic&logo=Java&logoSize=auto&labelColor=%23FFFF00) 
 
