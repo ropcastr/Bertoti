@@ -27,7 +27,6 @@ O público-alvo inclui colegas de classe, o professor e potenciais recrutadores 
 ## Atividades
 - [Leia o README das atividades](Atividades.md)
 
----
 <br>
 
 ### Atividade Extra
