@@ -11,7 +11,7 @@ Aqui compartilho reflexões, estudos, exemplos práticos e interpretações sobr
 1. [Sobre o Projeto](#-sobre-o-projeto)
 2. [Atividades](#%EF%B8%8F-exemplos-de-trade-offs)
    - [Atividades](#atividades)
-   - [Atividade Extra](#atividades-extra)
+   - [Atividade Extra](#atividade-extra)
 3. [Tecnologias e Ferramentas](#%EF%B8%8F-tecnologias-e-ferramentas)
    
 <br>
