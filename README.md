@@ -11,7 +11,9 @@ Aqui compartilho reflexões, estudos, exemplos práticos e interpretações sobr
 1. [Sobre o Projeto](#-sobre-o-projeto)
 2. [Atividades](#%EF%B8%8F-exemplos-de-trade-offs)
    - [Atividades](#atividades)
-
+   - [Atividade Extra](#atividades-extra)
+3. [Tecnologias e Ferramentas](#%EF%B8%8F-tecnologias-e-ferramentas)
+   
 <br>
 
 ## 📌 Sobre o Projeto
@@ -25,6 +27,29 @@ O público-alvo inclui colegas de classe, o professor e potenciais recrutadores 
 ## Atividades
 - [Leia o README das atividades](Atividades.md)
 
+---
+<br>
+
+### Atividade Extra
+#### 🤖 Quarkus AI Database Assistant
+
+Para esta atividade, criei um assistente de banco de dados com IA integrado ao SQLite, construído em **Java + Quarkus + Langchain4j + Ollama**.
+
+A aplicação permite a um usuário criar, consultar e gerenciar bancos de dados SQLite usando **linguagem natural** em português (ex: "Crie um banco chamado Vendas" ou "Liste todos os clientes"). A IA (apelidada de "Tenebra") traduz o pedido em comandos SQL, executa-os em um banco SQLite e retorna o resultado em uma interface de chat.
+
+##### 🔗 Links Principais do Projeto
+
+* **🗒️ Documentação Completa (Arquivo Fonte):**
+    * [**Leia a `DOCUMENTACAO.MD`**](/quarkus-bot-db/DOCUMENTACAO.MD)
+    * Este arquivo contém a visão geral, arquitetura, fluxo de uso e guias de troubleshooting da aplicação.
+
+* **🚀 Aplicação (código fonte):**
+    * [**Acesse a pasta:**](/quarkus-bot-db)
+
+* **💬 Versão executável (Jar):**
+    * [**Acesse a pasta:**](/quarkus-bot-db-executavel)
+    * Versão compilada do código fonte usando Uber-Jar
+      
 ---
 <br>
 
