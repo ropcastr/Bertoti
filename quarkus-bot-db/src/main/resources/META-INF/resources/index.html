@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Database AI Assistant</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: #f7f8fa;
+            margin: 0;
+        }
+        .container {
+            max-width: 700px;
+            min-width: 340px;
+            margin: 40px auto 0 auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px #0001;
+            padding: 0 32px;
+            display: flex;
+            flex-direction: column;
+            min-height: 80vh;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 32px 0 8px 0;
+        }
+        .header-icon {
+            color: #0077cc;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        .header-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #222;
+        }
+        .header-desc {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .chat-section {
+            flex: 1;
+            padding: 24px 0 24px 0;
+            height: 400px;
+            max-height: 400px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            background: transparent;
+        }
+        .messages {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .msg {
+            background: #f7f8fa;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px #0001;
+            margin-bottom: 0;
+            padding: 18px 22px;
+            font-size: 1.08rem;
+            line-height: 1.7;
+            word-break: break-word;
+            max-width: 80%;
+        }
+        .msg.user {
+            background: #eaf4fb;
+            color: #0077cc;
+            margin-left: auto;
+            text-align: right;
+        }
+        .msg.ia {
+            background: #fffbe6;
+            color: #222;
+            margin-right: auto;
+            text-align: left;
+        }
+        .actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+            justify-content: flex-start;
+        }
+        .action-btn {
+            background: #fff;
+            border: 1px solid #0077cc;
+            border-radius: 8px;
+            color: #0077cc;
+            font-size: 0.98rem;
+            padding: 8px 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 500;
+            transition: background 0.2s, border 0.2s;
+        }
+        .action-btn:hover {
+            background: #eaf4fb;
+        }
+        .input-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 8px;
+        }
+        .input-box {
+            flex: 1;
+            padding: 16px 20px;
+            border-radius: 10px;
+            border: 1px solid #d0d0d0;
+            font-size: 1.12rem;
+            background: #fff;
+            resize: none;
+            min-height: 96px;
+            max-height: 240px;
+        }
+        .send-btn {
+            padding: 16px 24px;
+            border-radius: 10px;
+            border: none;
+            background: #0077cc;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .send-btn:hover {
+            background: #005fa3;
+        }
+        .input-hint {
+            font-size: 0.92rem;
+            color: #aaa;
+            margin-top: 2px;
+        }
+        .footer {
+            padding: 12px 0;
+            background: #fff;
+            border-radius: 0 0 18px 18px;
+            text-align: right;
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+        @media (max-width: 900px) {
+            .container {
+                max-width: 98vw;
+                min-width: 0;
+                padding: 0 8px;
+                margin: 0;
+            }
+            .header {
+                padding: 24px 0 8px 0;
+            }
+            .chat-section {
+                padding: 12px 0 12px 0;
+                height: 300px;
+                max-height: 300px;
+            }
+            .footer {
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="header-icon"><i class="fa-solid fa-database"></i></div>
+        <div>
+            <div class="header-title">Database AI Assistant <span style="font-size:1.2rem;">✨</span></div>
+            <div class="header-desc">Seu especialista em SQL e gerenciamento de banco de dados</div>
+        </div>
+    </header>
+    <main>
+        <section class="chat-section">
+            <div id="messages" class="messages"></div>
+        </section>
+        <section>
+            <div class="actions">
+                <button class="action-btn" data-prompt="Criar um banco de dados com as seguintes características:\nNome: 'nome do banco'\nTabela: 'nome da tabela'\nColuna(s): 'nome da coluna', 'nome da coluna', ...\nChaves: 'especifique as chaves' (caso necessário)"><i class="fa-solid fa-database"></i>Criar um banco com os seguintes dados</button>
+                <button class="action-btn" data-prompt="Otimizar essa query SQL: "><i class="fa-solid fa-wand-magic-sparkles"></i>Otimizar essa query SQL</button>
+                <button class="action-btn" data-prompt="Realizar busca: 'detalhe a busca', no banco 'nome do banco'."><i class="fa-solid fa-magnifying-glass"></i>Realizar busca</button>
+                <button class="action-btn" data-prompt="Adicionar ou remover do banco 'nome do banco':\nTabela 'nome da tabela' a coluna(s) 'nome da coluna(s)'"><i class="fa-solid fa-plus-minus"></i>Adicionar ou Remover do banco</button>
+                <button class="action-btn" data-prompt="Criar e estruturar um banco de dados para 'finalidade' gerenciar 'o que precisa ser guardado no banco' e insira alguns dados como exemplos no banco e faça uma busca nesse banco e me retorne a lista de dados nele armazenado, juntamente com o nome do banco criado."><i class="fa-solid fa-lightbulb"></i>Criar exemplo</button>
+            </div>
+            <div class="input-row">
+                <textarea id="input" class="input-box" placeholder="Digite sua consulta SQL ou pergunta sobre banco de dados... (Ctrl+Enter para enviar)" rows="1" maxlength="2000" autofocus></textarea>
+                <button id="send" class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+            <div class="input-hint">Use Ctrl+Enter para enviar rapidamente</div>
+        </section>
+    </main>
+    <footer class="footer">
+        Powered by AI ✨
+        <span id="model-info" style="color:#888;font-size:0.95em;"></span>
+        <br>
+        <a href="/docs" target="_blank" style="color:#0077cc;text-decoration:none;font-weight:500;">
+            📘 Ver Documentação
+        </a>
+    </footer>
+</div>
+<script>
+const messages = document.getElementById('messages');
+const input = document.getElementById('input');
+const send = document.getElementById('send');
+// Gerenciamento de sessão: gera um sessionId único por navegador
+let sessionId = localStorage.getItem('chatSessionId');
+if (!sessionId) {
+    sessionId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : Math.random().toString(36).substring(2) + Date.now();
+    localStorage.setItem('chatSessionId', sessionId);
+}
+function addMessage(text, sender) {
+    //Preserva a quebra de linhas para mensagens do usuário
+    if (sender === 'user') {
+        text = text.replace(/\n/g, '<br>');
+    }
+    const div = document.createElement('div');
+    div.className = 'msg ' + sender;
+    div.innerHTML = text + `<div class='msg-time'>${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</div>`;
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+}
+send.onclick = async function() {
+    const msg = input.value.trim();
+    if (!msg) return;
+    addMessage(msg, 'user');
+    input.value = '';
+    try {
+        const res = await fetch('/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: msg, sessionId: sessionId }) // Envia o sessionId
+        });
+        const data = await res.json();
+        addMessage(data.response, 'ia');
+    } catch (e) {
+        addMessage('Erro ao conectar com a IA.', 'ia');
+    }
+};
+input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' && !e.shiftKey && !e.ctrlKey) return;
+    if ((e.key === 'Enter' && (e.ctrlKey || e.metaKey))) {
+        send.click();
+        e.preventDefault();
+    }
+});
+for (const btn of document.querySelectorAll('.action-btn')) {
+    btn.onclick = function() {
+        //troca \n por quebras de linhas
+        const prompt = btn.getAttribute('data-prompt').replace(/\\n|\n/g, '\n');
+        input.value = prompt;
+        input.focus();
+    };
+}
+fetch('/chat/model')
+    .then(res => res.text())
+    .then(model => {
+        document.getElementById('model-info').textContent = `Modelo: ${model}`;
+    });
+window.addEventListener('DOMContentLoaded', async function() {
+    try {
+        const res = await fetch('/chat/welcome');
+        const data = await res.json();
+        addMessage(data.response, 'ia');
+    } catch (e) {
+        addMessage('Não foi possível carregar a mensagem de boas-vindas.', 'ia');
+    }
+});
+</script>
+</body>
+</html>
