@@ -42,19 +42,18 @@ public class BrowserLauncher {
      */
     private void openBrowserManually(String url) throws IOException {
         String os = System.getProperty("os.name").toLowerCase();
-        Runtime rt = Runtime.getRuntime();
 
         if (os.contains("win")) {
             //Para Windows
-            rt.exec("cmd /c start " + url);
+            new ProcessBuilder("cmd", "/c", "start", url).start();
             LOG.info("Executado comando 'start' do Windows.");
         } else if (os.contains("mac")) {
             //Para macOS
-            rt.exec("open " + url);
+            new ProcessBuilder("open", url).start();
             LOG.info("Executado comando 'open' do macOS.");
         } else if (os.contains("nix") || os.contains("nux") || os.contains("aix")) {
             //Para Linux/Unix
-            rt.exec("xdg-open " + url);
+            new ProcessBuilder("xdg-open", url).start();
             LOG.info("Executado comando 'xdg-open' do Linux.");
         } else {
             LOG.error("Sistema operacional não suportado para abertura automática do navegador. Acesse manualmente: " + url);

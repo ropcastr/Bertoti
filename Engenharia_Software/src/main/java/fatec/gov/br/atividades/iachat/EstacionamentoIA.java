@@ -25,6 +25,7 @@ public class EstacionamentoIA {
     private static List<Veiculo> ultimaListaExibida = new ArrayList<>();
     private static final String MODEL = "llama3:8b";
     private static final String OLLAMA_URL = "http://localhost:11434/";
+    @SuppressWarnings("unused")
     private static final int REQUEST_TIMEOUT_SECONDS = 30;
 
     private static final String SYSTEM_PROMPT = """
@@ -141,6 +142,7 @@ public class EstacionamentoIA {
 
                     try {
                         Gson gson = new GsonBuilder().setLenient().create();
+                        @SuppressWarnings("null")
                         JsonObject json = gson.fromJson(iaResponse, JsonObject.class);
                         String action = json.get("action").getAsString();
                         JsonObject params = json.get("params").getAsJsonObject();

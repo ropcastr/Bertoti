@@ -300,7 +300,6 @@ public class ChatResource {
                     try (ResultSet rs = conn.getMetaData().getColumns(null, null, tabela, null)) {
                         while (rs.next()) {
                             String coluna = rs.getString("COLUMN_NAME");
-                            String tipo = rs.getString("TYPE_NAME");
                             int nullable = rs.getInt("NULLABLE");
                             // Busca PK
                             try (ResultSet pk = conn.getMetaData().getPrimaryKeys(null, null, tabela)) {

@@ -7,17 +7,17 @@ public class Main {
     public static void main(String[] args) {
         Repositorio repositorio = new Repositorio();
         Estacionamento estacionamento = new Estacionamento(repositorio);
-        Scanner scanner = new Scanner(System.in);
 
-        try {
-            repositorio.criarTabelaVeiculo();
-            System.out.println("Banco de dados inicializado com sucesso.");
-        } catch (Exception e) {
-            System.err.println("Erro ao inicializar o banco de dados: " + e.getMessage());
-            return;
-        }
+        try (Scanner scanner = new Scanner(System.in)) {
+            try {
+                repositorio.criarTabelaVeiculo();
+                System.out.println("Banco de dados inicializado com sucesso.");
+            } catch (Exception e) {
+                System.err.println("Erro ao inicializar o banco de dados: " + e.getMessage());
+                return;
+            }
 
-        while (true) {
+            while (true) {
             System.out.println("\n=== Sistema de Gerenciamento de Estacionamento ===");
             System.out.println("1. Adicionar veículo");
             System.out.println("2. Buscar veículo por placa");
@@ -108,12 +108,12 @@ public class Main {
 
                 case 5: //para sair
                     System.out.println("Saindo do sistema...");
-                    scanner.close();
                     return;
 
                 default:
                     System.out.println("Opção inválida. Por favor, escolha entre 1 e 5.");
             }
         }
+    }
     }
 }

@@ -13,7 +13,7 @@ import java.util.List;
 public class BibliotecaDAO {
     //Criar Banco de Dados
     public void CriarDB() throws SQLException{
-        try (Connection conexao = DriverManager.getConnection("jdbc:sqlite:biblioteca.db")) {
+        try (@SuppressWarnings("unused") Connection conexao = DriverManager.getConnection("jdbc:sqlite:biblioteca.db")) {
             System.out.println("Conectado com sucesso!");
         }
     }
