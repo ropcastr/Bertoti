@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+<!--suppress JSUnresolvedLibraryURL, HtmlUnknownTarget, CssUnusedSymbol -->
 <head>
     <meta charset="UTF-8">
     <title>Database AI Assistant</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--suppress CssUnusedSymbol -->
     <style>
         body {
             font-family: 'Inter', Arial, sans-serif;
@@ -202,8 +204,8 @@
                 <button class="action-btn" data-prompt="Criar e estruturar um banco de dados para 'finalidade' gerenciar 'o que precisa ser guardado no banco' e insira alguns dados como exemplos no banco e faça uma busca nesse banco e me retorne a lista de dados nele armazenado, juntamente com o nome do banco criado."><i class="fa-solid fa-lightbulb"></i>Criar exemplo</button>
             </div>
             <div class="input-row">
-                <textarea id="input" class="input-box" placeholder="Digite sua consulta SQL ou pergunta sobre banco de dados... (Ctrl+Enter para enviar)" rows="1" maxlength="2000" autofocus></textarea>
-                <button id="send" class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                <textarea id="input" class="input-box" placeholder="Digite sua consulta SQL ou pergunta sobre banco de dados... (Ctrl+Enter para enviar)" aria-label="Digite sua consulta SQL ou pergunta sobre banco de dados..." rows="1" maxlength="2000" autofocus></textarea>
+                <button id="send" class="send-btn" aria-label="Enviar mensagem"><i class="fa-solid fa-paper-plane"></i></button>
             </div>
             <div class="input-hint">Use Ctrl+Enter para enviar rapidamente</div>
         </section>
@@ -212,7 +214,7 @@
         Powered by AI ✨
         <span id="model-info" style="color:#888;font-size:0.95em;"></span>
         <br>
-        <a href="/Engenharia-de-Software/docsnharia-de-Software/docs" target="_blank" style="color:#0077cc;text-decoration:none;font-weight:500;">
+        <a href="/docs" target="_blank" style="color:#0077cc;text-decoration:none;font-weight:500;">
             📘 Ver Documentação
         </a>
     </footer>
@@ -265,8 +267,7 @@ input.addEventListener('keydown', function(e) {
 for (const btn of document.querySelectorAll('.action-btn')) {
     btn.onclick = function() {
         //troca \n por quebras de linhas
-        const prompt = btn.getAttribute('data-prompt').replace(/\\n|\n/g, '\n');
-        input.value = prompt;
+        input.value = btn.getAttribute('data-prompt').replace(/\\n|\n/g, '\n');
         input.focus();
     };
 }

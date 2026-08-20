@@ -7,15 +7,16 @@ Aqui compartilho reflexões, estudos, exemplos práticos e interpretações sobr
 
 <br>
 
+<a id="indice"></a>
 ## 📑 Índice
-1. [Sobre o Projeto](#-sobre-o-projeto)
-2. [Atividades](#%EF%B8%8F-exemplos-de-trade-offs)
-   - [Atividades](#atividades)
+1. [Sobre o Projeto](#sobre-o-projeto)
+2. [Atividades](#atividades)
    - [Atividade Extra](#atividade-extra)
-3. [Tecnologias e Ferramentas](#%EF%B8%8F-tecnologias-e-ferramentas)
+3. [Tecnologias e Ferramentas](#tecnologias-e-ferramentas)
    
 <br>
 
+<a id="sobre-o-projeto"></a>
 ## 📌 Sobre o Projeto
 Este repositório contém as atividades práticas da disciplina de Engenharia de Software, ministrada pelo Prof. Betoti na Fatec. O objetivo é explorar os conceitos e implementações práticas da linguagem Java, modelagem UML, demonstrando a aplicação de boas práticas de engenharia de software.
 As atividades visam preparar os alunos para tomar decisões técnicas conscientes, considerando fatores como escalabilidade, qualidade e manutenção.
@@ -24,11 +25,13 @@ O público-alvo inclui colegas de classe, o professor e potenciais recrutadores 
 ---
 <br>
 
+<a id="atividades"></a>
 ## Atividades
 - [Leia o README das atividades](Atividades.md)
 
 <br>
 
+<a id="atividade-extra"></a>
 ### Atividade Extra
 #### 🤖 Quarkus AI Database Assistant
 
@@ -52,6 +55,7 @@ A aplicação permite a um usuário criar, consultar e gerenciar bancos de dados
 ---
 <br>
 
+<a id="tecnologias-e-ferramentas"></a>
 ## 🛠️ Tecnologias e Ferramentas
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)

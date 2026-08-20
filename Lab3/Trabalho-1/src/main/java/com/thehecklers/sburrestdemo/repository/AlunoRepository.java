@@ -12,6 +12,7 @@ import java.util.Optional;
  * Repositório DAO para persistência da entidade Aluno utilizando Spring JDBC (JdbcTemplate).
  * Executa instruções SQL explícitas e mapeia os resultados do ResultSet para objetos Java.
  */
+@SuppressWarnings({"SqlResolve", "SqlWithoutWhere", "SqlNoDataSourceInspection", "unused"})
 @Repository
 public class AlunoRepository {
 

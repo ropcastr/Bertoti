@@ -11,30 +11,30 @@ Um exemplo é o sistema de estacionamento modelado em Java, que inclui classes, 
 1. [Comentários sobre o Livro Software Engineering at Google, O'Reilly](#-comentários-sobre-o-livro-software-engineering-at-google-oreilly)
    - [Trecho 1: O que é Engenharia de Software?](#-trecho-1-o-que-é-engenharia-de-software)
    - [Trecho 2: Programação ao Longo do Tempo](#-trecho-2-programação-ao-longo-do-tempo)
-2. [Exemplos de Trade-offs](#%EF%B8%8F-exemplos-de-trade-offs)
-   - [1. Velocidade vs Qualidade](#1%EF%B8%8F⃣-velocidade-vs-qualidade)
-   - [2. Escalabilidade vs Simplicidade](#2%EF%B8%8F⃣-escalabilidade-vs-simplicidade)
-   - [3. Custo vs Manutenção](#3%EF%B8%8F⃣-custo-vs-manutenção)
+2. [Exemplos de Trade-offs](#trade-offs)
+   - [1. Velocidade vs Qualidade](#velocidade-vs-qualidade)
+   - [2. Escalabilidade vs Simplicidade](#escalabilidade-vs-simplicidade)
+   - [3. Custo vs Manutenção](#custo-vs-manutencao)
 3. [Tabela Resumo](#-tabela-resumo)
 4. [Conclusão](#-conclusão)
 5. [Diagramas e Classes](#-diagramas-e-estudo-de-classes)
    - [Diagrama UML para um estacionamento](#diagrama-uml-para-um-estacionamento---)
-   - [Classes para um estacionamento](#classes-para-um-estacionamento---)
+   - [Classes para um estacionamento](#classes-estacionamento)
      - [Classe Carro](#classe-carro)
      - [Classe Estacionamento](#classe-estacionamento)
      - [Teste Junit](#teste-junit)
    - [Diagrama UML para uma quitanda](#diagrama-uml-para-uma-quitanda---)
-   - [Classes para uma quitanda](#classes-para-uma-quitanda---)
+   - [Classes para uma Quitanda](#classes-quitanda)
      - [Classe Produto](#classe-produto)
      - [Classe Quitanda](#classe-quitanda)
      - [Teste Junit](#teste-junit-1)
 6. [Relatório de Testes](#-relatório-de-testes---surefire)
 7. [Implementar um BD com SQLite](#-atividade-7--integração-com-banco-de-dados)
    - [Classe do Banco - Repositório](#classe-repositorio)
-   - [Clase de gestão do Banco - Main](#classe-main)
+   - [Classe de gestão do Banco - Main](#classe-main)
 8. [Criar interação com IA](#-atividade-8--interação-com-ia-ollama4j)
    - [Chat interativo](#classe-conversar)
-   - [Gerênciamento de BD](#classe-estacionamento-ia)
+   - [Gerenciamento de BD](#classe-estacionamento-ia)
 ---
 <br>
 
@@ -63,8 +63,10 @@ Envolve a utilização de **ferramentas**, **processos** e **estratégias** para
 ---
 <br>
 
+<a id="trade-offs"></a>
 ## ⚙️ Exemplos de Trade-offs
 
+<a id="velocidade-vs-qualidade"></a>
 ### 1️⃣ Velocidade vs Qualidade
 **Descrição:**  
 Priorizar entregas rápidas pode reduzir o tempo dedicado a testes, aumentando riscos de erros. Investir em qualidade exige mais tempo inicial, mas minimiza problemas futuros.
@@ -80,6 +82,7 @@ O Twitter, em seu lançamento em 2006, priorizou velocidade para disponibilizar 
 
 ---
 
+<a id="escalabilidade-vs-simplicidade"></a>
 ### 2️⃣ Escalabilidade vs Simplicidade
 **Descrição:**  
 Soluções simples são mais rápidas de implementar, mas podem não suportar um crescimento massivo de usuários ou dados.
@@ -96,6 +99,7 @@ O Netflix começou com uma arquitetura monolítica, simples e funcional para seu
 
 ---
 
+<a id="custo-vs-manutencao"></a>
 ### 3️⃣ Custo vs Manutenção
 **Descrição:**  
 Escolhas de baixo custo inicial podem resultar em altos custos de manutenção no futuro, enquanto soluções prontas podem ser mais caras, mas oferecem suporte contínuo.
@@ -141,6 +145,7 @@ A leitura de *Software Engineering at Google* foi transformadora, destacando que
 ### Diagrama UML para um estacionamento - ![Static Badge](https://img.shields.io/badge/Plant-UML-blue?style=plastic&logo=UML&logoSize=auto&labelColor=b22222)
 <img src="Engenharia_Software/src/main/java/fatec/gov/br/atividades/estacionamento/Diagrama_Estacionamento.png" alt="Diagrama UML do sistema de estacionamento" width="500"/>
 
+<a id="classes-estacionamento"></a>
 ### Classes para um estacionamento - ![Static Badge](https://img.shields.io/badge/Java-code-brightgreen?style=plastic&logo=Java&logoSize=auto&labelColor=%23FFFF00) 
 
 <br>
@@ -206,8 +211,7 @@ public class Carro {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Carro)) return false;
-        Carro carro = (Carro) o;
+        if (!(o instanceof Carro carro)) return false;
         return Objects.equals(placa, carro.placa);
     }
 
@@ -296,6 +300,7 @@ class Teste_Estacionamento {
 ### Diagrama UML para uma quitanda - ![Static Badge](https://img.shields.io/badge/Plant-UML-blue?style=plastic&logo=UML&logoSize=auto&labelColor=b22222)
 <img src="Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama_Quitanda.png" alt="Diagrama UML do sistema de estacionamento" width="500"/>
 
+<a id="classes-quitanda"></a>
 ### Classes para uma Quitanda - ![Static Badge](https://img.shields.io/badge/Java-code-brightgreen?style=plastic&logo=Java&logoSize=auto&labelColor=%23FFFF00) 
 
 <br>
@@ -351,8 +356,7 @@ public class Produto {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Produto)) return false;
-        Produto produto = (Produto) o;
+        if (!(o instanceof Produto produto)) return false;
         return Objects.equals(nome, produto.nome);
     }
 
@@ -466,6 +470,7 @@ public class Teste_Quitanda {
 Implementar um banco de dados (BD) em um dos exercícios anteriores usando o SQLite.
 Este exercício foi implementado no *Package Estacionamento*.
 
+<a id="classe-repositorio"></a>
 ### Classe Repositório
 
 

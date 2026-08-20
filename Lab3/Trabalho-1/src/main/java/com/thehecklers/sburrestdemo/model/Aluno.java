@@ -7,6 +7,7 @@ import java.util.UUID;
  * Representa a entidade de domínio Aluno (POJO puro, sem anotações JPA).
  * Os dados desta classe são mapeados manualmente para as colunas SQL via JDBC RowMapper.
  */
+@SuppressWarnings("unused")
 public class Aluno {
 
     private String id;

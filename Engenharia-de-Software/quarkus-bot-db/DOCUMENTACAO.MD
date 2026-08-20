@@ -5,23 +5,25 @@
 
 ---
 
+<a id="sumario"></a>
 ## 📚 Sumário
 
-1. [Visão Geral](#visão-geral)  
+1. [Visão Geral](#visao-geral)  
 2. [Estrutura do Projeto](#estrutura-do-projeto)  
-3. [Pré-requisitos e Configuração](#pré-requisitos-e-configuração)  
+3. [Pré-requisitos e Configuração](#pre-requisitos-e-configuracao)  
 4. [Componentes Principais](#componentes-principais)  
-   - [Backend (Java/Quarkus)](#1-backend-javaquarkus)  
-   - [Frontend (HTML/CSS/JavaScript)](#2-frontend-htmlcssjavascript)  
-5. [Como a Aplicação Funciona (Fluxo de Uso)](#como-a-aplicação-funciona-fluxo-de-uso)  
-6. [Guia Rápido de Uso](#guia-rápido-de-uso)  
-7. [Manutenção e Expansão](#manutenção-e-expansão)  
+   - [Backend (Java/Quarkus)](#backend-java-quarkus)  
+   - [Frontend (HTML/CSS/JavaScript)](#frontend-html-css-javascript)  
+5. [Como a Aplicação Funciona (Fluxo de Uso)](#como-a-aplicacao-funciona-fluxo-de-uso)  
+6. [Guia Rápido de Uso](#guia-rapido-de-uso)  
+7. [Manutenção e Expansão](#manutencao-e-expansao)  
 8. [Problemas Comuns (Troubleshooting)](#problemas-comuns-troubleshooting)  
-9. [Fluxo Geral da Aplicação](#fluxo-geral-da-aplicação)  
-10. [Licença e Contribuição](#licença-e-contribuição)
+9. [Fluxo Geral da Aplicação](#fluxo-geral-da-aplicacao)  
+10. [Licença e Contribuição](#licenca-e-contribuicao)
 
 ---
 
+<a id="visao-geral"></a>
 ## 🧠 Visão Geral
 
 Esta aplicação é um **assistente de banco de dados com inteligência artificial**, projetado para ajudar usuários — mesmo iniciantes — a interagir com bancos de dados **SQLite** usando linguagem natural.
@@ -42,6 +44,7 @@ A arquitetura combina:
 
 ---
 
+<a id="estrutura-do-projeto"></a>
 ## 🗂️ Estrutura do Projeto
 
 ```
@@ -69,6 +72,7 @@ A arquitetura combina:
 
 ---
 
+<a id="pre-requisitos-e-configuracao"></a>
 ## ⚙️ Pré-requisitos e Configuração
 
 Antes de rodar o projeto, instale os seguintes componentes:
@@ -120,8 +124,10 @@ ollama pull qwen3:8b
 
 ---
 
+<a id="componentes-principais"></a>
 ## 🧩 Componentes Principais
 
+<a id="backend-java-quarkus"></a>
 ### 1. Backend (Java/Quarkus)
 
 #### 🧱 `pom.xml`
@@ -266,6 +272,7 @@ GET /test  -> "Olá! Este é um endpoint de teste."
 
 ---
 
+<a id="frontend-html-css-javascript"></a>
 ### 2. Frontend (HTML/CSS/JavaScript)
 
 #### 📄 `index.html`
@@ -280,13 +287,11 @@ Página única que implementa a interface do chat. Destaques:
 **Rodapé atualizado (link para docs):**
 
 ```html
-
 <footer class="footer">
     Powered by AI ✨
     <span id="model-info" style="color:#888;font-size:0.95em;"></span>
     <br>
-    <a href="/Engenharia-de-Software/docsnharia-de-Software/docs" target="_blank"
-       style="color:#0077cc;text-decoration:none;font-weight:500;">
+    <a href="/docs" target="_blank" style="color:#0077cc;text-decoration:none;font-weight:500;">
         📘 Ver Documentação
     </a>
 </footer>
@@ -294,6 +299,7 @@ Página única que implementa a interface do chat. Destaques:
 
 ---
 
+<a id="como-a-aplicacao-funciona-fluxo-de-uso"></a>
 ## 🔁 Como a Aplicação Funciona (Fluxo de Uso)
 
 1. O usuário inicia a aplicação; `BrowserLauncher` abre o navegador.  
@@ -305,6 +311,7 @@ Página única que implementa a interface do chat. Destaques:
 
 ---
 
+<a id="guia-rapido-de-uso"></a>
 ## ⚡ Guia Rápido de Uso
 
 | Ação | Exemplo de comando | Resultado esperado |
@@ -317,6 +324,7 @@ Página única que implementa a interface do chat. Destaques:
 
 ---
 
+<a id="manutencao-e-expansao"></a>
 ## 🧩 Manutenção e Expansão
 
 - Trocar modelo da IA: alterar `quarkus.langchain4j.ollama.chat-model.model-id` em `application.properties`.  
@@ -326,6 +334,7 @@ Página única que implementa a interface do chat. Destaques:
 
 ---
 
+<a id="problemas-comuns-troubleshooting"></a>
 ## 🧰 Problemas Comuns (Troubleshooting)
 
 | Problema | Causa provável | Solução |
@@ -339,22 +348,24 @@ Página única que implementa a interface do chat. Destaques:
 
 ---
 
+<a id="fluxo-geral-da-aplicacao"></a>
 ## 🧭 Fluxo Geral da Aplicação
 
 ```mermaid
 flowchart LR
-    A[Usuário] --> B[index.html]
-    B --> C[/chat endpoint]
-    C --> D[AIService (Ollama)]
-    D --> E[SQLite Database]
+    A["Usuário"] --> B["index.html"]
+    B --> C["/chat endpoint"]
+    C --> D["AIService (Ollama)"]
+    D --> E["SQLite Database"]
     E --> C
     C --> B
-    B --> F[/docs endpoint]
-    F --> G[DocsResource + CommonMark]
+    B --> F["/docs endpoint"]
+    F --> G["DocsResource + CommonMark"]
 ```
 
 ---
 
+<a id="licenca-e-contribuicao"></a>
 ## 🪪 Licença e Contribuição
 
 Este projeto é distribuído sob a licença **MIT**.  
@@ -364,13 +375,3 @@ Para contribuir:
 1. Faça um *fork* do repositório.  
 2. Crie uma *branch* (`feature/nome-da-feature`).  
 3. Envie um *pull request* com suas melhorias.
-
----
-
-### Notas finais
-
-- Se desejar, posso também:  
-  - Gerar um arquivo HTML separado com a documentação já renderizada;  
-  - Criar um pequeno script de deploy para copiar o `DOCUMENTACAO.MD` para `src/main/resources/...`;  
-  - Atualizar automaticamente o `pom.xml` (inserir a dependência CommonMark) e enviar o diff.
-

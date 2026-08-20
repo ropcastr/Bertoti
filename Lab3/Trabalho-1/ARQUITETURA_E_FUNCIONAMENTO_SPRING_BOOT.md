@@ -1,25 +1,26 @@
 # 📖 Guia Definitivo de Arquitetura e Código: Spring Boot com JDBC do Zero ao Banco de Dados
 
-Este documento é o guia didático completo do projeto **Sistema Acadêmico** (Trabalho 1 da disciplina de Laboratório de Desenvolvimento em Banco de Dados III - Prof. Bertoti). Ele foi projetado para estudantes iniciantes em **Java**, **Orientação a Objetos (POO)**, **Spring Boot**, **Spring JDBC** e **Banco de Dados Relacional (H2 / SQL)**, explicando exaustivamente cada classe, método, linha de código, conceito teórico, comando SQL, construtor, herança, polimorfismo e encapsulamento.
+Este documento é o guia didático completo do projeto **Sistema Acadêmico** (Trabalho 1 da disciplina de Laboratório de Desenvolvimento em Banco de Dados III - Prof. Bertoti). Ele foi projetado para estudantes iniciantes em **Java**, **Orientação a Objetos (POO)**, **Spring Boot**, **Spring JDBC** e **Banco de Dados Relacional (H2 / SQL)**, explicando exaustivamente cada classe, método, conceito teórico, comando SQL, construtor, herança, polimorfismo e encapsulamento.
 
 ---
 
 ## 📑 Sumário Completo
 
 1. [Visão Geral e Objetivos de Aprendizagem](#1-visão-geral-e-objetivos-de-aprendizagem)
+   - [1.1. Como Executar e Abrir no Navegador (Passo a Passo Rápido)](#11-como-executar-e-abrir-no-navegador-passo-a-passo-rápido)
 2. [Fundamentos de Banco de Dados: Por que usar JDBC no início?](#2-fundamentos-de-banco-de-dados-por-que-usar-jdbc-no-início)
-   - [Diferenças entre DDL, DML e DQL](#21-diferenças-entre-ddl-dml-e-dql)
-   - [A Anatomia da Conexão JDBC e o Papel do JdbcTemplate](#22-a-anatomia-da-conexão-jdbc-e-o-papel-do-jdbctemplate)
+   - [2.1. Diferenças entre DDL, DML e DQL](#21-diferenças-entre-ddl-dml-e-dql)
+   - [2.2. A Anatomia da Conexão JDBC e o Papel do JdbcTemplate](#22-a-anatomia-da-conexão-jdbc-e-o-papel-do-jdbctemplate)
 3. [Pilares de Orientação a Objetos (POO) Aplicados no Projeto](#3-pilares-de-orientação-a-objetos-poo-aplicados-no-projeto)
-   - [Abstração e Modelagem de Entidade](#31-abstração-e-modelagem-de-entidade)
-   - [Encapsulamento e Modificadores de Acesso](#32-encapsulamento-e-modificadores-de-acesso)
-   - [Herança e Sobrescrita (@Override)](#33-herança-e-sobrescrita-override)
-   - [Polimorfismo e Interfaces Funcionais (RowMapper / Lambdas)](#34-polimorfismo-e-interfaces-funcionais-rowmapper--lambdas)
-   - [Sobrecarga de Construtores (Overloading)](#35-sobrecarga-de-construtores-overloading)
+   - [3.1. Abstração e Modelagem de Entidade](#31-abstração-e-modelagem-de-entidade)
+   - [3.2. Encapsulamento e Modificadores de Acesso](#32-encapsulamento-e-modificadores-de-acesso)
+   - [3.3. Herança e Sobrescrita (@Override)](#33-herança-e-sobrescrita-override)
+   - [3.4. Polimorfismo e Interfaces Funcionais (RowMapper / Lambdas)](#34-polimorfismo-e-interfaces-funcionais-rowmapper--lambdas)
+   - [3.5. Sobrecarga de Construtores (Overloading)](#35-sobrecarga-de-construtores-overloading)
 4. [Arquitetura em Camadas (Layered Architecture) e Fluxo de Dados](#4-arquitetura-em-camadas-layered-architecture-e-fluxo-de-dados)
-   - [Diagrama da Arquitetura](#41-diagrama-da-arquitetura)
-   - [Ciclo de Vida Passo a Passo de uma Requisição Web](#42-ciclo-de-vida-passo-a-passo-de-uma-requisição-web)
-5. [Análise Detalhada Linha por Linha de Todos os Arquivos do Backend](#5-análise-detalhada-linha-por-linha-de-todos-os-arquivos-do-backend)
+   - [4.1. Diagrama da Arquitetura](#41-diagrama-da-arquitetura)
+   - [4.2. Ciclo de Vida Passo a Passo de uma Requisição Web](#42-ciclo-de-vida-passo-a-passo-de-uma-requisição-web)
+5. [Análise Detalhada de Todos os Arquivos do Backend](#5-análise-detalhada-de-todos-os-arquivos-do-backend)
    - [5.1. schema.sql (Script DDL de Criação da Tabela)](#51-schemasql-script-ddl-de-criação-da-tabela)
    - [5.2. Aluno.java (Modelo de Domínio / POJO)](#52-alunojava-modelo-de-domínio--pojo)
    - [5.3. AlunoRepository.java (Acesso a Dados com JdbcTemplate e SQL)](#53-alunorepositoryjava-acesso-a-dados-com-jdbctemplate-e-sql)
@@ -34,7 +35,7 @@ Este documento é o guia didático completo do projeto **Sistema Acadêmico** (T
 7. [Análise da Camada Frontend (Interface Web SPA)](#7-análise-da-camada-frontend-interface-web-spa)
    - [7.1. index.html (Estrutura da Interface)](#71-indexhtml-estrutura-da-interface)
    - [7.2. index.js (Consumo da API REST com Axios)](#72-indexjs-consumo-da-api-rest-com-axios)
-   - [7.3. style.css (Estilização)](#73-stylecss-estilização)
+   - [7.3. style.css (Estilização Customizada)](#73-stylecss-estilização-customizada)
 8. [Tabela Resumo das Anotações e Tecnologias](#8-tabela-resumo-das-anotações-e-tecnologias)
 9. [Guia de Estudo e Exercícios Práticos para Iniciantes](#9-guia-de-estudo-e-exercícios-práticos-para-iniciantes)
 
@@ -51,6 +52,25 @@ Este projeto foi construído para servir como o modelo ideal de aprendizado para
 4. **Arquitetura em Camadas:** O porquê de separar Controller (Web), Service (Regras) e Repository (Banco).
 5. **API RESTful:** Como criar rotas HTTP que respeitam os métodos padronizados (`GET`, `POST`, `PUT`, `DELETE`) e retornam códigos de status apropriados (`200 OK`, `201 CREATED`, `204 NO CONTENT`, `404 NOT FOUND`).
 6. **Frontend Integrado:** Como uma página web (HTML/JS/Axios) consome dados JSON de uma API backend.
+
+---
+
+### 1.1. Como Executar e Abrir no Navegador (Passo a Passo Rápido)
+
+Para ver a aplicação funcionando na prática:
+
+1. **Abra o Terminal e entre na pasta do projeto:**
+   ```bash
+   cd Lab3/Trabalho-1
+   ```
+2. **Inicie o servidor:**
+   * No **Windows (PowerShell / CMD):** `.\mvnw.cmd clean spring-boot:run`
+   * No **Linux / macOS:** `./mvnw clean spring-boot:run`
+3. **Aguarde a mensagem no terminal:** `Started SburRestDemoApplication in X seconds`.
+4. **Abra o Navegador e acesse:**
+   * 👉 **Interface Gráfica (Frontend):** [http://localhost:8080/](http://localhost:8080/)
+   * 🗃️ **Console do Banco H2:** [http://localhost:8080/h2-console](http://localhost:8080/h2-console) *(JDBC URL: `jdbc:h2:mem:academicodb`, Usuário: `sa`, Senha: em branco)*
+   * 🔌 **API REST JSON:** [http://localhost:8080/alunos](http://localhost:8080/alunos)
 
 ---
 
@@ -80,19 +100,7 @@ No aprendizado de banco de dados, os comandos SQL são divididos em categorias e
 
 ### 2.2. A Anatomia da Conexão JDBC e o Papel do `JdbcTemplate`
 
-No Java tradicional (JDBC puro antigo), para executar uma consulta era necessário escrever dezenas de linhas manuais:
-
-```java
-// Forma Antiga (Verborrágica e propensa a vazamento de memória):
-Connection conn = DriverManager.getConnection(url, user, pass);
-PreparedStatement stmt = conn.prepareStatement("SELECT * FROM aluno WHERE id = ?");
-stmt.setString(1, "123");
-ResultSet rs = stmt.executeQuery();
-while (rs.next()) { ... }
-rs.close();
-stmt.close();
-conn.close();
-```
+No Java tradicional (JDBC puro antigo), para executar uma consulta era necessário escrever dezenas de linhas manuais para abrir `Connection`, `PreparedStatement` e `ResultSet`.
 
 O **`JdbcTemplate` do Spring Boot** elimina todo esse código repetitivo (*boilerplate*), cuidando automaticamente de:
 1. Obter uma conexão do pool gerenciado pelo **HikariCP**.
@@ -120,7 +128,7 @@ A classe `Aluno` abstrai um conceito do mundo real acadêmico, selecionando apen
 
 ### 3.3. Herança e Sobrescrita (`@Override`)
 
-Em Java, toda classe que não declara explicitamente um `extends` herda automaticamente da classe raiz **`java.lang.Object`**.
+Em Java, toda classe herda automaticamente da classe raiz **`java.lang.Object`**.
 
 No arquivo `Aluno.java`, sobrescrevemos (`@Override`) três métodos fundamentais herdados de `Object`:
 1. **`equals(Object o)`:** Define que dois alunos são considerados iguais se possuírem o mesmo `id` (identificador único).
@@ -133,11 +141,7 @@ No arquivo `Aluno.java`, sobrescrevemos (`@Override`) três métodos fundamentai
 
 O **Polimorfismo** manifesta-se fortemente no uso de interfaces:
 
-1. **`RowMapper<T>`:** É uma interface do Spring JDBC com um único método abstrato:
-   ```java
-   T mapRow(ResultSet rs, int rowNum) throws SQLException;
-   ```
-   No `AlunoRepository`, utilizamos uma **expressão Lambda** (polimorfismo funcional em tempo de execução) para implementar essa interface de forma elegante:
+1. **`RowMapper<T>`:** É uma interface do Spring JDBC com um único método abstrato (`mapRow`). No `AlunoRepository`, utilizamos uma **expressão Lambda** para implementar essa interface de forma elegante:
    ```java
    private final RowMapper<Aluno> alunoRowMapper = (rs, rowNum) -> new Aluno(
            rs.getString("id"),
@@ -155,7 +159,7 @@ O **Polimorfismo** manifesta-se fortemente no uso de interfaces:
 A classe `Aluno` possui **três construtores sobrecarregados**, cada um atendendo a um caso de uso específico:
 
 1. **`public Aluno()`:** Construtor sem argumentos.
-2. **`public Aluno(String id, String nome, String email, String curso)`:** Construtor completo para quando já temos o ID definido (usado pelo `RowMapper` ao ler do banco ou em testes).
+2. **`public Aluno(String id, String nome, String email, String curso)`:** Construtor completo com todos os campos (usado pelo `RowMapper` ao ler do banco ou em testes).
 3. **`public Aluno(String nome, String email, String curso)`:** Construtor que utiliza a instrução **`this(...)`** para encadear a chamada ao construtor completo, gerando um identificador único universal (`UUID.randomUUID().toString()`) automaticamente:
    ```java
    public Aluno(String nome, String email, String curso) {
@@ -223,8 +227,8 @@ Vamos rastrear o que acontece quando o usuário clica em **"Salvar Aluno"** com 
    - O repositório chama `aluno.ensureId()`, gerando um UUID caso o ID esteja vazio.
    - O repositório verifica se o aluno já existe via `existsById(aluno.getId())`.
    - Como é novo, monta o comando SQL:
-     ```sql
-     INSERT INTO aluno (id, nome, email, curso) VALUES ('a1b2c3d4-...', 'Carla', 'carla@fatec.br', 'Banco de Dados');
+     ```
+     INSERT INTO aluno (id, nome, email, curso) VALUES (?, ?, ?, ?)
      ```
    - O `jdbcTemplate.update(...)` envia o comando ao driver H2.
 5. **Gravação no H2 Database:** O motor relacional do H2 grava a nova linha fisicamente na tabela `aluno`.
@@ -232,7 +236,7 @@ Vamos rastrear o que acontece quando o usuário clica em **"Salvar Aluno"** com 
 
 ---
 
-## 5. Análise Detalhada Linha por Linha de Todos os Arquivos do Backend
+## 5. Análise Detalhada de Todos os Arquivos do Backend
 
 ---
 
@@ -240,19 +244,19 @@ Vamos rastrear o que acontece quando o usuário clica em **"Salvar Aluno"** com 
 
 Arquivo: `src/main/resources/schema.sql`
 
-```sql
-1: -- Esquema DDL para criação da tabela de Alunos
-2: CREATE TABLE IF NOT EXISTS aluno (
-3:     id VARCHAR(255) PRIMARY KEY,
-4:     nome VARCHAR(255) NOT NULL,
-5:     email VARCHAR(255) NOT NULL,
-6:     curso VARCHAR(255) NOT NULL
-7: );
+```
+-- Esquema DDL para criacao da tabela de Alunos
+CREATE TABLE IF NOT EXISTS aluno (
+    id VARCHAR(255) PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    curso VARCHAR(255) NOT NULL
+);
 ```
 
-* **Linha 2 (`CREATE TABLE IF NOT EXISTS aluno`):** Instrução DDL que cria a tabela `aluno` apenas se ela ainda não existir no banco.
-* **Linha 3 (`id VARCHAR(255) PRIMARY KEY`):** Define a coluna `id` como texto de até 255 caracteres e estabelece que ela é a **Chave Primária (Primary Key)**, garantindo unicidade e indexação rápida.
-* **Linhas 4 a 6 (`nome`, `email`, `curso` com `NOT NULL`):** Colunas de dados obrigatórias. A restrição `NOT NULL` impede que linhas sejam salvas sem essas informações.
+* **`CREATE TABLE IF NOT EXISTS aluno`:** Instrução DDL que cria a tabela `aluno` apenas se ela ainda não existir no banco.
+* **`id VARCHAR(255) PRIMARY KEY`:** Define a coluna `id` como texto de até 255 caracteres e estabelece que ela é a **Chave Primária (Primary Key)**, garantindo unicidade e indexação rápida.
+* **`nome`, `email`, `curso` com `NOT NULL`:** Colunas de dados obrigatórias. A restrição `NOT NULL` impede que linhas sejam salvas sem essas informações.
 
 ---
 
@@ -261,74 +265,75 @@ Arquivo: `src/main/resources/schema.sql`
 Arquivo: `src/main/java/com/thehecklers/sburrestdemo/model/Aluno.java`
 
 ```java
-1: package com.thehecklers.sburrestdemo.model;
-2: 
-3: import java.util.Objects;
-4: import java.util.UUID;
-5: 
-6: public class Aluno {
-7: 
-8:     private String id;
-9:     private String nome;
-10:    private String email;
-11:    private String curso;
-12: 
-13:    public Aluno() {
-14:    }
-15: 
-16:    public Aluno(String id, String nome, String email, String curso) {
-17:        this.id = id;
-18:        this.nome = nome;
-19:        this.email = email;
-20:        this.curso = curso;
-21:    }
-22: 
-23:    public Aluno(String nome, String email, String curso) {
-24:        this(UUID.randomUUID().toString(), nome, email, curso);
-25:    }
-26: 
-27:    public void ensureId() {
-28:        if (this.id == null || this.id.isBlank()) {
-29:            this.id = UUID.randomUUID().toString();
-30:        }
-31:    }
-32: 
-33:    public String getId() { return id; }
-34:    public void setId(String id) { this.id = id; }
-35:    public String getNome() { return nome; }
-36:    public void setNome(String nome) { this.nome = nome; }
-37:    public String getEmail() { return email; }
-38:    public void setEmail(String email) { this.email = email; }
-39:    public String getCurso() { return curso; }
-40:    public void setCurso(String curso) { this.curso = curso; }
-41: 
-42:    @Override
-43:    public boolean equals(Object o) {
-44:        if (this == o) return true;
-45:        if (!(o instanceof Aluno aluno)) return false;
-46:        return Objects.equals(id, aluno.id);
-47:    }
-48: 
-49:    @Override
-50:    public int hashCode() {
-51:        return Objects.hash(id);
-52:    }
-53: 
-54:    @Override
-55:    public String toString() {
-56:        return "Aluno{" + "id='" + id + '\'' + ", nome='" + nome + '\'' + ", email='" + email + '\'' + ", curso='" + curso + '\'' + '}';
-57:    }
-58: }
+package com.thehecklers.sburrestdemo.model;
+
+import java.util.Objects;
+import java.util.UUID;
+
+@SuppressWarnings("unused")
+public class Aluno {
+
+    private String id;
+    private String nome;
+    private String email;
+    private String curso;
+
+    public Aluno() {
+    }
+
+    public Aluno(String id, String nome, String email, String curso) {
+        this.id = id;
+        this.nome = nome;
+        this.email = email;
+        this.curso = curso;
+    }
+
+    public Aluno(String nome, String email, String curso) {
+        this(UUID.randomUUID().toString(), nome, email, curso);
+    }
+
+    public void ensureId() {
+        if (this.id == null || this.id.isBlank()) {
+            this.id = UUID.randomUUID().toString();
+        }
+    }
+
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+    public String getCurso() { return curso; }
+    public void setCurso(String curso) { this.curso = curso; }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Aluno aluno)) return false;
+        return Objects.equals(id, aluno.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    @Override
+    public String toString() {
+        return "Aluno{" + "id='" + id + '\'' + ", nome='" + nome + '\'' + ", email='" + email + '\'' + ", curso='" + curso + '\'' + '}';
+    }
+}
 ```
 
-* **Linhas 8 a 11:** Atributos privados que compõem o estado do objeto (Encapsulamento).
-* **Linhas 13-14:** Construtor padrão sem argumentos (necessário para serializadores JSON como Jackson).
-* **Linhas 16-21:** Construtor completo com todos os campos.
-* **Linhas 23-25:** Construtor com sobrecarga (`this(...)`) que gera automaticamente um identificador UUID.
-* **Linhas 27-31 (`ensureId`):** Método de segurança defensiva: se o aluno foi instanciado sem ID, gera um UUID antes de enviar a query de inserção.
-* **Linhas 33-40:** Métodos Getters e Setters para leitura e alteração controlada.
-* **Linhas 42-52 (`equals` e `hashCode`):** Sobrescrita dos métodos de `Object` para comparação baseada no `id`.
-* **Linhas 54-57 (`toString`):** Formata os dados do objeto em String para fácil visualização.
+* **Atributos privados:** Compõem o estado do objeto (Encapsulamento).
+* **Construtor padrão sem argumentos:** Necessário para serializadores JSON como Jackson.
+* **Construtor completo:** Inicializa todos os campos.
+* **Construtor com sobrecarga (`this(...)`):** Gera automaticamente um identificador UUID.
+* **`ensureId`:** Método de segurança defensiva: se o aluno foi instanciado sem ID, gera um UUID antes de enviar a query de inserção.
+* **Getters e Setters:** Métodos para leitura e alteração controlada.
+* **`equals` e `hashCode`:** Sobrescrita dos métodos de `Object` para comparação baseada no `id`.
+* **`toString`:** Formata os dados do objeto em String para fácil visualização.
 
 ---
 
@@ -337,95 +342,96 @@ Arquivo: `src/main/java/com/thehecklers/sburrestdemo/model/Aluno.java`
 Arquivo: `src/main/java/com/thehecklers/sburrestdemo/repository/AlunoRepository.java`
 
 ```java
-1: package com.thehecklers.sburrestdemo.repository;
-2: 
-3: import com.thehecklers.sburrestdemo.model.Aluno;
-4: import org.springframework.jdbc.core.JdbcTemplate;
-5: import org.springframework.jdbc.core.RowMapper;
-6: import org.springframework.stereotype.Repository;
-7: 
-8: import java.util.List;
-9: import java.util.Optional;
-10: 
-11: @Repository
-12: public class AlunoRepository {
-13: 
-14:     private final JdbcTemplate jdbcTemplate;
-15: 
-16:     private final RowMapper<Aluno> alunoRowMapper = (rs, rowNum) -> new Aluno(
-17:             rs.getString("id"),
-18:             rs.getString("nome"),
-19:             rs.getString("email"),
-20:             rs.getString("curso")
-21:     );
-22: 
-23:     public AlunoRepository(JdbcTemplate jdbcTemplate) {
-24:         this.jdbcTemplate = jdbcTemplate;
-25:     }
-26: 
-27:     public List<Aluno> findAll() {
-28:         String sql = "SELECT id, nome, email, curso FROM aluno";
-29:         return jdbcTemplate.query(sql, alunoRowMapper);
-30:     }
-31: 
-32:     public Optional<Aluno> findById(String id) {
-33:         String sql = "SELECT id, nome, email, curso FROM aluno WHERE id = ?";
-34:         List<Aluno> results = jdbcTemplate.query(sql, alunoRowMapper, id);
-35:         return results.stream().findFirst();
-36:     }
-37: 
-38:     public Aluno save(Aluno aluno) {
-39:         aluno.ensureId();
-40:         if (existsById(aluno.getId())) {
-41:             String sql = "UPDATE aluno SET nome = ?, email = ?, curso = ? WHERE id = ?";
-42:             jdbcTemplate.update(sql, aluno.getNome(), aluno.getEmail(), aluno.getCurso(), aluno.getId());
-43:         } else {
-44:             String sql = "INSERT INTO aluno (id, nome, email, curso) VALUES (?, ?, ?, ?)";
-45:             jdbcTemplate.update(sql, aluno.getId(), aluno.getNome(), aluno.getEmail(), aluno.getCurso());
-46:         }
-47:         return aluno;
-48:     }
-49: 
-50:     public boolean existsById(String id) {
-51:         String sql = "SELECT COUNT(*) FROM aluno WHERE id = ?";
-52:         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, id);
-53:         return count != null && count > 0;
-54:     }
-55: 
-56:     public boolean deleteById(String id) {
-57:         String sql = "DELETE FROM aluno WHERE id = ?";
-58:         int rowsAffected = jdbcTemplate.update(sql, id);
-59:         return rowsAffected > 0;
-60:     }
-61: 
-62:     public long count() {
-63:         String sql = "SELECT COUNT(*) FROM aluno";
-64:         Long total = jdbcTemplate.queryForObject(sql, Long.class);
-65:         return total != null ? total : 0L;
-66:     }
-67: 
-68:     public void saveAll(Iterable<Aluno> alunos) {
-69:         for (Aluno aluno : alunos) {
-70:             save(aluno);
-71:         }
-72:     }
-73: 
-74:     public void deleteAll() {
-75:         String sql = "DELETE FROM aluno";
-76:         jdbcTemplate.update(sql);
-77:     }
-78: }
+package com.thehecklers.sburrestdemo.repository;
+
+import com.thehecklers.sburrestdemo.model.Aluno;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Optional;
+
+@SuppressWarnings({"SqlResolve", "SqlWithoutWhere", "unused"})
+@Repository
+public class AlunoRepository {
+
+    private final JdbcTemplate jdbcTemplate;
+
+    private final RowMapper<Aluno> alunoRowMapper = (rs, rowNum) -> new Aluno(
+            rs.getString("id"),
+            rs.getString("nome"),
+            rs.getString("email"),
+            rs.getString("curso")
+    );
+
+    public AlunoRepository(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
+
+    public List<Aluno> findAll() {
+        String sql = "SELECT id, nome, email, curso FROM aluno";
+        return jdbcTemplate.query(sql, alunoRowMapper);
+    }
+
+    public Optional<Aluno> findById(String id) {
+        String sql = "SELECT id, nome, email, curso FROM aluno WHERE id = ?";
+        List<Aluno> results = jdbcTemplate.query(sql, alunoRowMapper, id);
+        return results.stream().findFirst();
+    }
+
+    public Aluno save(Aluno aluno) {
+        aluno.ensureId();
+        if (existsById(aluno.getId())) {
+            String sql = "UPDATE aluno SET nome = ?, email = ?, curso = ? WHERE id = ?";
+            jdbcTemplate.update(sql, aluno.getNome(), aluno.getEmail(), aluno.getCurso(), aluno.getId());
+        } else {
+            String sql = "INSERT INTO aluno (id, nome, email, curso) VALUES (?, ?, ?, ?)";
+            jdbcTemplate.update(sql, aluno.getId(), aluno.getNome(), aluno.getEmail(), aluno.getCurso());
+        }
+        return aluno;
+    }
+
+    public boolean existsById(String id) {
+        String sql = "SELECT COUNT(*) FROM aluno WHERE id = ?";
+        Integer count = jdbcTemplate.queryForObject(sql, Integer.class, id);
+        return count != null && count > 0;
+    }
+
+    public boolean deleteById(String id) {
+        String sql = "DELETE FROM aluno WHERE id = ?";
+        int rowsAffected = jdbcTemplate.update(sql, id);
+        return rowsAffected > 0;
+    }
+
+    public long count() {
+        String sql = "SELECT COUNT(*) FROM aluno";
+        Long total = jdbcTemplate.queryForObject(sql, Long.class);
+        return total != null ? total : 0L;
+    }
+
+    public void saveAll(Iterable<Aluno> alunos) {
+        for (Aluno aluno : alunos) {
+            save(aluno);
+        }
+    }
+
+    public void deleteAll() {
+        String sql = "DELETE FROM aluno";
+        jdbcTemplate.update(sql);
+    }
+}
 ```
 
-* **Linha 11 (`@Repository`):** Registra a classe como um Bean gerenciado no Spring IoC Container especializado em acesso a dados.
-* **Linhas 16-21 (`alunoRowMapper`):** Instância de `RowMapper` implementada via lambda que lê cada coluna do `ResultSet` (`rs.getString("...")`) e cria um objeto `Aluno`.
-* **Linhas 23-25:** Injeção de dependência por construtor do `JdbcTemplate`.
-* **Linhas 27-30 (`findAll`):** Executa o `SELECT` em toda a tabela e usa o `RowMapper` para devolver uma `List<Aluno>`.
-* **Linhas 32-36 (`findById`):** Consulta parametrizada com `?` (evita SQL Injection). Retorna um `Optional<Aluno>` para evitar `NullPointerException`.
-* **Linhas 38-48 (`save`):** Implementa o comportamento de **Upsert**: se o aluno já existir no banco, executa `UPDATE`; se não existir, executa `INSERT`.
-* **Linhas 50-54 (`existsById`):** Executa `SELECT COUNT(*)` com `queryForObject`, verificando se há registros com aquele ID.
-* **Linhas 56-60 (`deleteById`):** Executa o comando `DELETE` e verifica se `rowsAffected > 0` para retornar `true` ou `false`.
-* **Linhas 74-77 (`deleteAll`):** Limpa a tabela com `DELETE FROM aluno` (essencial para isolamento nos testes unitários).
+* **`@Repository`:** Registra a classe como um Bean gerenciado no Spring IoC Container especializado em acesso a dados.
+* **`alunoRowMapper`:** Instância de `RowMapper` implementada via lambda que lê cada coluna do `ResultSet` (`rs.getString("...")`) e cria um objeto `Aluno`.
+* **Injeção do `JdbcTemplate`:** Realizada no construtor.
+* **`findAll`:** Executa o `SELECT` em toda a tabela e usa o `RowMapper` para devolver uma `List<Aluno>`.
+* **`findById`:** Consulta parametrizada com `?` (evita SQL Injection). Retorna um `Optional<Aluno>` para evitar `NullPointerException`.
+* **`save`:** Implementa o comportamento de **Upsert**: se o aluno já existir no banco, executa `UPDATE`; se não existir, executa `INSERT`.
+* **`existsById`:** Executa `SELECT COUNT(*)` com `queryForObject`, verificando se há registros com aquele ID.
+* **`deleteById`:** Executa o comando `DELETE` e verifica se `rowsAffected > 0` para retornar `true` ou `false`.
+* **`deleteAll`:** Limpa a tabela com `DELETE FROM aluno` (essencial para isolamento nos testes unitários).
 
 ---
 
@@ -434,60 +440,60 @@ Arquivo: `src/main/java/com/thehecklers/sburrestdemo/repository/AlunoRepository.
 Arquivo: `src/main/java/com/thehecklers/sburrestdemo/service/AlunoService.java`
 
 ```java
-1: package com.thehecklers.sburrestdemo.service;
-2: 
-3: import com.thehecklers.sburrestdemo.model.Aluno;
-4: import com.thehecklers.sburrestdemo.repository.AlunoRepository;
-5: import org.springframework.stereotype.Service;
-6: 
-7: import java.util.Optional;
-8: 
-9: @Service
-10: public class AlunoService {
-11: 
-12:     private final AlunoRepository alunoRepository;
-13: 
-14:     public AlunoService(AlunoRepository alunoRepository) {
-15:         this.alunoRepository = alunoRepository;
-16:     }
-17: 
-18:     public Iterable<Aluno> findAll() {
-19:         return alunoRepository.findAll();
-20:     }
-21: 
-22:     public Optional<Aluno> findById(String id) {
-23:         return alunoRepository.findById(id);
-24:     }
-25: 
-26:     public Aluno save(Aluno aluno) {
-27:         return alunoRepository.save(aluno);
-28:     }
-29: 
-30:     public boolean existsById(String id) {
-31:         return alunoRepository.existsById(id);
-32:     }
-33: 
-34:     public boolean deleteById(String id) {
-35:         if (alunoRepository.existsById(id)) {
-36:             alunoRepository.deleteById(id);
-37:             return true;
-38:         }
-39:         return false;
-40:     }
-41: 
-42:     public long count() {
-43:         return alunoRepository.count();
-44:     }
-45: 
-46:     public void saveAll(Iterable<Aluno> alunos) {
-47:         alunoRepository.saveAll(alunos);
-48:     }
-49: }
+package com.thehecklers.sburrestdemo.service;
+
+import com.thehecklers.sburrestdemo.model.Aluno;
+import com.thehecklers.sburrestdemo.repository.AlunoRepository;
+import org.springframework.stereotype.Service;
+
+import java.util.Optional;
+
+@Service
+public class AlunoService {
+
+    private final AlunoRepository alunoRepository;
+
+    public AlunoService(AlunoRepository alunoRepository) {
+        this.alunoRepository = alunoRepository;
+    }
+
+    public Iterable<Aluno> findAll() {
+        return alunoRepository.findAll();
+    }
+
+    public Optional<Aluno> findById(String id) {
+        return alunoRepository.findById(id);
+    }
+
+    public Aluno save(Aluno aluno) {
+        return alunoRepository.save(aluno);
+    }
+
+    public boolean existsById(String id) {
+        return alunoRepository.existsById(id);
+    }
+
+    public boolean deleteById(String id) {
+        if (alunoRepository.existsById(id)) {
+            alunoRepository.deleteById(id);
+            return true;
+        }
+        return false;
+    }
+
+    public long count() {
+        return alunoRepository.count();
+    }
+
+    public void saveAll(Iterable<Aluno> alunos) {
+        alunoRepository.saveAll(alunos);
+    }
+}
 ```
 
-* **Linha 9 (`@Service`):** Marca a classe como Bean de lógica de negócio.
-* **Linhas 14-16:** Injeção do `AlunoRepository` via construtor.
-* **Linhas 34-40 (`deleteById`):** Regra defensiva: verifica a existência antes de tentar excluir, retornando `true` (sucesso) ou `false` (não encontrado).
+* **`@Service`:** Marca a classe como Bean de lógica de negócio.
+* **Injeção por construtor:** Injeta o `AlunoRepository`.
+* **`deleteById`:** Regra defensiva: verifica a existência antes de tentar excluir, retornando `true` (sucesso) ou `false` (não encontrado).
 
 ---
 
@@ -496,68 +502,68 @@ Arquivo: `src/main/java/com/thehecklers/sburrestdemo/service/AlunoService.java`
 Arquivo: `src/main/java/com/thehecklers/sburrestdemo/controller/AlunoController.java`
 
 ```java
-1: package com.thehecklers.sburrestdemo.controller;
-2: 
-3: import com.thehecklers.sburrestdemo.model.Aluno;
-4: import com.thehecklers.sburrestdemo.service.AlunoService;
-5: import org.springframework.http.HttpStatus;
-6: import org.springframework.http.ResponseEntity;
-7: import org.springframework.web.bind.annotation.*;
-8: 
-9: @CrossOrigin(origins = {"http://localhost:8080", "http://127.0.0.1:5500"})
-10: @RestController
-11: @RequestMapping("/alunos")
-12: public class AlunoController {
-13: 
-14:     private final AlunoService alunoService;
-15: 
-16:     public AlunoController(AlunoService alunoService) {
-17:         this.alunoService = alunoService;
-18:     }
-19: 
-20:     @GetMapping
-21:     public Iterable<Aluno> getAlunos() {
-22:         return alunoService.findAll();
-23:     }
-24: 
-25:     @GetMapping("/{id}")
-26:     public ResponseEntity<Aluno> getAlunoById(@PathVariable String id) {
-27:         return alunoService.findById(id)
-28:                 .map(ResponseEntity::ok)
-29:                 .orElse(ResponseEntity.notFound().build());
-30:     }
-31: 
-32:     @PostMapping
-33:     public ResponseEntity<Aluno> postAluno(@RequestBody Aluno aluno) {
-34:         Aluno saved = alunoService.save(aluno);
-35:         return new ResponseEntity<>(saved, HttpStatus.CREATED);
-36:     }
-37: 
-38:     @PutMapping("/{id}")
-39:     public ResponseEntity<Aluno> putAluno(@PathVariable String id, @RequestBody Aluno aluno) {
-40:         aluno.setId(id);
-41:         boolean exists = alunoService.existsById(id);
-42:         Aluno saved = alunoService.save(aluno);
-43:         return exists ? ResponseEntity.ok(saved) : new ResponseEntity<>(saved, HttpStatus.CREATED);
-44:     }
-45: 
-46:     @DeleteMapping("/{id}")
-47:     public ResponseEntity<Void> deleteAluno(@PathVariable String id) {
-48:         return alunoService.deleteById(id)
-49:                 ? ResponseEntity.noContent().build()
-50:                 : ResponseEntity.notFound().build();
-51:     }
-52: }
+package com.thehecklers.sburrestdemo.controller;
+
+import com.thehecklers.sburrestdemo.model.Aluno;
+import com.thehecklers.sburrestdemo.service.AlunoService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@CrossOrigin(origins = {"http://localhost:8080", "http://127.0.0.1:5500"})
+@RestController
+@RequestMapping("/alunos")
+public class AlunoController {
+
+    private final AlunoService alunoService;
+
+    public AlunoController(AlunoService alunoService) {
+        this.alunoService = alunoService;
+    }
+
+    @GetMapping
+    public Iterable<Aluno> getAlunos() {
+        return alunoService.findAll();
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Aluno> getAlunoById(@PathVariable String id) {
+        return alunoService.findById(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
+    @PostMapping
+    public ResponseEntity<Aluno> postAluno(@RequestBody Aluno aluno) {
+        Aluno saved = alunoService.save(aluno);
+        return new ResponseEntity<>(saved, HttpStatus.CREATED);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Aluno> putAluno(@PathVariable String id, @RequestBody Aluno aluno) {
+        aluno.setId(id);
+        boolean exists = alunoService.existsById(id);
+        Aluno saved = alunoService.save(aluno);
+        return exists ? ResponseEntity.ok(saved) : new ResponseEntity<>(saved, HttpStatus.CREATED);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteAluno(@PathVariable String id) {
+        return alunoService.deleteById(id)
+                ? ResponseEntity.noContent().build()
+                : ResponseEntity.notFound().build();
+    }
+}
 ```
 
-* **Linha 9 (`@CrossOrigin`):** Permite requisições originadas de outras portas locais (ex: Live Server `5500`).
-* **Linha 10 (`@RestController`):** Combinação de `@Controller` com `@ResponseBody`, instruindo o Spring a serializar o retorno dos métodos em formato **JSON**.
-* **Linha 11 (`@RequestMapping("/alunos")`):** Rota base para todas as operações.
-* **Linhas 20-23 (`GET /alunos`):** Lista todos os alunos cadastrados com status `200 OK`.
-* **Linhas 25-30 (`GET /alunos/{id}`):** Usa `@PathVariable` para extrair o ID da URL. Se encontrar, retorna `200 OK`; se não, retorna `404 NOT FOUND`.
-* **Linhas 32-36 (`POST /alunos`):** Usa `@RequestBody` para converter o corpo JSON em `Aluno` e retorna status **201 CREATED**.
-* **Linhas 38-44 (`PUT /alunos/{id}`):** Se o registro já existia, atualiza e devolve `200 OK`. Se não existia, cria e devolve `201 CREATED`.
-* **Linhas 46-51 (`DELETE /alunos/{id}`):** Se deletou, retorna **204 NO CONTENT** (sucesso sem corpo); se o aluno não existia, retorna **404 NOT FOUND**.
+* **`@CrossOrigin`:** Permite requisições originadas de outras portas locais (ex: Live Server `5500`).
+* **`@RestController`:** Combinação de `@Controller` com `@ResponseBody`, instruindo o Spring a serializar o retorno dos métodos em formato **JSON**.
+* **`@RequestMapping("/alunos")`:** Rota base para todas as operações.
+* **`GET /alunos`:** Lista todos os alunos cadastrados com status `200 OK`.
+* **`GET /alunos/{id}`:** Usa `@PathVariable` para extrair o ID da URL. Se encontrar, retorna `200 OK`; se não, retorna `404 NOT FOUND`.
+* **`POST /alunos`:** Usa `@RequestBody` para converter o corpo JSON em `Aluno` e retorna status **201 CREATED**.
+* **`PUT /alunos/{id}`:** Se o registro já existia, atualiza e devolve `200 OK`. Se não existia, cria e devolve `201 CREATED`.
+* **`DELETE /alunos/{id}`:** Se deletou, retorna **204 NO CONTENT** (sucesso sem corpo); se o aluno não existia, retorna **404 NOT FOUND**.
 
 ---
 
@@ -566,45 +572,45 @@ Arquivo: `src/main/java/com/thehecklers/sburrestdemo/controller/AlunoController.
 Arquivo: `src/main/java/com/thehecklers/sburrestdemo/SburRestDemoApplication.java`
 
 ```java
-1: package com.thehecklers.sburrestdemo;
-2: 
-3: import com.thehecklers.sburrestdemo.model.Aluno;
-4: import com.thehecklers.sburrestdemo.service.AlunoService;
-5: import jakarta.annotation.PostConstruct;
-6: import org.springframework.boot.SpringApplication;
-7: import org.springframework.boot.autoconfigure.SpringBootApplication;
-8: 
-9: import java.util.List;
-10: 
-11: @SpringBootApplication
-12: public class SburRestDemoApplication {
-13: 
-14:     private final AlunoService alunoService;
-15: 
-16:     public SburRestDemoApplication(AlunoService alunoService) {
-17:         this.alunoService = alunoService;
-18:     }
-19: 
-20:     public static void main(String[] args) {
-21:         SpringApplication.run(SburRestDemoApplication.class, args);
-22:     }
-23: 
-24:     @PostConstruct
-25:     private void loadData() {
-26:         if (alunoService.count() == 0) {
-27:             alunoService.saveAll(List.of(
-28:                     new Aluno("Ana Silva", "ana.silva@faculdade.edu", "Engenharia de Software"),
-29:                     new Aluno("Bruno Santos", "bruno.santos@faculdade.edu", "Ciência da Computação"),
-30:                     new Aluno("Carla Oliveira", "carla.oliveira@faculdade.edu", "Sistemas de Informação"),
-31:                     new Aluno("Diego Ferreira", "diego.ferreira@faculdade.edu", "Engenharia de Software")
-32:             ));
-33:         }
-34:     }
-35: }
+package com.thehecklers.sburrestdemo;
+
+import com.thehecklers.sburrestdemo.model.Aluno;
+import com.thehecklers.sburrestdemo.service.AlunoService;
+import jakarta.annotation.PostConstruct;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.List;
+
+@SpringBootApplication
+public class SburRestDemoApplication {
+
+    private final AlunoService alunoService;
+
+    public SburRestDemoApplication(AlunoService alunoService) {
+        this.alunoService = alunoService;
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(SburRestDemoApplication.class, args);
+    }
+
+    @PostConstruct
+    private void loadData() {
+        if (alunoService.count() == 0) {
+            alunoService.saveAll(List.of(
+                    new Aluno("Ana Silva", "ana.silva@faculdade.edu", "Engenharia de Software"),
+                    new Aluno("Bruno Santos", "bruno.santos@faculdade.edu", "Ciência da Computação"),
+                    new Aluno("Carla Oliveira", "carla.oliveira@faculdade.edu", "Sistemas de Informação"),
+                    new Aluno("Diego Ferreira", "diego.ferreira@faculdade.edu", "Engenharia de Software")
+            ));
+        }
+    }
+}
 ```
 
-* **Linha 11 (`@SpringBootApplication`):** Habilita a configuração automática e o escaneamento de componentes nos subpacotes (`model`, `repository`, `service`, `controller`).
-* **Linhas 24-34 (`@PostConstruct`):** Método executado automaticamente após o Spring inicializar o contexto. Verifica se o banco está vazio (`count() == 0`) e insere 4 alunos de exemplo para testes.
+* **`@SpringBootApplication`:** Habilita a configuração automática e o escaneamento de componentes nos subpacotes (`model`, `repository`, `service`, `controller`).
+* **`@PostConstruct`:** Método executado automaticamente após o Spring inicializar o contexto. Verifica se o banco está vazio (`count() == 0`) e insere 4 alunos de exemplo para testes.
 
 ---
 
@@ -613,19 +619,19 @@ Arquivo: `src/main/java/com/thehecklers/sburrestdemo/SburRestDemoApplication.jav
 Arquivo: `src/main/resources/application.properties`
 
 ```properties
-1: spring.h2.console.enabled=true
-2: spring.h2.console.path=/h2-console
-3: spring.datasource.url=jdbc:h2:mem:academicodb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-4: spring.datasource.driverClassName=org.h2.Driver
-5: spring.datasource.username=sa
-6: spring.datasource.password=
-7: spring.sql.init.mode=always
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+spring.datasource.url=jdbc:h2:mem:academicodb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.sql.init.mode=always
 ```
 
-* **Linha 1-2:** Habilita a interface web do banco H2 em `/h2-console`.
-* **Linha 3:** Conecta ao banco relacional em memória `academicodb`. Os parâmetros `DB_CLOSE_DELAY=-1` e `DB_CLOSE_ON_EXIT=FALSE` garantem que o banco permaneça vivo durante toda a execução da aplicação.
-* **Linha 4:** Driver oficial do H2 (`org.h2.Driver`).
-* **Linha 7 (`spring.sql.init.mode=always`):** Garante que o Spring execute o script `schema.sql` sempre que a aplicação subir, criando a tabela `aluno`.
+* **`spring.h2.console.enabled=true`:** Habilita a interface web do banco H2 em `/h2-console`.
+* **`spring.datasource.url`:** Conecta ao banco relacional em memória `academicodb`. Os parâmetros `DB_CLOSE_DELAY=-1` e `DB_CLOSE_ON_EXIT=FALSE` garantem que o banco permaneça vivo durante toda a execução da aplicação.
+* **`spring.datasource.driverClassName`:** Driver oficial do H2 (`org.h2.Driver`).
+* **`spring.sql.init.mode=always`:** Garante que o Spring execute o script `schema.sql` sempre que a aplicação subir, criando a tabela `aluno`.
 
 ---
 
@@ -668,7 +674,6 @@ class AlunoControllerTest {
     void setUp() {
         alunoRepository.deleteAll(); // Limpa a tabela antes de cada teste
     }
-    // ...
 }
 ```
 
@@ -712,6 +717,13 @@ Os arquivos estáticos ficam em `src/main/resources/static/` e são servidos dir
 
 ---
 
+### 7.3. `style.css` (Estilização Customizada)
+* Personalização visual moderna com esquema de cores azul e cinza claro.
+* Animações suaves para abertura e fechamento do modal customizado (`custom-modal`).
+* Estilização dos cartões e itens de lista com hover states.
+
+---
+
 ## 8. Tabela Resumo das Anotações e Tecnologias
 
 | Tecnologia / Anotação | Onde é Aplicada? | Função Detalhada |
@@ -744,7 +756,7 @@ Para fixar o conteúdo deste projeto, pratique os seguintes passos:
    - Acesse [http://localhost:8080/h2-console](http://localhost:8080/h2-console).
    - Conecte usando a JDBC URL `jdbc:h2:mem:academicodb`.
    - Execute comandos manuais:
-     ```sql
+     ```
      SELECT * FROM aluno WHERE curso = 'Engenharia de Software';
      ```
 2. **Teste a API com o Postman:**
