@@ -245,7 +245,7 @@ public class DocsResource {
 
 **Observações e boas práticas:**
 - Durante desenvolvimento, `Path.of("DOCUMENTACAO.MD")` lê o arquivo na raiz do projeto.  
-- Para empacotar em jar/uber-jar, prefira colocar `DOCUMENTACAO.MD` em `src/main/resources/META-INF/resources/` e ler via `getResourceAsStream` ou servir diretamente como recurso estático.
+- Para empacotar em jar/uber-jar, prefira colocar `DOCUMENTACAO.MD` em `src/main/resources/META-INF/resources` e ler via `getResourceAsStream` ou servir diretamente como recurso estático.
 - Assegure que o arquivo esteja codificado em UTF-8.
 
 ---
@@ -280,11 +280,13 @@ Página única que implementa a interface do chat. Destaques:
 **Rodapé atualizado (link para docs):**
 
 ```html
+
 <footer class="footer">
-    Powered by AI ✨ 
+    Powered by AI ✨
     <span id="model-info" style="color:#888;font-size:0.95em;"></span>
     <br>
-    <a href="/docs" target="_blank" style="color:#0077cc;text-decoration:none;font-weight:500;">
+    <a href="/Engenharia-de-Software/docsnharia-de-Software/docs" target="_blank"
+       style="color:#0077cc;text-decoration:none;font-weight:500;">
         📘 Ver Documentação
     </a>
 </footer>

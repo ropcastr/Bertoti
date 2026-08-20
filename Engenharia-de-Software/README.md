@@ -39,14 +39,14 @@ A aplicação permite a um usuário criar, consultar e gerenciar bancos de dados
 ##### 🔗 Links Principais do Projeto
 
 * **🗒️ Documentação Completa (Arquivo Fonte):**
-    * [**Leia a `DOCUMENTACAO.MD`**](/quarkus-bot-db/DOCUMENTACAO.MD)
+    * [**Leia a `DOCUMENTACAO.MD`**](/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD)
     * Este arquivo contém a visão geral, arquitetura, fluxo de uso e guias de troubleshooting da aplicação.
 
 * **🚀 Aplicação (código fonte):**
-    * [**Acesse a pasta:**](/quarkus-bot-db)
+    * [**Acesse a pasta:**](/Engenharia-de-Software/quarkus-bot-db)
 
 * **💬 Versão executável (Jar):**
-    * [**Acesse a pasta:**](/quarkus-bot-db-executavel)
+    * [**Acesse a pasta:**](/Engenharia-de-Software/quarkus-bot-db-executavel)
     * Versão compilada do código fonte usando Uber-Jar
       
 ---
