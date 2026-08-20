@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="63a7a11e-e592-4ec1-a9f3-758cb71a124e" name="Changes" comment="remoção residuos">
+      <change beforePath="$PROJECT_DIR$/Lab3/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/Readme.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DBNavigator.Project.Workspace.Settings">
+    <assistant-settings>
+      <credential-settings>
+        <credentials />
+      </credential-settings>
+      <profile-settings>
+        <profiles />
+      </profile-settings>
+      <mcp-server-settings>
+        <workspace-integration value="false" />
+        <mcp-servers />
+        <mcp-tool-approvals />
+      </mcp-server-settings>
+    </assistant-settings>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="122" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ropcastr/Bertoti.git&quot;,
+    &quot;accountId&quot;: &quot;96ad5975-ee9f-4e94-b1ea-af7787251ffe&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000262013377819" />
+      <entry key="MS500" value="1.1212452387927168" />
+      <entry key="S2" value="1.5900871717027008" />
+      <entry key="S5" value="1.8100241878564982" />
+      <entry key="S10" value="1.9488925585833141" />
+      <entry key="S30" value="3.6602348648160095" />
+      <entry key="S60" value="6.098178488827517" />
+      <entry key="M2" value="8.406135402123704" />
+      <entry key="M5" value="10.492698535287778" />
+      <entry key="M10" value="13.068395903877908" />
+      <entry key="M15" value="16.48378112306422" />
+      <entry key="M30" value="27.278752243498083" />
+      <entry key="H1" value="43.6418701731638" />
+      <entry key="H2" value="60.239618093546554" />
+      <entry key="H4" value="72.58688611447627" />
+      <entry key="D1" value="85.92305756142929" />
+      <entry key="W1" value="88.55116905974069" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="3.0605941811742316E-155" />
+      <entry key="S10" value="6.571284599482708E-78" />
+      <entry key="S30" value="2.806842784618379E-26" />
+      <entry key="S60" value="2.3503187630915784E-13" />
+      <entry key="M2" value="6.842133902674179E-7" />
+      <entry key="M5" value="0.005181819145627065" />
+      <entry key="M10" value="0.10196631534914126" />
+      <entry key="M15" value="0.27858222925343157" />
+      <entry key="M30" value="0.8295981103113692" />
+      <entry key="H1" value="1.6380514702942508" />
+      <entry key="H2" value="2.4775588344997637" />
+      <entry key="H4" value="3.120938599703656" />
+      <entry key="D1" value="3.8332476347017215" />
+      <entry key="W1" value="3.9756219321129214" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9659616377488756" />
+      <entry key="MS500" value="1.1135002321895544" />
+      <entry key="S2" value="1.5873341466063007" />
+      <entry key="S5" value="1.8087699878883832" />
+      <entry key="S10" value="1.948215314920437" />
+      <entry key="S30" value="3.6597915905230534" />
+      <entry key="S60" value="6.0978019521481235" />
+      <entry key="M2" value="8.405874547913864" />
+      <entry key="M5" value="10.497695344410982" />
+      <entry key="M10" value="13.169797770396018" />
+      <entry key="M15" value="16.76142976992479" />
+      <entry key="M30" value="28.1069623244549" />
+      <entry key="H1" value="45.27846821909736" />
+      <entry key="H2" value="62.71602664776353" />
+      <entry key="H4" value="75.70708204670566" />
+      <entry key="D1" value="89.75614997560906" />
+      <entry key="W1" value="92.5267679125864" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="groupByToolId" value="true" />
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3I5jIA7EL0mytLa7r7TqVSASLUX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.codeInspection.ui.actions.InspectionResultsExportActionProvider.location&quot;: &quot;C:/Users/dasmi/IdeaProjects/Bertoti&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dasmi\IdeaProjects\Bertoti\Engenharia-de-Software" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SburRestDemoApplication">
+    <configuration name="quarkus-bot-db" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
+      <module name="quarkus-bot-db" />
+      <QsMavenRunConfiguration>
+        <MavenSettings>
+          <option name="myGeneralSettings" />
+          <option name="myRunnerSettings" />
+          <option name="myRunnerParameters">
+            <MavenRunnerParameters>
+              <option name="cmdOptions" />
+              <option name="profiles">
+                <set />
+              </option>
+              <option name="goals">
+                <list>
+                  <option value="quarkus:dev" />
+                </list>
+              </option>
+              <option name="multimoduleDir" />
+              <option name="pomFileName" value="pom.xml" />
+              <option name="profilesMap">
+                <map />
+              </option>
+              <option name="projectsCmdOptionValues">
+                <list />
+              </option>
+              <option name="resolveToWorkspace" value="false" />
+              <option name="workingDirPath" value="$PROJECT_DIR$/quarkus-bot-db" />
+            </MavenRunnerParameters>
+          </option>
+        </MavenSettings>
+        <targetMavenLocalRepo />
+        <emulateTerminal>true</emulateTerminal>
+        <profile>dev</profile>
+      </QsMavenRunConfiguration>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SburRestDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="sbur-rest-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thehecklers.sburrestdemo.SburRestDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63a7a11e-e592-4ec1-a9f3-758cb71a124e" name="Changes" comment="" />
+      <created>1787061242049</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1787061242049</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Organização do repositório e atualização da aplicação em springboot" />
+    <MESSAGE value="remoção de log de analises de codigo" />
+    <MESSAGE value="remoção residuos" />
+    <option name="LAST_COMMIT_MESSAGE" value="remoção residuos" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
