@@ -1,0 +1,28 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/.github/workflows/maven.yml</file>
+  <line>37</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/.github/workflows/maven.yml" />
+  <problem_class id="Annotator" severity="ERROR" attribute_key="WRONG_REFERENCES_ATTRIBUTES">Annotator</problem_class>
+  <hints />
+  <description>Invalid child element in a block mapping #loc</description>
+  <highlighted_element>- name: Cache</highlighted_element>
+  <language>yaml</language>
+  <offset>3</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD</file>
+  <line>347</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD" />
+  <problem_class id="Annotator" severity="ERROR" attribute_key="WRONG_REFERENCES_ATTRIBUTES">Annotator</problem_class>
+  <hints />
+  <description>ALIAS, Flowchart.INV_TRAP_END or Flowchart.TRAP_END expected, got ']' #loc</description>
+  <highlighted_element>]</highlighted_element>
+  <language>Markdown</language>
+  <offset>26</offset>
+  <length>1</length>
+</problem>
+</problems>

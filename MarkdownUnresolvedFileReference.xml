@@ -1,0 +1,14 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/README.md</file>
+  <line>40</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/README.md" />
+  <problem_class id="MarkdownUnresolvedFileReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved file references</problem_class>
+  <description>Cannot resolve file 'GUIA_MIGRACAO_BANCO_DE_DADOS.md'</description>
+  <highlighted_element>GUIA_MIGRACAO_BANCO_DE_DADOS.md</highlighted_element>
+  <language>Markdown</language>
+  <offset>70</offset>
+  <length>31</length>
+</problem>
+</problems>

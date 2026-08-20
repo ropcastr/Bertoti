@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md</file>
+  <line>142</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md" />
+  <problem_class id="CheckImageSize" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched image size</problem_class>
+  <description>Original image width is 569</description>
+  <highlighted_element>&quot;500&quot;</highlighted_element>
+  <language>HTML</language>
+  <offset>166</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md</file>
+  <line>297</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md" />
+  <problem_class id="CheckImageSize" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched image size</problem_class>
+  <description>Original image width is 523</description>
+  <highlighted_element>&quot;500&quot;</highlighted_element>
+  <language>HTML</language>
+  <offset>154</offset>
+  <length>5</length>
+</problem>
+</problems>

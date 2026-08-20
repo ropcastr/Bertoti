@@ -1,0 +1,648 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/Coffee.java</file>
+  <line>8</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="class" FQNAME="com.thehecklers.sburrestdemo.Coffee" />
+  <language>JAVA</language>
+  <offset>13</offset>
+  <length>6</length>
+  <highlighted_element>Coffee</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Class has one instantiation, but the instantiation is not reachable from the entry points.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/Coffee.java</file>
+  <line>11</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="field" FQNAME="com.thehecklers.sburrestdemo.Coffee id" />
+  <language>JAVA</language>
+  <offset>19</offset>
+  <length>2</length>
+  <highlighted_element>id</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Field has 3 usages, but the usages are not reachable from the entry points.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/Coffee.java</file>
+  <line>15</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.Coffee Coffee()" />
+  <language>JAVA</language>
+  <offset>11</offset>
+  <length>6</length>
+  <highlighted_element>Coffee</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Constructor is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/Coffee.java</file>
+  <line>27</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.Coffee java.lang.String getId()" />
+  <language>JAVA</language>
+  <offset>18</offset>
+  <length>5</length>
+  <highlighted_element>getId</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/Coffee.java</file>
+  <line>31</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.Coffee void setId(java.lang.String id)" />
+  <language>JAVA</language>
+  <offset>16</offset>
+  <length>5</length>
+  <highlighted_element>setId</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/SburRestDemoApplication.java</file>
+  <line>12</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="class" FQNAME="com.thehecklers.sburrestdemo.SburRestDemoApplication" />
+  <language>JAVA</language>
+  <offset>13</offset>
+  <length>23</length>
+  <highlighted_element>SburRestDemoApplication</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Class has one instantiation, but the instantiation is not reachable from the entry points.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/SburRestDemoApplication.java</file>
+  <line>16</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.SburRestDemoApplication SburRestDemoApplication(com.thehecklers.sburrestdemo.service.AlunoService alunoService)" />
+  <language>JAVA</language>
+  <offset>11</offset>
+  <length>23</length>
+  <highlighted_element>SburRestDemoApplication</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Constructor has one usage, but the usage is not reachable from the entry points.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/SburRestDemoApplication.java</file>
+  <line>20</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.SburRestDemoApplication void main(java.lang.String[] args)" />
+  <language>JAVA</language>
+  <offset>23</offset>
+  <length>4</length>
+  <highlighted_element>main</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/SburRestDemoApplication.java</file>
+  <line>26</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.SburRestDemoApplication void loadData()" />
+  <language>JAVA</language>
+  <offset>17</offset>
+  <length>8</length>
+  <highlighted_element>loadData</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/controller/AlunoController.java</file>
+  <line>12</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo.controller</package>
+  <entry_point TYPE="class" FQNAME="com.thehecklers.sburrestdemo.controller.AlunoController" />
+  <language>JAVA</language>
+  <offset>13</offset>
+  <length>15</length>
+  <highlighted_element>AlunoController</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Class is not instantiated.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/controller/AlunoController.java</file>
+  <line>16</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo.controller</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.controller.AlunoController AlunoController(com.thehecklers.sburrestdemo.service.AlunoService alunoService)" />
+  <language>JAVA</language>
+  <offset>11</offset>
+  <length>15</length>
+  <highlighted_element>AlunoController</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Constructor is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/controller/AlunoController.java</file>
+  <line>22</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo.controller</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.controller.AlunoController java.lang.Iterable&lt;com.thehecklers.sburrestdemo.model.Aluno&gt; getAlunos()" />
+  <language>JAVA</language>
+  <offset>27</offset>
+  <length>9</length>
+  <highlighted_element>getAlunos</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/controller/AlunoController.java</file>
+  <line>28</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo.controller</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.controller.AlunoController org.springframework.http.ResponseEntity&lt;com.thehecklers.sburrestdemo.model.Aluno&gt; getAlunoById(java.lang.String id)" />
+  <language>JAVA</language>
+  <offset>33</offset>
+  <length>12</length>
+  <highlighted_element>getAlunoById</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/controller/AlunoController.java</file>
+  <line>36</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo.controller</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.controller.AlunoController org.springframework.http.ResponseEntity&lt;com.thehecklers.sburrestdemo.model.Aluno&gt; postAluno(com.thehecklers.sburrestdemo.model.Aluno aluno)" />
+  <language>JAVA</language>
+  <offset>33</offset>
+  <length>9</length>
+  <highlighted_element>postAluno</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/controller/AlunoController.java</file>
+  <line>43</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo.controller</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.controller.AlunoController org.springframework.http.ResponseEntity&lt;com.thehecklers.sburrestdemo.model.Aluno&gt; putAluno(java.lang.String id, com.thehecklers.sburrestdemo.model.Aluno aluno)" />
+  <language>JAVA</language>
+  <offset>33</offset>
+  <length>8</length>
+  <highlighted_element>putAluno</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/controller/AlunoController.java</file>
+  <line>52</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo.controller</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.controller.AlunoController org.springframework.http.ResponseEntity&lt;java.lang.Void&gt; deleteAluno(java.lang.String id)" />
+  <language>JAVA</language>
+  <offset>32</offset>
+  <length>11</length>
+  <highlighted_element>deleteAluno</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/model/Aluno.java</file>
+  <line>9</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo.model</package>
+  <entry_point TYPE="class" FQNAME="com.thehecklers.sburrestdemo.model.Aluno" />
+  <language>JAVA</language>
+  <offset>13</offset>
+  <length>5</length>
+  <highlighted_element>Aluno</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Class has 8 instantiations, but the instantiations are not reachable from the entry points.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/model/Aluno.java</file>
+  <line>12</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo.model</package>
+  <entry_point TYPE="field" FQNAME="com.thehecklers.sburrestdemo.model.Aluno id" />
+  <language>JAVA</language>
+  <offset>19</offset>
+  <length>2</length>
+  <highlighted_element>id</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Field has 4 usages, but the usages are not reachable from the entry points.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/model/Aluno.java</file>
+  <line>18</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo.model</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.model.Aluno Aluno()" />
+  <language>JAVA</language>
+  <offset>11</offset>
+  <length>5</length>
+  <highlighted_element>Aluno</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Constructor is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/model/Aluno.java</file>
+  <line>35</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo.model</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.model.Aluno void ensureId()" />
+  <language>JAVA</language>
+  <offset>16</offset>
+  <length>8</length>
+  <highlighted_element>ensureId</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/model/Aluno.java</file>
+  <line>41</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo.model</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.model.Aluno java.lang.String getId()" />
+  <language>JAVA</language>
+  <offset>18</offset>
+  <length>5</length>
+  <highlighted_element>getId</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is not reachable from the entry points.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/model/Aluno.java</file>
+  <line>45</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo.model</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.model.Aluno void setId(java.lang.String id)" />
+  <language>JAVA</language>
+  <offset>16</offset>
+  <length>5</length>
+  <highlighted_element>setId</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is not reachable from the entry points.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/service/AlunoService.java</file>
+  <line>14</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo.service</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.service.AlunoService AlunoService(com.thehecklers.sburrestdemo.repository.AlunoRepository alunoRepository)" />
+  <language>JAVA</language>
+  <offset>11</offset>
+  <length>12</length>
+  <highlighted_element>AlunoService</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Constructor is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java</file>
+  <line>20</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="class" FQNAME="com.thehecklers.sburrestdemo.AlunoControllerTest" />
+  <language>JAVA</language>
+  <offset>6</offset>
+  <length>19</length>
+  <highlighted_element>AlunoControllerTest</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Class is not instantiated.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java</file>
+  <line>23</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="field" FQNAME="com.thehecklers.sburrestdemo.AlunoControllerTest mockMvc" />
+  <language>JAVA</language>
+  <offset>20</offset>
+  <length>7</length>
+  <highlighted_element>mockMvc</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Field has 8 usages, but the usages are not reachable from the entry points.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java</file>
+  <line>26</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="field" FQNAME="com.thehecklers.sburrestdemo.AlunoControllerTest alunoRepository" />
+  <language>JAVA</language>
+  <offset>28</offset>
+  <length>15</length>
+  <highlighted_element>alunoRepository</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Field has 4 usages, but the usages are not reachable from the entry points.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java</file>
+  <line>29</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="field" FQNAME="com.thehecklers.sburrestdemo.AlunoControllerTest objectMapper" />
+  <language>JAVA</language>
+  <offset>25</offset>
+  <length>12</length>
+  <highlighted_element>objectMapper</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Field has 3 usages, but the usages are not reachable from the entry points.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java</file>
+  <line>32</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.AlunoControllerTest void setUp()" />
+  <language>JAVA</language>
+  <offset>9</offset>
+  <length>5</length>
+  <highlighted_element>setUp</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java</file>
+  <line>37</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.AlunoControllerTest void shouldReturnEmptyListWhenNoAlunosExist()" />
+  <language>JAVA</language>
+  <offset>9</offset>
+  <length>38</length>
+  <highlighted_element>shouldReturnEmptyListWhenNoAlunosExist</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java</file>
+  <line>44</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.AlunoControllerTest void shouldCreateNewAluno()" />
+  <language>JAVA</language>
+  <offset>9</offset>
+  <length>20</length>
+  <highlighted_element>shouldCreateNewAluno</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java</file>
+  <line>58</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.AlunoControllerTest void shouldGetAlunoByIdWhenExists()" />
+  <language>JAVA</language>
+  <offset>9</offset>
+  <length>28</length>
+  <highlighted_element>shouldGetAlunoByIdWhenExists</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java</file>
+  <line>70</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.AlunoControllerTest void shouldReturn404WhenAlunoDoesNotExist()" />
+  <language>JAVA</language>
+  <offset>9</offset>
+  <length>36</length>
+  <highlighted_element>shouldReturn404WhenAlunoDoesNotExist</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java</file>
+  <line>76</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.AlunoControllerTest void shouldUpdateExistingAluno()" />
+  <language>JAVA</language>
+  <offset>9</offset>
+  <length>25</length>
+  <highlighted_element>shouldUpdateExistingAluno</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java</file>
+  <line>91</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.AlunoControllerTest void shouldCreateAlunoOnPutWhenNotExists()" />
+  <language>JAVA</language>
+  <offset>9</offset>
+  <length>35</length>
+  <highlighted_element>shouldCreateAlunoOnPutWhenNotExists</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java</file>
+  <line>105</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.AlunoControllerTest void shouldDeleteAlunoSuccessfully()" />
+  <language>JAVA</language>
+  <offset>9</offset>
+  <length>29</length>
+  <highlighted_element>shouldDeleteAlunoSuccessfully</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java</file>
+  <line>116</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.AlunoControllerTest void shouldReturn404WhenDeletingNonExistingAluno()" />
+  <language>JAVA</language>
+  <offset>9</offset>
+  <length>43</length>
+  <highlighted_element>shouldReturn404WhenDeletingNonExistingAluno</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/SburRestDemoApplicationTests.java</file>
+  <line>7</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="class" FQNAME="com.thehecklers.sburrestdemo.SburRestDemoApplicationTests" />
+  <language>JAVA</language>
+  <offset>6</offset>
+  <length>28</length>
+  <highlighted_element>SburRestDemoApplicationTests</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Class is not instantiated.</description>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/SburRestDemoApplicationTests.java</file>
+  <line>10</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.SburRestDemoApplicationTests void contextLoads()" />
+  <language>JAVA</language>
+  <offset>6</offset>
+  <length>12</length>
+  <highlighted_element>contextLoads</highlighted_element>
+  <problem_class id="" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+  <hints>
+    <hint value="comment" />
+    <hint value="delete" />
+  </hints>
+  <description>Method is never used.</description>
+</problem>
+</problems>

@@ -1,0 +1,74 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/docs/surefire.html</file>
+  <line>193</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/docs/surefire.html" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable or type anchors</description>
+  <highlighted_element>anchors</highlighted_element>
+  <language>JavaScript</language>
+  <offset>5</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/docs/surefire.html</file>
+  <line>194</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/docs/surefire.html" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable or type anchors</description>
+  <highlighted_element>anchors</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.js</file>
+  <line>77</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable or type axios</description>
+  <highlighted_element>axios</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.js</file>
+  <line>88</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable or type axios</description>
+  <highlighted_element>axios</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.js</file>
+  <line>102</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable or type axios</description>
+  <highlighted_element>axios</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.js</file>
+  <line>199</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable or type axios</description>
+  <highlighted_element>axios</highlighted_element>
+  <language>JavaScript</language>
+  <offset>16</offset>
+  <length>5</length>
+</problem>
+</problems>

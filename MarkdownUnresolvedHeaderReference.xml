@@ -1,0 +1,230 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md</file>
+  <line>14</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor %EF%B8%8F-exemplos-de-trade-offs</description>
+  <highlighted_element>%EF%B8%8F-exemplos-de-trade-offs</highlighted_element>
+  <language>Markdown</language>
+  <offset>29</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md</file>
+  <line>15</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor 1%EF%B8%8F⃣-velocidade-vs-qualidade</description>
+  <highlighted_element>1%EF%B8%8F⃣-velocidade-vs-qualidade</highlighted_element>
+  <language>Markdown</language>
+  <offset>35</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md</file>
+  <line>16</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor 2%EF%B8%8F⃣-escalabilidade-vs-simplicidade</description>
+  <highlighted_element>2%EF%B8%8F⃣-escalabilidade-vs-simplicidade</highlighted_element>
+  <language>Markdown</language>
+  <offset>42</offset>
+  <length>42</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md</file>
+  <line>17</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor 3%EF%B8%8F⃣-custo-vs-manutenção</description>
+  <highlighted_element>3%EF%B8%8F⃣-custo-vs-manutenção</highlighted_element>
+  <language>Markdown</language>
+  <offset>31</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md</file>
+  <line>22</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor classes-para-um-estacionamento---</description>
+  <highlighted_element>classes-para-um-estacionamento---</highlighted_element>
+  <language>Markdown</language>
+  <offset>39</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md</file>
+  <line>27</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor classes-para-uma-quitanda---</description>
+  <highlighted_element>classes-para-uma-quitanda---</highlighted_element>
+  <language>Markdown</language>
+  <offset>34</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md</file>
+  <line>33</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor classe-repositorio</description>
+  <highlighted_element>classe-repositorio</highlighted_element>
+  <language>Markdown</language>
+  <offset>38</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/README.md</file>
+  <line>12</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/README.md" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor %EF%B8%8F-exemplos-de-trade-offs</description>
+  <highlighted_element>%EF%B8%8F-exemplos-de-trade-offs</highlighted_element>
+  <language>Markdown</language>
+  <offset>17</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/README.md</file>
+  <line>15</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/README.md" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor %EF%B8%8F-tecnologias-e-ferramentas</description>
+  <highlighted_element>%EF%B8%8F-tecnologias-e-ferramentas</highlighted_element>
+  <language>Markdown</language>
+  <offset>32</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD</file>
+  <line>10</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor visão-geral</description>
+  <highlighted_element>visão-geral</highlighted_element>
+  <language>Markdown</language>
+  <offset>18</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD</file>
+  <line>11</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor estrutura-do-projeto</description>
+  <highlighted_element>estrutura-do-projeto</highlighted_element>
+  <language>Markdown</language>
+  <offset>27</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD</file>
+  <line>12</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor pré-requisitos-e-configuração</description>
+  <highlighted_element>pré-requisitos-e-configuração</highlighted_element>
+  <language>Markdown</language>
+  <offset>36</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD</file>
+  <line>13</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor componentes-principais</description>
+  <highlighted_element>componentes-principais</highlighted_element>
+  <language>Markdown</language>
+  <offset>29</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD</file>
+  <line>16</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor como-a-aplicação-funciona-fluxo-de-uso</description>
+  <highlighted_element>como-a-aplicação-funciona-fluxo-de-uso</highlighted_element>
+  <language>Markdown</language>
+  <offset>47</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD</file>
+  <line>17</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor guia-rápido-de-uso</description>
+  <highlighted_element>guia-rápido-de-uso</highlighted_element>
+  <language>Markdown</language>
+  <offset>25</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD</file>
+  <line>18</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor manutenção-e-expansão</description>
+  <highlighted_element>manutenção-e-expansão</highlighted_element>
+  <language>Markdown</language>
+  <offset>28</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD</file>
+  <line>19</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor problemas-comuns-troubleshooting</description>
+  <highlighted_element>problemas-comuns-troubleshooting</highlighted_element>
+  <language>Markdown</language>
+  <offset>41</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD</file>
+  <line>20</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor fluxo-geral-da-aplicação</description>
+  <highlighted_element>fluxo-geral-da-aplicação</highlighted_element>
+  <language>Markdown</language>
+  <offset>31</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD</file>
+  <line>21</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/DOCUMENTACAO.MD" />
+  <problem_class id="MarkdownUnresolvedHeaderReference" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved header reference</problem_class>
+  <description>Cannot resolve anchor licença-e-contribuição</description>
+  <highlighted_element>licença-e-contribuição</highlighted_element>
+  <language>Markdown</language>
+  <offset>30</offset>
+  <length>22</length>
+</problem>
+</problems>

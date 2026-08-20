@@ -1,0 +1,15 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/docs/fonts/glyphicons-halflings-regular.svg</file>
+  <line>2</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/docs/fonts/glyphicons-halflings-regular.svg" />
+  <problem_class id="XmlHighlighting" severity="ERROR" attribute_key="WRONG_REFERENCES_ATTRIBUTES">XML highlighting</problem_class>
+  <hints />
+  <description>URI is not registered (Settings | Languages &amp; Frameworks | Schemas and DTDs) #loc</description>
+  <highlighted_element>http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd</highlighted_element>
+  <language>SVG</language>
+  <offset>48</offset>
+  <length>48</length>
+</problem>
+</problems>

@@ -1,0 +1,50 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/src/main/resources/META-INF/resources/index.html</file>
+  <line>7</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/src/main/resources/META-INF/resources/index.html" />
+  <problem_class id="JSUnresolvedLibraryURL" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missed locally stored library for HTTP link</problem_class>
+  <description>Missed locally stored library for HTTP link</description>
+  <highlighted_element>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css</highlighted_element>
+  <language>HTML</language>
+  <offset>33</offset>
+  <length>73</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.html</file>
+  <line>7</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.html" />
+  <problem_class id="JSUnresolvedLibraryURL" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missed locally stored library for HTTP link</problem_class>
+  <description>Missed locally stored library for HTTP link</description>
+  <highlighted_element>https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css</highlighted_element>
+  <language>HTML</language>
+  <offset>33</offset>
+  <length>71</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.html</file>
+  <line>8</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.html" />
+  <problem_class id="JSUnresolvedLibraryURL" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missed locally stored library for HTTP link</problem_class>
+  <description>Missed locally stored library for HTTP link</description>
+  <highlighted_element>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css</highlighted_element>
+  <language>HTML</language>
+  <offset>33</offset>
+  <length>73</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.html</file>
+  <line>10</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.html" />
+  <problem_class id="JSUnresolvedLibraryURL" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missed locally stored library for HTTP link</problem_class>
+  <description>Missed locally stored library for HTTP link</description>
+  <highlighted_element>https://cdn.jsdelivr.net/npm/axios@1.2.1/dist/axios.min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>17</offset>
+  <length>58</length>
+</problem>
+</problems>

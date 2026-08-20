@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "4e72338c-851c-4da4-8b65-68045b1e987c",
+		"name": "Sistema Acadêmico - API Alunos",
+		"description": "Collection completa para testar as rotas da API REST de Gestão de Alunos com Spring Boot e Spring Data JPA.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Listar Todos os Alunos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/alunos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alunos"
+					]
+				},
+				"description": "Retorna todos os alunos cadastrados no banco de dados H2."
+			},
+			"response": []
+		},
+		{
+			"name": "2. Buscar Aluno por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/alunos/{{aluno_id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alunos",
+						"{{aluno_id}}"
+					]
+				},
+				"description": "Busca um aluno específico pelo identificador único (ID)."
+			},
+			"response": []
+		},
+		{
+			"name": "3. Matricular Novo Aluno",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Mariana Lima\",\n    \"email\": \"mariana.lima@faculdade.edu\",\n    \"curso\": \"Engenharia de Software\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/alunos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alunos"
+					]
+				},
+				"description": "Cadastra um novo aluno no banco de dados gerando um UUID automaticamente."
+			},
+			"response": []
+		},
+		{
+			"name": "4. Atualizar Aluno Existente",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"{{aluno_id}}\",\n    \"nome\": \"Mariana Lima Especialista\",\n    \"email\": \"mariana.lima@pos.faculdade.edu\",\n    \"curso\": \"Inteligência Artificial\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/alunos/{{aluno_id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alunos",
+						"{{aluno_id}}"
+					]
+				},
+				"description": "Atualiza os dados de um aluno existente no banco de dados."
+			},
+			"response": []
+		},
+		{
+			"name": "5. Cadastrar Aluno via PUT com ID Personalizado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"RA-2024001\",\n    \"nome\": \"Gabriel Monteiro\",\n    \"email\": \"gabriel.monteiro@faculdade.edu\",\n    \"curso\": \"Ciência da Computação\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/alunos/RA-2024001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alunos",
+						"RA-2024001"
+					]
+				},
+				"description": "Cria um novo aluno caso o ID informado na URL não exista (comportamento Upsert do PUT)."
+			},
+			"response": []
+		},
+		{
+			"name": "6. Remover Aluno",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/alunos/{{aluno_id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alunos",
+						"{{aluno_id}}"
+					]
+				},
+				"description": "Remove o aluno do banco de dados pelo ID (retorna 204 No Content se excluído, 404 se não existir)."
+			},
+			"response": []
+		}
+	]
+}

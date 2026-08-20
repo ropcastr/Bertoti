@@ -1,0 +1,725 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md</file>
+  <line>142</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'fatec'</description>
+  <highlighted_element>fatec</highlighted_element>
+  <language>HTML</language>
+  <offset>44</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md</file>
+  <line>297</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'fatec'</description>
+  <highlighted_element>fatec</highlighted_element>
+  <language>HTML</language>
+  <offset>44</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md</file>
+  <line>297</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'quitanda'</description>
+  <highlighted_element>quitanda</highlighted_element>
+  <language>HTML</language>
+  <offset>68</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md</file>
+  <line>297</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Quitanda'</description>
+  <highlighted_element>Quitanda</highlighted_element>
+  <language>HTML</language>
+  <offset>86</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md</file>
+  <line>37</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Atividades.md" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Gerênciamento'</description>
+  <highlighted_element>Gerênciamento</highlighted_element>
+  <language>Markdown</language>
+  <offset>6</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml</file>
+  <line>4</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'preco'</description>
+  <highlighted_element>preco</highlighted_element>
+  <language>PUML</language>
+  <offset>4</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml</file>
+  <line>7</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'preco'</description>
+  <highlighted_element>preco</highlighted_element>
+  <language>PUML</language>
+  <offset>25</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml</file>
+  <line>9</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Preco'</description>
+  <highlighted_element>Preco</highlighted_element>
+  <language>PUML</language>
+  <offset>7</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml</file>
+  <line>13</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Quitanda'</description>
+  <highlighted_element>Quitanda</highlighted_element>
+  <language>PUML</language>
+  <offset>6</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml</file>
+  <line>16</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Quitanda'</description>
+  <highlighted_element>Quitanda</highlighted_element>
+  <language>PUML</language>
+  <offset>4</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml</file>
+  <line>22</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Quitanda'</description>
+  <highlighted_element>Quitanda</highlighted_element>
+  <language>PUML</language>
+  <offset>0</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml</file>
+  <line>25</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'quitanda'</description>
+  <highlighted_element>quitanda</highlighted_element>
+  <language>PUML</language>
+  <offset>4</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml</file>
+  <line>26</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/Engenharia_Software/src/main/java/fatec/gov/br/atividades/quitanda/Diagrama.puml" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'quitanda'</description>
+  <highlighted_element>quitanda</highlighted_element>
+  <language>PUML</language>
+  <offset>29</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/README.md</file>
+  <line>22</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/README.md" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'acadêmicos'</description>
+  <highlighted_element>acadêmicos</highlighted_element>
+  <language>Markdown</language>
+  <offset>104</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/docs/css/print.css</file>
+  <line>22</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/docs/css/print.css" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'leftcol'</description>
+  <highlighted_element>leftcol</highlighted_element>
+  <language>CSS</language>
+  <offset>1</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/docs/css/print.css</file>
+  <line>25</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/docs/css/print.css" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'courtesylinks'</description>
+  <highlighted_element>courtesylinks</highlighted_element>
+  <language>CSS</language>
+  <offset>7</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/docs/fonts/glyphicons-halflings-regular.svg</file>
+  <line>6</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/docs/fonts/glyphicons-halflings-regular.svg" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'halflingsregular'</description>
+  <highlighted_element>halflingsregular</highlighted_element>
+  <language>SVG</language>
+  <offset>21</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/docs/surefire.html</file>
+  <line>5</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/docs/surefire.html" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Doxia'</description>
+  <highlighted_element>Doxia</highlighted_element>
+  <language>XML</language>
+  <offset>29</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/docs/surefire.html</file>
+  <line>104</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/docs/surefire.html" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'testsuites'</description>
+  <highlighted_element>testsuites</highlighted_element>
+  <language>HTML</language>
+  <offset>86</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/docs/surefire.html</file>
+  <line>118</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/docs/surefire.html" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Quitanda'</description>
+  <highlighted_element>Quitanda</highlighted_element>
+  <language>HTML</language>
+  <offset>69</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/docs/surefire.html</file>
+  <line>161</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/docs/surefire.html" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Quitanda'</description>
+  <highlighted_element>Quitanda</highlighted_element>
+  <language>HTML</language>
+  <offset>10</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/src/main/resources/META-INF/resources/index.html</file>
+  <line>189</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/src/main/resources/META-INF/resources/index.html" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'gerenciamento'</description>
+  <highlighted_element>gerenciamento</highlighted_element>
+  <language>HTML</language>
+  <offset>63</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/src/main/resources/META-INF/resources/index.html</file>
+  <line>224</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/src/main/resources/META-INF/resources/index.html" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Gerenciamento'</description>
+  <highlighted_element>Gerenciamento</highlighted_element>
+  <language>JavaScript</language>
+  <offset>3</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/src/main/resources/application.properties</file>
+  <line>1</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/src/main/resources/application.properties" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'langchain'</description>
+  <highlighted_element>langchain</highlighted_element>
+  <language>Properties</language>
+  <offset>8</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/src/main/resources/application.properties</file>
+  <line>2</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/src/main/resources/application.properties" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'langchain'</description>
+  <highlighted_element>langchain</highlighted_element>
+  <language>Properties</language>
+  <offset>8</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/src/main/resources/application.properties</file>
+  <line>3</line>
+  <module>Bertoti</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Engenharia-de-Software/quarkus-bot-db/src/main/resources/application.properties" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'langchain'</description>
+  <highlighted_element>langchain</highlighted_element>
+  <language>Properties</language>
+  <offset>18</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/README.md</file>
+  <line>1</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/README.md" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Acadêmico'</description>
+  <highlighted_element>Acadêmico</highlighted_element>
+  <language>Markdown</language>
+  <offset>13</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>34</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'mavenrc'</description>
+  <highlighted_element>mavenrc</highlighted_element>
+  <language>Shell Script</language>
+  <offset>47</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>43</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'mavenrc'</description>
+  <highlighted_element>mavenrc</highlighted_element>
+  <language>Shell Script</language>
+  <offset>18</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>44</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'mavenrc'</description>
+  <highlighted_element>mavenrc</highlighted_element>
+  <language>Shell Script</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>57</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'libexec'</description>
+  <highlighted_element>libexec</highlighted_element>
+  <language>Shell Script</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>60</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'libexec'</description>
+  <highlighted_element>libexec</highlighted_element>
+  <language>Shell Script</language>
+  <offset>20</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>90</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'saveddir'</description>
+  <highlighted_element>saveddir</highlighted_element>
+  <language>Shell Script</language>
+  <offset>2</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>143</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'JAVACMD'</description>
+  <highlighted_element>JAVACMD</highlighted_element>
+  <language>Shell Script</language>
+  <offset>6</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>145</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'JAVACMD'</description>
+  <highlighted_element>JAVACMD</highlighted_element>
+  <language>Shell Script</language>
+  <offset>6</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>148</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'JAVACMD'</description>
+  <highlighted_element>JAVACMD</highlighted_element>
+  <language>Shell Script</language>
+  <offset>4</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>162</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'CLASSWORLDS'</description>
+  <highlighted_element>CLASSWORLDS</highlighted_element>
+  <language>Shell Script</language>
+  <offset>0</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>175</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'wdir'</description>
+  <highlighted_element>wdir</highlighted_element>
+  <language>Shell Script</language>
+  <offset>2</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>181</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'JBEAP'</description>
+  <highlighted_element>JBEAP</highlighted_element>
+  <language>Shell Script</language>
+  <offset>21</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>183</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'wdir'</description>
+  <highlighted_element>wdir</highlighted_element>
+  <language>Shell Script</language>
+  <offset>6</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>215</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'takari'</description>
+  <highlighted_element>takari</highlighted_element>
+  <language>Shell Script</language>
+  <offset>31</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>281</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'PROJECTBASEDIR'</description>
+  <highlighted_element>PROJECTBASEDIR</highlighted_element>
+  <language>Shell Script</language>
+  <offset>13</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw</file>
+  <line>296</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'PROJECTBASEDIR'</description>
+  <highlighted_element>PROJECTBASEDIR</highlighted_element>
+  <language>Shell Script</language>
+  <offset>10</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd</file>
+  <line>33</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'mavenrc'</description>
+  <highlighted_element>mavenrc</highlighted_element>
+  <language>textmate</language>
+  <offset>48</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd</file>
+  <line>44</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'HOMEDRIVE'</description>
+  <highlighted_element>HOMEDRIVE</highlighted_element>
+  <language>textmate</language>
+  <offset>30</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd</file>
+  <line>44</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'HOMEPATH'</description>
+  <highlighted_element>HOMEPATH</highlighted_element>
+  <language>textmate</language>
+  <offset>41</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd</file>
+  <line>53</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'setlocal'</description>
+  <highlighted_element>setlocal</highlighted_element>
+  <language>textmate</language>
+  <offset>1</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd</file>
+  <line>88</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'PROJECTBASEDIR'</description>
+  <highlighted_element>PROJECTBASEDIR</highlighted_element>
+  <language>textmate</language>
+  <offset>10</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd</file>
+  <line>92</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'WDIR'</description>
+  <highlighted_element>WDIR</highlighted_element>
+  <language>textmate</language>
+  <offset>4</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd</file>
+  <line>114</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'usebackq'</description>
+  <highlighted_element>usebackq</highlighted_element>
+  <language>textmate</language>
+  <offset>8</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd</file>
+  <line>114</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/mvnw.cmd" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'delims'</description>
+  <highlighted_element>delims</highlighted_element>
+  <language>textmate</language>
+  <offset>17</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/postman/Sistema_Academico_Alunos.postman_collection.json</file>
+  <line>4</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/postman/Sistema_Academico_Alunos.postman_collection.json" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Acadêmico'</description>
+  <highlighted_element>Acadêmico</highlighted_element>
+  <language>JSON</language>
+  <offset>19</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/SburRestDemoApplication.java</file>
+  <line>12</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="class" FQNAME="com.thehecklers.sburrestdemo.SburRestDemoApplication" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Sbur'</description>
+  <highlighted_element>Sbur</highlighted_element>
+  <language>JAVA</language>
+  <offset>13</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/application.properties</file>
+  <line>8</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/application.properties" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'academicodb'</description>
+  <highlighted_element>academicodb</highlighted_element>
+  <language>Properties</language>
+  <offset>34</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.html</file>
+  <line>6</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.html" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Acadêmico'</description>
+  <highlighted_element>Acadêmico</highlighted_element>
+  <language>XML</language>
+  <offset>22</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.html</file>
+  <line>18</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.html" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Acadêmico'</description>
+  <highlighted_element>Acadêmico</highlighted_element>
+  <language>HTML</language>
+  <offset>70</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.html</file>
+  <line>73</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.html" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'cursosSugestoes'</description>
+  <highlighted_element>cursosSugestoes</highlighted_element>
+  <language>XML</language>
+  <offset>37</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.html</file>
+  <line>74</line>
+  <module>sbur-rest-demo</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/Lab3/Trabalho-1/src/main/resources/static/index.html" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'cursosSugestoes'</description>
+  <highlighted_element>cursosSugestoes</highlighted_element>
+  <language>XML</language>
+  <offset>38</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java</file>
+  <line>106</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="method" FQNAME="com.thehecklers.sburrestdemo.AlunoControllerTest void shouldDeleteAlunoSuccessfully()" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Exclusao'</description>
+  <highlighted_element>Exclusao</highlighted_element>
+  <language>JAVA</language>
+  <offset>66</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/SburRestDemoApplicationTests.java</file>
+  <line>7</line>
+  <module>sbur-rest-demo</module>
+  <package>com.thehecklers.sburrestdemo</package>
+  <entry_point TYPE="class" FQNAME="com.thehecklers.sburrestdemo.SburRestDemoApplicationTests" />
+  <problem_class id="SpellCheckingInspection" severity="TYPO" attribute_key="TYPO">Spelling</problem_class>
+  <description>Typo: In word 'Sbur'</description>
+  <highlighted_element>Sbur</highlighted_element>
+  <language>JAVA</language>
+  <offset>6</offset>
+  <length>4</length>
+</problem>
+</problems>
