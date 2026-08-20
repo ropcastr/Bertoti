@@ -398,3 +398,33 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# IntelliJ inspection export files
+/.descriptions.xml
+/.xml
+/Annotator.xml
+/CheckImageSize.xml
+/CheckTagEmptyBody.xml
+/CssUnusedSymbol.xml
+/ES6ConvertVarToLetConst.xml
+/EmptyMethod.xml
+/GrazieInspection.xml
+/GrazieStyle.xml
+/HtmlFormInputWithoutLabel.xml
+/HtmlRequiredAltAttribute.xml
+/HtmlUnknownTarget.xml
+/IgnoreFileDuplicateEntry.xml
+/JSEqualityComparisonWithCoercion.xml
+/JSUnresolvedLibraryURL.xml
+/JSUnresolvedReference.xml
+/JSUnusedGlobalSymbols.xml
+/JSValidateTypes.xml
+/MandatoryParamsAbsent.xml
+/MarkdownIncorrectTableFormatting.xml
+/MarkdownUnresolvedFileReference.xml
+/MarkdownUnresolvedHeaderReference.xml
+/SpellCheckingInspection.xml
+/UndefinedParamsPresent.xml
+/UnnecessaryLocalVariableJS.xml
+/XmlHighlighting.xml
+/unused.xml
