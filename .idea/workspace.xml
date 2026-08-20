@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63a7a11e-e592-4ec1-a9f3-758cb71a124e" name="Changes" comment="Readme's att">
+    <list default="true" id="63a7a11e-e592-4ec1-a9f3-758cb71a124e" name="Changes" comment="Pequenas correções para garantir a compilação correta">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +27,13 @@
       </mcp-server-settings>
     </assistant-settings>
   </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="25a0b35e-6b7a-41e3-9eda-38d39f74b12d" value="" />
+    </colors>
+  </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="122" />
+    <option name="cachedIndexableFilesCount" value="37" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -56,61 +61,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.1080595534304811" />
-      <entry key="MS500" value="1.9120391315793248" />
-      <entry key="S2" value="2.8522633007128375" />
-      <entry key="S5" value="3.641106741419562" />
-      <entry key="S10" value="4.172956983624481" />
-      <entry key="S30" value="4.6810480497921905" />
-      <entry key="S60" value="4.855753056061696" />
-      <entry key="M2" value="5.414708250332922" />
-      <entry key="M5" value="8.357089835285745" />
-      <entry key="M10" value="12.412363058227433" />
-      <entry key="M15" value="16.300806143077075" />
-      <entry key="M30" value="27.592309836052152" />
-      <entry key="H1" value="44.71871396217018" />
-      <entry key="H2" value="62.46891093116774" />
-      <entry key="H4" value="75.89809594534881" />
-      <entry key="D1" value="90.58662804582679" />
-      <entry key="W1" value="93.50155492046459" />
+      <entry key="MS100" value="1.0207629332901127" />
+      <entry key="MS500" value="1.6068049632385037" />
+      <entry key="S2" value="3.9365568465374796" />
+      <entry key="S5" value="6.548229961677535" />
+      <entry key="S10" value="9.399470046411402" />
+      <entry key="S30" value="15.586202083202593" />
+      <entry key="S60" value="18.97969834985302" />
+      <entry key="M2" value="21.27759271128884" />
+      <entry key="M5" value="23.99586689229507" />
+      <entry key="M10" value="28.043214579565774" />
+      <entry key="M15" value="32.05930067894284" />
+      <entry key="M30" value="43.67675487208995" />
+      <entry key="H1" value="61.85557732315836" />
+      <entry key="H2" value="81.50184688109759" />
+      <entry key="H4" value="96.82491721191725" />
+      <entry key="D1" value="113.96572362100407" />
+      <entry key="W1" value="117.40975306457361" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
-      <entry key="S5" value="1.1337688329409046E-184" />
-      <entry key="S10" value="1.2647644783079998E-92" />
-      <entry key="S30" value="3.491439724191514E-31" />
-      <entry key="S60" value="8.28934085696856E-16" />
-      <entry key="M2" value="4.0633869778314554E-8" />
-      <entry key="M5" value="0.001674792075842055" />
-      <entry key="M10" value="0.05796903208714383" />
-      <entry key="M15" value="0.1911816878142404" />
-      <entry key="M30" value="0.6872491243214697" />
-      <entry key="H1" value="1.490907722917324" />
-      <entry key="H2" value="2.363663161966782" />
-      <entry key="H4" value="3.0483584238626453" />
-      <entry key="D1" value="3.8182439933445895" />
-      <entry key="W1" value="3.9733952075203876" />
+      <entry key="S5" value="6.203951678789368E-236" />
+      <entry key="S10" value="2.9585683423939517E-118" />
+      <entry key="S30" value="9.985317170675562E-40" />
+      <entry key="S60" value="4.4330094372523496E-20" />
+      <entry key="M2" value="2.9715121701994227E-10" />
+      <entry key="M5" value="2.342052515303646E-4" />
+      <entry key="M10" value="0.02167773558979672" />
+      <entry key="M15" value="0.09923347544869059" />
+      <entry key="M30" value="0.4951310366837826" />
+      <entry key="H1" value="1.265475501541864" />
+      <entry key="H2" value="2.1776449653120813" />
+      <entry key="H4" value="2.9259491490462346" />
+      <entry key="D1" value="3.792251524743422" />
+      <entry key="W1" value="3.969519793351795" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.0703223188644237" />
-      <entry key="MS500" value="1.6372174115320335" />
-      <entry key="S2" value="2.410334867133062" />
-      <entry key="S5" value="3.3652734906833848" />
-      <entry key="S10" value="4.0119950740896275" />
-      <entry key="S30" value="4.621465736173683" />
-      <entry key="S60" value="4.825162725989529" />
-      <entry key="M2" value="5.399194270646023" />
-      <entry key="M5" value="8.352455888031649" />
-      <entry key="M10" value="12.466878415358325" />
-      <entry key="M15" value="16.489256775085526" />
-      <entry key="M30" value="28.277362989503033" />
-      <entry key="H1" value="46.207775532785526" />
-      <entry key="H2" value="64.83121499091568" />
-      <entry key="H4" value="78.94559810794522" />
-      <entry key="D1" value="94.40469561331996" />
-      <entry key="W1" value="97.47492394547001" />
+      <entry key="MS100" value="0.9791812710924517" />
+      <entry key="MS500" value="1.5937372304393467" />
+      <entry key="S2" value="3.929464340232046" />
+      <entry key="S5" value="6.54381350842561" />
+      <entry key="S10" value="9.396400521989856" />
+      <entry key="S30" value="15.58454100843895" />
+      <entry key="S60" value="18.978689146495036" />
+      <entry key="M2" value="21.27691634749052" />
+      <entry key="M5" value="23.994977037870843" />
+      <entry key="M10" value="28.06347686670663" />
+      <entry key="M15" value="32.157033279638206" />
+      <entry key="M30" value="44.17026180897289" />
+      <entry key="H1" value="63.11946472859471" />
+      <entry key="H2" value="83.6782291368288" />
+      <entry key="H4" value="99.75003919424644" />
+      <entry key="D1" value="117.7577990385803" />
+      <entry key="W1" value="121.37924657488206" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -126,39 +131,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Maven.sbur-rest-demo [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.SburRestDemoApplication.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.codeInspection.ui.actions.InspectionResultsExportActionProvider.location&quot;: &quot;C:/Users/dasmi/IdeaProjects/Bertoti&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.33103448&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Maven.sbur-rest-demo [clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.SburRestDemoApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.codeInspection.ui.actions.InspectionResultsExportActionProvider.location": "C:/Users/dasmi/IdeaProjects/Bertoti",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.33103448",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
+    "show.migrate.to.gradle.popup": "false",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dasmi\IdeaProjects\Bertoti\Engenharia-de-Software" />
@@ -202,21 +212,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="ShConfigurationType">
-      <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="pwsh.exe" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
-      <envs />
-      <method v="2" />
     </configuration>
     <configuration name="SburRestDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-26.0.2.1" />
@@ -265,7 +260,8 @@
     <MESSAGE value="remoção de log de analises de codigo" />
     <MESSAGE value="remoção residuos" />
     <MESSAGE value="Readme's att" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme's att" />
+    <MESSAGE value="Pequenas correções para garantir a compilação correta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pequenas correções para garantir a compilação correta" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
