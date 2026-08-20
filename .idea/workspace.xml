@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63a7a11e-e592-4ec1-a9f3-758cb71a124e" name="Changes" comment="remoção residuos">
-      <change beforePath="$PROJECT_DIR$/Lab3/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/Readme.md" afterDir="false" />
+    <list default="true" id="63a7a11e-e592-4ec1-a9f3-758cb71a124e" name="Changes" comment="Readme's att">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,61 +56,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000262013377819" />
-      <entry key="MS500" value="1.1212452387927168" />
-      <entry key="S2" value="1.5900871717027008" />
-      <entry key="S5" value="1.8100241878564982" />
-      <entry key="S10" value="1.9488925585833141" />
-      <entry key="S30" value="3.6602348648160095" />
-      <entry key="S60" value="6.098178488827517" />
-      <entry key="M2" value="8.406135402123704" />
-      <entry key="M5" value="10.492698535287778" />
-      <entry key="M10" value="13.068395903877908" />
-      <entry key="M15" value="16.48378112306422" />
-      <entry key="M30" value="27.278752243498083" />
-      <entry key="H1" value="43.6418701731638" />
-      <entry key="H2" value="60.239618093546554" />
-      <entry key="H4" value="72.58688611447627" />
-      <entry key="D1" value="85.92305756142929" />
-      <entry key="W1" value="88.55116905974069" />
+      <entry key="MS100" value="1.1080595534304811" />
+      <entry key="MS500" value="1.9120391315793248" />
+      <entry key="S2" value="2.8522633007128375" />
+      <entry key="S5" value="3.641106741419562" />
+      <entry key="S10" value="4.172956983624481" />
+      <entry key="S30" value="4.6810480497921905" />
+      <entry key="S60" value="4.855753056061696" />
+      <entry key="M2" value="5.414708250332922" />
+      <entry key="M5" value="8.357089835285745" />
+      <entry key="M10" value="12.412363058227433" />
+      <entry key="M15" value="16.300806143077075" />
+      <entry key="M30" value="27.592309836052152" />
+      <entry key="H1" value="44.71871396217018" />
+      <entry key="H2" value="62.46891093116774" />
+      <entry key="H4" value="75.89809594534881" />
+      <entry key="D1" value="90.58662804582679" />
+      <entry key="W1" value="93.50155492046459" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
-      <entry key="S5" value="3.0605941811742316E-155" />
-      <entry key="S10" value="6.571284599482708E-78" />
-      <entry key="S30" value="2.806842784618379E-26" />
-      <entry key="S60" value="2.3503187630915784E-13" />
-      <entry key="M2" value="6.842133902674179E-7" />
-      <entry key="M5" value="0.005181819145627065" />
-      <entry key="M10" value="0.10196631534914126" />
-      <entry key="M15" value="0.27858222925343157" />
-      <entry key="M30" value="0.8295981103113692" />
-      <entry key="H1" value="1.6380514702942508" />
-      <entry key="H2" value="2.4775588344997637" />
-      <entry key="H4" value="3.120938599703656" />
-      <entry key="D1" value="3.8332476347017215" />
-      <entry key="W1" value="3.9756219321129214" />
+      <entry key="S5" value="1.1337688329409046E-184" />
+      <entry key="S10" value="1.2647644783079998E-92" />
+      <entry key="S30" value="3.491439724191514E-31" />
+      <entry key="S60" value="8.28934085696856E-16" />
+      <entry key="M2" value="4.0633869778314554E-8" />
+      <entry key="M5" value="0.001674792075842055" />
+      <entry key="M10" value="0.05796903208714383" />
+      <entry key="M15" value="0.1911816878142404" />
+      <entry key="M30" value="0.6872491243214697" />
+      <entry key="H1" value="1.490907722917324" />
+      <entry key="H2" value="2.363663161966782" />
+      <entry key="H4" value="3.0483584238626453" />
+      <entry key="D1" value="3.8182439933445895" />
+      <entry key="W1" value="3.9733952075203876" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9659616377488756" />
-      <entry key="MS500" value="1.1135002321895544" />
-      <entry key="S2" value="1.5873341466063007" />
-      <entry key="S5" value="1.8087699878883832" />
-      <entry key="S10" value="1.948215314920437" />
-      <entry key="S30" value="3.6597915905230534" />
-      <entry key="S60" value="6.0978019521481235" />
-      <entry key="M2" value="8.405874547913864" />
-      <entry key="M5" value="10.497695344410982" />
-      <entry key="M10" value="13.169797770396018" />
-      <entry key="M15" value="16.76142976992479" />
-      <entry key="M30" value="28.1069623244549" />
-      <entry key="H1" value="45.27846821909736" />
-      <entry key="H2" value="62.71602664776353" />
-      <entry key="H4" value="75.70708204670566" />
-      <entry key="D1" value="89.75614997560906" />
-      <entry key="W1" value="92.5267679125864" />
+      <entry key="MS100" value="1.0703223188644237" />
+      <entry key="MS500" value="1.6372174115320335" />
+      <entry key="S2" value="2.410334867133062" />
+      <entry key="S5" value="3.3652734906833848" />
+      <entry key="S10" value="4.0119950740896275" />
+      <entry key="S30" value="4.621465736173683" />
+      <entry key="S60" value="4.825162725989529" />
+      <entry key="M2" value="5.399194270646023" />
+      <entry key="M5" value="8.352455888031649" />
+      <entry key="M10" value="12.466878415358325" />
+      <entry key="M15" value="16.489256775085526" />
+      <entry key="M30" value="28.277362989503033" />
+      <entry key="H1" value="46.207775532785526" />
+      <entry key="H2" value="64.83121499091568" />
+      <entry key="H4" value="78.94559810794522" />
+      <entry key="D1" value="94.40469561331996" />
+      <entry key="W1" value="97.47492394547001" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -129,11 +129,13 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Maven.sbur-rest-demo [clean].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SburRestDemoApplication.executor&quot;: &quot;Run&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.codeInspection.ui.actions.InspectionResultsExportActionProvider.location&quot;: &quot;C:/Users/dasmi/IdeaProjects/Bertoti&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
@@ -148,8 +150,11 @@
     &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33103448&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
@@ -198,13 +203,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="pwsh.exe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="SburRestDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-26.0.2.1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="sbur-rest-demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.thehecklers.sburrestdemo.SburRestDemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Quarkus.quarkus-bot-db" />
+      <item itemvalue="Spring Boot.SburRestDemoApplication" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -238,7 +264,8 @@
     <MESSAGE value="Organização do repositório e atualização da aplicação em springboot" />
     <MESSAGE value="remoção de log de analises de codigo" />
     <MESSAGE value="remoção residuos" />
-    <option name="LAST_COMMIT_MESSAGE" value="remoção residuos" />
+    <MESSAGE value="Readme's att" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme's att" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
