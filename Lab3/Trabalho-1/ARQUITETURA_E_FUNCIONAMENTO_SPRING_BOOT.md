@@ -1,6 +1,6 @@
 # 📖 Guia Definitivo de Arquitetura e Código: Spring Boot com JDBC do Zero ao Banco de Dados
 
-Este documento é o guia didático completo do projeto **Sistema Acadêmico** (Trabalho 1 da disciplina de Laboratório de Desenvolvimento em Banco de Dados III - Prof. Bertoti). Ele foi projetado para estudantes iniciantes em **Java**, **Orientação a Objetos (POO)**, **Spring Boot**, **Spring JDBC** e **Banco de Dados Relacional (H2 / SQL)**, explicando exaustivamente cada classe, método, conceito teórico, comando SQL, construtor, herança, polimorfismo e encapsulamento.
+Este documento é o guia didático completo do projeto **Sistema Acadêmico** (Trabalho 1 da disciplina de Laboratório de Desenvolvimento em Banco de Dados III - Prof. Bertoti). Ele foi projetado para estudantes de **Java**, **Orientação a Objetos (POO)**, **Spring Boot**, **Spring JDBC** e **Banco de Dados Relacional (H2 / SQL)**, explicando exaustivamente cada classe, método, conceito teórico, comando SQL, construtor, herança, polimorfismo e encapsulamento.
 
 ---
 
@@ -506,9 +506,12 @@ package com.thehecklers.sburrestdemo.controller;
 
 import com.thehecklers.sburrestdemo.model.Aluno;
 import com.thehecklers.sburrestdemo.service.AlunoService;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 @CrossOrigin(origins = {"http://localhost:8080", "http://127.0.0.1:5500"})
 @RestController
@@ -521,11 +524,13 @@ public class AlunoController {
         this.alunoService = alunoService;
     }
 
+    // GET /alunos - Busca todos os alunos cadastrados
     @GetMapping
     public Iterable<Aluno> getAlunos() {
         return alunoService.findAll();
     }
 
+    // GET /alunos/{id} - Busca aluno por ID (retorna 404 se não encontrado)
     @GetMapping("/{id}")
     public ResponseEntity<Aluno> getAlunoById(@PathVariable String id) {
         return alunoService.findById(id)
@@ -533,25 +538,51 @@ public class AlunoController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    // POST /alunos - Cadastra novo aluno (retorna 201 CREATED ou 400 BAD REQUEST se campos forem inválidos)
     @PostMapping
-    public ResponseEntity<Aluno> postAluno(@RequestBody Aluno aluno) {
+    public ResponseEntity<?> postAluno(@RequestBody(required = false) Aluno aluno) {
+        if (isInvalid(aluno)) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body(Map.of("erro", "Os campos 'nome', 'email' e 'curso' são obrigatórios e não podem ser vazios."));
+        }
         Aluno saved = alunoService.save(aluno);
         return new ResponseEntity<>(saved, HttpStatus.CREATED);
     }
 
+    // PUT /alunos/{id} - Atualiza aluno existente (200 OK) ou cria caso não exista (201 CREATED)
     @PutMapping("/{id}")
-    public ResponseEntity<Aluno> putAluno(@PathVariable String id, @RequestBody Aluno aluno) {
+    public ResponseEntity<?> putAluno(@PathVariable String id, @RequestBody(required = false) Aluno aluno) {
+        if (isInvalid(aluno)) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body(Map.of("erro", "Os campos 'nome', 'email' e 'curso' são obrigatórios e não podem ser vazios."));
+        }
         aluno.setId(id);
         boolean exists = alunoService.existsById(id);
         Aluno saved = alunoService.save(aluno);
         return exists ? ResponseEntity.ok(saved) : new ResponseEntity<>(saved, HttpStatus.CREATED);
     }
 
+    // DELETE /alunos/{id} - Remove aluno pelo ID (204 No Content se excluído, 404 se não encontrado)
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteAluno(@PathVariable String id) {
         return alunoService.deleteById(id)
                 ? ResponseEntity.noContent().build()
                 : ResponseEntity.notFound().build();
+    }
+
+    // Trata violações de integridade do banco (ex: dados inválidos ou nulos)
+    @ExceptionHandler(DataIntegrityViolationException.class)
+    public ResponseEntity<Map<String, String>> handleDataIntegrityViolation(DataIntegrityViolationException ex) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                .body(Map.of("erro", "Violação de integridade nos dados: certifique-se de que todos os campos obrigatórios foram preenchidos corretamente."));
+    }
+
+    // Validação de campos obrigatórios
+    private boolean isInvalid(Aluno aluno) {
+        return aluno == null
+                || aluno.getNome() == null || aluno.getNome().isBlank()
+                || aluno.getEmail() == null || aluno.getEmail().isBlank()
+                || aluno.getCurso() == null || aluno.getCurso().isBlank();
     }
 }
 ```
@@ -561,9 +592,10 @@ public class AlunoController {
 * **`@RequestMapping("/alunos")`:** Rota base para todas as operações.
 * **`GET /alunos`:** Lista todos os alunos cadastrados com status `200 OK`.
 * **`GET /alunos/{id}`:** Usa `@PathVariable` para extrair o ID da URL. Se encontrar, retorna `200 OK`; se não, retorna `404 NOT FOUND`.
-* **`POST /alunos`:** Usa `@RequestBody` para converter o corpo JSON em `Aluno` e retorna status **201 CREATED**.
-* **`PUT /alunos/{id}`:** Se o registro já existia, atualiza e devolve `200 OK`. Se não existia, cria e devolve `201 CREATED`.
-* **`DELETE /alunos/{id}`:** Se deletou, retorna **204 NO CONTENT** (sucesso sem corpo); se o aluno não existia, retorna **404 NOT FOUND**.
+* **`POST /alunos`:** Converte o JSON em `Aluno`, valida os campos obrigatórios (`nome`, `email`, `curso`). Se válidos, salva no H2 e retorna status **201 CREATED**. Se inválidos ou vazios, retorna status **400 BAD REQUEST** com mensagem descritiva.
+* **`PUT /alunos/{id}`:** Valida os campos obrigatórios. Se válidos e o ID já existia, atualiza e devolve `200 OK`. Se não existia, cria (*Upsert*) e devolve `201 CREATED`. Se inválidos, retorna `400 BAD REQUEST`.
+* **`DELETE /alunos/{id}`:** Opera sobre o ID informado na URL (não requer corpo no Postman). Se deletou com sucesso, retorna **204 NO CONTENT** (sem corpo); se o aluno não existia no banco, retorna **404 NOT FOUND**. Se invocado sem ID (`/alunos`), o Spring recusa com `405 Method Not Allowed`.
+* **`@ExceptionHandler`:** Intercepta exceções de violação de integridade relacional (`DataIntegrityViolationException`), convertendo potenciais erros `500` em respostas amigáveis com status **400 BAD REQUEST**.
 
 ---
 
@@ -679,13 +711,15 @@ class AlunoControllerTest {
 
 #### Cenários Testados:
 1. **`shouldReturnEmptyListWhenNoAlunosExist`:** Garante que `GET /alunos` retorna `200 OK` e um array vazio `[]` quando não há dados.
-2. **`shouldCreateNewAluno`:** Envia `POST /alunos` com JSON e valida status `201 CREATED`, geração de ID e campos via `jsonPath`.
-3. **`shouldGetAlunoByIdWhenExists`:** Salva um aluno no banco e verifica se `GET /alunos/{id}` recupera os dados corretamente (`200 OK`).
-4. **`shouldReturn404WhenAlunoDoesNotExist`:** Valida retorno de status `404 NOT FOUND` para IDs inexistentes.
-5. **`shouldUpdateExistingAluno`:** Testa a alteração de dados de um aluno existente via `PUT /alunos/{id}` (`200 OK`).
-6. **`shouldCreateAlunoOnPutWhenNotExists`:** Testa a funcionalidade de *Upsert* do `PUT`, criando o registro caso o ID informado na URL não exista (`201 CREATED`).
-7. **`shouldDeleteAlunoSuccessfully`:** Testa a remoção com `DELETE /alunos/{id}`, verificando status `204 NO CONTENT` e confirmando que uma busca posterior resulta em `404`.
-8. **`shouldReturn404WhenDeletingNonExistingAluno`:** Valida retorno `404` ao tentar deletar registro que não existe.
+2. **`shouldCreateNewAluno`:** Envia `POST /alunos` com JSON válido e valida status `201 CREATED`, geração de ID e campos via `jsonPath`.
+3. **`shouldReturn400WhenCreatingAlunoWithMissingFields`:** Envia `POST /alunos` com JSON vazio `{}` ou faltando campos obrigatórios (ex: sem curso) e valida o retorno `400 BAD REQUEST` com mensagem de erro descritiva.
+4. **`shouldGetAlunoByIdWhenExists`:** Salva um aluno no banco e verifica se `GET /alunos/{id}` recupera os dados corretamente (`200 OK`).
+5. **`shouldReturn404WhenAlunoDoesNotExist`:** Valida retorno de status `404 NOT FOUND` para IDs inexistentes.
+6. **`shouldUpdateExistingAluno`:** Testa a alteração de dados de um aluno existente via `PUT /alunos/{id}` (`200 OK`).
+7. **`shouldCreateAlunoOnPutWhenNotExists`:** Testa a funcionalidade de *Upsert* do `PUT`, criando o registro caso o ID informado na URL não exista (`201 CREATED`).
+8. **`shouldReturn400WhenUpdatingAlunoWithMissingFields`:** Testa envio de `PUT /alunos/{id}` com campos em branco, validando retorno `400 BAD REQUEST`.
+9. **`shouldDeleteAlunoSuccessfully`:** Testa a remoção com `DELETE /alunos/{id}`, verificando status `204 NO CONTENT` e confirmando que uma busca posterior resulta em `404`.
+10. **`shouldReturn404WhenDeletingNonExistingAluno`:** Valida retorno `404` ao tentar deletar registro que não existe.
 
 ---
 
@@ -743,12 +777,13 @@ Os arquivos estáticos ficam em `src/main/resources/static/` e são servidos dir
 | `@PathVariable` | Parâmetros de Método | Captura variáveis passadas na URL (ex: `/alunos/{id}`). |
 | `@RequestBody` | Parâmetros de Método | Converte o corpo JSON da requisição em um objeto Java. |
 | `@CrossOrigin` | `AlunoController` | Permite chamadas de origens e portas externas (CORS). |
+| `@ExceptionHandler` | Métodos de Controller | Captura exceções específicas lançadas na execução dos endpoints e formata uma resposta HTTP customizada amigável. |
 | `@SpringBootTest` | Classes de Teste | Sobe o contexto do Spring para testes de integração. |
 | `@AutoConfigureMockMvc` | Classes de Teste | Injeta o `MockMvc` para simular requisições HTTP sem abrir portas reais de rede. |
 
 ---
 
-## 9. Guia de Estudo e Exercícios Práticos para Iniciantes
+## 9. Guia de Estudo e Exercícios Práticos
 
 Para fixar o conteúdo deste projeto, pratique os seguintes passos:
 

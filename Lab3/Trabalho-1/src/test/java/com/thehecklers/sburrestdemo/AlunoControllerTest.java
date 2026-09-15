@@ -55,6 +55,23 @@ class AlunoControllerTest {
     }
 
     @Test
+    void shouldReturn400WhenCreatingAlunoWithMissingFields() throws Exception {
+        // Envio com body vazio
+        mockMvc.perform(post("/alunos")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{}"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.erro", notNullValue()));
+
+        // Envio faltando curso
+        mockMvc.perform(post("/alunos")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"nome\":\"João\",\"email\":\"joao@email.com\"}"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.erro", notNullValue()));
+    }
+
+    @Test
     void shouldGetAlunoByIdWhenExists() throws Exception {
         Aluno saved = alunoRepository.save(new Aluno("Lucas Rocha", "lucas.rocha@faculdade.edu", "Ciência da Computação"));
 
@@ -99,6 +116,15 @@ class AlunoControllerTest {
                 .andExpect(jsonPath("$.nome", is("Thiago Alves")))
                 .andExpect(jsonPath("$.email", is("thiago.alves@faculdade.edu")))
                 .andExpect(jsonPath("$.curso", is("Banco de Dados")));
+    }
+
+    @Test
+    void shouldReturn400WhenUpdatingAlunoWithMissingFields() throws Exception {
+        mockMvc.perform(put("/alunos/any-id")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"nome\":\"\"}"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.erro", notNullValue()));
     }
 
     @Test

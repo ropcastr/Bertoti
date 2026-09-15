@@ -3,9 +3,29 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="63a7a11e-e592-4ec1-a9f3-758cb71a124e" name="Changes" comment="Pequenas correções para garantir a compilação correta">
+    <list default="true" id="63a7a11e-e592-4ec1-a9f3-758cb71a124e" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/.idea/jsonSchemas.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/Trabalho-1/.postman/resources.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/Trabalho-1/.postman/resources.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/Trabalho-1/ARQUITETURA_E_FUNCIONAMENTO_SPRING_BOOT.md" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/Trabalho-1/ARQUITETURA_E_FUNCIONAMENTO_SPRING_BOOT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/Trabalho-1/postman/Sistema_Academico_Alunos.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/Trabalho-1/postman/Sistema_Academico_Alunos.postman_collection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/controller/AlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/controller/AlunoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/Trabalho-1/src/test/java/com/thehecklers/sburrestdemo/AlunoControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +68,9 @@
     &quot;accountId&quot;: &quot;96ad5975-ee9f-4e94-b1ea-af7787251ffe&quot;
   }
 }</component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="JSgzSLUS" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -61,61 +84,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0207629332901127" />
-      <entry key="MS500" value="1.6068049632385037" />
-      <entry key="S2" value="3.9365568465374796" />
-      <entry key="S5" value="6.548229961677535" />
-      <entry key="S10" value="9.399470046411402" />
-      <entry key="S30" value="15.586202083202593" />
-      <entry key="S60" value="18.97969834985302" />
-      <entry key="M2" value="21.27759271128884" />
-      <entry key="M5" value="23.99586689229507" />
-      <entry key="M10" value="28.043214579565774" />
-      <entry key="M15" value="32.05930067894284" />
-      <entry key="M30" value="43.67675487208995" />
-      <entry key="H1" value="61.85557732315836" />
-      <entry key="H2" value="81.50184688109759" />
-      <entry key="H4" value="96.82491721191725" />
-      <entry key="D1" value="113.96572362100407" />
-      <entry key="W1" value="117.40975306457361" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0000000000001195" />
+      <entry key="M2" value="1.0000040428708594" />
+      <entry key="M5" value="1.214452213265353" />
+      <entry key="M10" value="11.285782126969353" />
+      <entry key="M15" value="42.9758435056112" />
+      <entry key="M30" value="198.4376477087801" />
+      <entry key="H1" value="467.4059317225877" />
+      <entry key="H2" value="742.2493530008807" />
+      <entry key="H4" value="947.0431962866293" />
+      <entry key="D1" value="1170.1035423809667" />
+      <entry key="W1" value="1214.4179518310107" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
-      <entry key="S5" value="6.203951678789368E-236" />
-      <entry key="S10" value="2.9585683423939517E-118" />
-      <entry key="S30" value="9.985317170675562E-40" />
-      <entry key="S60" value="4.4330094372523496E-20" />
-      <entry key="M2" value="2.9715121701994227E-10" />
-      <entry key="M5" value="2.342052515303646E-4" />
-      <entry key="M10" value="0.02167773558979672" />
-      <entry key="M15" value="0.09923347544869059" />
-      <entry key="M30" value="0.4951310366837826" />
-      <entry key="H1" value="1.265475501541864" />
-      <entry key="H2" value="2.1776449653120813" />
-      <entry key="H4" value="2.9259491490462346" />
-      <entry key="D1" value="3.792251524743422" />
-      <entry key="W1" value="3.969519793351795" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="8.1965013372789E-110" />
+      <entry key="S60" value="4.016353966618709E-55" />
+      <entry key="M2" value="8.94425506891433E-28" />
+      <entry key="M5" value="2.2962718081525725E-11" />
+      <entry key="M10" value="6.787772019211818E-6" />
+      <entry key="M15" value="4.5758005927056005E-4" />
+      <entry key="M30" value="0.03362208134645689" />
+      <entry key="H1" value="0.3297660666198769" />
+      <entry key="H2" value="1.1116374941481968" />
+      <entry key="H4" value="2.090522420471317" />
+      <entry key="D1" value="3.585599763471288" />
+      <entry key="W1" value="3.937871107841413" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9791812710924517" />
-      <entry key="MS500" value="1.5937372304393467" />
-      <entry key="S2" value="3.929464340232046" />
-      <entry key="S5" value="6.54381350842561" />
-      <entry key="S10" value="9.396400521989856" />
-      <entry key="S30" value="15.58454100843895" />
-      <entry key="S60" value="18.978689146495036" />
-      <entry key="M2" value="21.27691634749052" />
-      <entry key="M5" value="23.994977037870843" />
-      <entry key="M10" value="28.06347686670663" />
-      <entry key="M15" value="32.157033279638206" />
-      <entry key="M30" value="44.17026180897289" />
-      <entry key="H1" value="63.11946472859471" />
-      <entry key="H2" value="83.6782291368288" />
-      <entry key="H4" value="99.75003919424644" />
-      <entry key="D1" value="117.7577990385803" />
-      <entry key="W1" value="121.37924657488206" />
+      <entry key="MS100" value="0.7955364837549187" />
+      <entry key="MS500" value="0.9552829363824373" />
+      <entry key="S2" value="0.9886282245671552" />
+      <entry key="S5" value="0.9954356769359717" />
+      <entry key="S10" value="0.997715228377302" />
+      <entry key="S30" value="0.9992378287015956" />
+      <entry key="S60" value="0.9996188417100962" />
+      <entry key="M2" value="0.9998134454452466" />
+      <entry key="M5" value="1.214373442099051" />
+      <entry key="M10" value="11.285688887831272" />
+      <entry key="M15" value="42.97609933560282" />
+      <entry key="M30" value="198.47074029978086" />
+      <entry key="H1" value="467.7347956654733" />
+      <entry key="H2" value="743.359963116379" />
+      <entry key="H4" value="949.1328864892" />
+      <entry key="D1" value="1173.688926720875" />
+      <entry key="W1" value="1218.3557896368127" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -134,6 +157,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "CidrDebugProfileConversion": "true",
     "Maven.sbur-rest-demo [clean].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
@@ -141,11 +165,15 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.SburRestDemoApplication.executor": "Run",
+    "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.codeInspection.ui.actions.InspectionResultsExportActionProvider.location": "C:/Users/dasmi/IdeaProjects/Bertoti",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
@@ -163,8 +191,9 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.33103448",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
+    "settings.editor.selected.configurable": "ml.llm.AcpAgentsConfigurable",
     "show.migrate.to.gradle.popup": "false",
     "to.speed.mode.migration.done": "true"
   }
@@ -175,6 +204,11 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SburRestDemoApplication">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="quarkus-bot-db" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
       <module name="quarkus-bot-db" />
       <QsMavenRunConfiguration>
@@ -230,8 +264,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
       </set>
     </attachedChunks>
   </component>
@@ -261,7 +294,8 @@
     <MESSAGE value="remoção residuos" />
     <MESSAGE value="Readme's att" />
     <MESSAGE value="Pequenas correções para garantir a compilação correta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pequenas correções para garantir a compilação correta" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

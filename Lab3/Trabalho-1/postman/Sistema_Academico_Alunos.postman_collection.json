@@ -49,6 +49,22 @@
 		},
 		{
 			"name": "3. Matricular Novo Aluno",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"if (pm.response.code === 201) {",
+							"    var data = pm.response.json();",
+							"    if (data && data.id) {",
+							"        pm.collectionVariables.set(\"aluno_id\", data.id);",
+							"    }",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -156,6 +172,13 @@
 				"description": "Remove o aluno do banco de dados pelo ID (retorna 204 No Content se excluído, 404 se não existir)."
 			},
 			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "aluno_id",
+			"value": "",
+			"type": "string"
 		}
 	]
 }
