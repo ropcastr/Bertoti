@@ -20,7 +20,7 @@ public class AlunoController {
         this.alunoService = alunoService;
     }
 
-    // GET /alunos - Busca todos os alunos cadastrados
+
     @GetMapping
     public Iterable<Aluno> getAlunos() {
         return alunoService.findAll();
@@ -34,7 +34,7 @@ public class AlunoController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    // POST /alunos - Cadastra novo aluno (retorna 201 CREATED ou 400 BAD REQUEST se campos forem inválidos)
+
     @PostMapping
     public ResponseEntity<?> postAluno(@RequestBody(required = false) Aluno aluno) {
         if (isInvalid(aluno)) {
@@ -45,7 +45,7 @@ public class AlunoController {
         return new ResponseEntity<>(saved, HttpStatus.CREATED);
     }
 
-    // PUT /alunos/{id} - Atualiza aluno existente (200 OK) ou cria caso não exista (201 CREATED)
+
     @PutMapping("/{id}")
     public ResponseEntity<?> putAluno(@PathVariable String id, @RequestBody(required = false) Aluno aluno) {
         if (isInvalid(aluno)) {
@@ -58,7 +58,7 @@ public class AlunoController {
         return exists ? ResponseEntity.ok(saved) : new ResponseEntity<>(saved, HttpStatus.CREATED);
     }
 
-    // DELETE /alunos/{id} - Remove aluno pelo ID (204 No Content se excluído, 404 se não encontrado)
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteAluno(@PathVariable String id) {
         return alunoService.deleteById(id)
@@ -66,14 +66,14 @@ public class AlunoController {
                 : ResponseEntity.notFound().build();
     }
 
-    // Trata violações de integridade do banco (ex: dados inválidos ou nulos)
+
     @ExceptionHandler(DataIntegrityViolationException.class)
     public ResponseEntity<Map<String, String>> handleDataIntegrityViolation(DataIntegrityViolationException ex) {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST)
                 .body(Map.of("erro", "Violação de integridade nos dados: certifique-se de que todos os campos obrigatórios foram preenchidos corretamente."));
     }
 
-    // Validação de campos obrigatórios
+
     private boolean isInvalid(Aluno aluno) {
         return aluno == null
                 || aluno.getNome() == null || aluno.getNome().isBlank()

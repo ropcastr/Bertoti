@@ -8,7 +8,7 @@
       <driver-ref>h2.unified</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
-      <remarks>C:/Users/dasmi/IdeaProjects/Bertoti/Lab3/Trabalho-1/src/main/resources/application.properties</remarks>
+      <remarks>/home/rodrigo/IdeaProjects/Bertoti/Lab3/Trabalho-1/src/main/resources/application.properties</remarks>
       <jdbc-driver>org.h2.Driver</jdbc-driver>
       <jdbc-url>jdbc:h2:mem:academicodb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE</jdbc-url>
       <jdbc-additional-properties>
