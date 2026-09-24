@@ -15,8 +15,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63a7a11e-e592-4ec1-a9f3-758cb71a124e" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="63a7a11e-e592-4ec1-a9f3-758cb71a124e" name="Changes" comment="Pequenas correções na documentação">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab3/Trabalho-1/ARQUITETURA_E_FUNCIONAMENTO_SPRING_BOOT.md" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/Trabalho-1/ARQUITETURA_E_FUNCIONAMENTO_SPRING_BOOT.md" afterDir="false" />
     </list>
@@ -77,23 +76,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000004222965289" />
-      <entry key="S60" value="1.0087123005353384" />
-      <entry key="M2" value="2.294152555151376" />
-      <entry key="M5" value="31.618833767043796" />
-      <entry key="M10" value="102.76955911659408" />
-      <entry key="M15" value="159.91950088208264" />
-      <entry key="M30" value="291.9754322013427" />
-      <entry key="H1" value="533.9881025069548" />
-      <entry key="H2" value="864.897411431652" />
-      <entry key="H4" value="1164.6864368317595" />
-      <entry key="D1" value="1537.767080529992" />
-      <entry key="W1" value="1617.2337996937715" />
+      <entry key="MS100" value="1.7375160882331444" />
+      <entry key="MS500" value="5.165059495754478" />
+      <entry key="S2" value="14.1707599579788" />
+      <entry key="S5" value="21.32291239464631" />
+      <entry key="S10" value="25.10373649155797" />
+      <entry key="S30" value="28.223696910170723" />
+      <entry key="S60" value="29.492740444650675" />
+      <entry key="M2" value="35.995007145853535" />
+      <entry key="M5" value="68.82856446900098" />
+      <entry key="M10" value="129.15239904738024" />
+      <entry key="M15" value="186.4068448971252" />
+      <entry key="M30" value="329.15304017341197" />
+      <entry key="H1" value="580.9499938573362" />
+      <entry key="H2" value="929.3920714024688" />
+      <entry key="H4" value="1253.087621467351" />
+      <entry key="D1" value="1664.805859828404" />
+      <entry key="W1" value="1753.5853917035663" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -101,37 +100,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="6.343732884088529E-150" />
-      <entry key="S60" value="3.533378545156813E-75" />
-      <entry key="M2" value="8.389252561879873E-38" />
-      <entry key="M5" value="2.238179591073465E-15" />
-      <entry key="M10" value="6.701361803576034E-8" />
-      <entry key="M15" value="2.105834821006651E-5" />
-      <entry key="M30" value="0.007212788553166421" />
-      <entry key="H1" value="0.1527373555996862" />
-      <entry key="H2" value="0.7565416427281991" />
-      <entry key="H4" value="1.7246050577381478" />
-      <entry key="D1" value="3.472436251420658" />
-      <entry key="W1" value="3.919871676917845" />
+      <entry key="S30" value="1.609698079763239E-158" />
+      <entry key="S60" value="1.7798767774249502E-79" />
+      <entry key="M2" value="5.954196371637179E-40" />
+      <entry key="M5" value="3.092679282784761E-16" />
+      <entry key="M10" value="2.4910534307506167E-8" />
+      <entry key="M15" value="1.0886901341004279E-5" />
+      <entry key="M30" value="0.005186127541603695" />
+      <entry key="H1" value="0.1295135666144327" />
+      <entry key="H2" value="0.6966551247047613" />
+      <entry key="H4" value="1.6549396244448404" />
+      <entry key="D1" value="3.448654585943123" />
+      <entry key="W1" value="3.916025227157809" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.7845840978967508" />
-      <entry key="MS500" value="0.9526379980439373" />
-      <entry key="S2" value="0.987943197140516" />
-      <entry key="S5" value="0.9951597218200828" />
-      <entry key="S10" value="0.9975769252644544" />
-      <entry key="S30" value="0.9991920774265001" />
-      <entry key="S60" value="1.0083075718262693" />
-      <entry key="M2" value="2.2939151811155964" />
-      <entry key="M5" value="31.618414298477642" />
-      <entry key="M10" value="102.7689392002226" />
-      <entry key="M15" value="159.91887035861137" />
-      <entry key="M30" value="291.98199134314353" />
-      <entry key="H1" value="534.1400546354874" />
-      <entry key="H2" value="865.6530359685664" />
-      <entry key="H4" value="1166.410236091169" />
-      <entry key="D1" value="1541.2392866714401" />
-      <entry key="W1" value="1621.1536351094796" />
+      <entry key="MS100" value="1.5636727972517221" />
+      <entry key="MS500" value="5.06402933447946" />
+      <entry key="S2" value="14.10200883512604" />
+      <entry key="S5" value="21.281307672790934" />
+      <entry key="S10" value="25.079173188805235" />
+      <entry key="S30" value="28.214470156144348" />
+      <entry key="S60" value="29.48789122129226" />
+      <entry key="M2" value="35.99178025085108" />
+      <entry key="M5" value="68.82552181755416" />
+      <entry key="M10" value="129.14976694543364" />
+      <entry key="M15" value="186.40460386748856" />
+      <entry key="M30" value="329.15660031581643" />
+      <entry key="H1" value="581.0782043994665" />
+      <entry key="H2" value="930.0875472399072" />
+      <entry key="H4" value="1254.7416162228456" />
+      <entry key="D1" value="1668.2542566726174" />
+      <entry key="W1" value="1757.5013765175493" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -186,7 +185,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.33103448&quot;,
     &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AcpAgentsConfigurable&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
@@ -197,9 +196,9 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SburRestDemoApplication">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="Application" factoryName="Application">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="quarkus-bot-db" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
@@ -289,7 +288,8 @@
     <MESSAGE value="Pequenas correções para garantir a compilação correta" />
     <MESSAGE value="." />
     <MESSAGE value="Atualização da documentação e configurações do projeto; ajustes no Postman e melhorias no gerenciamento de changelists" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Pequenas correções na documentação" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pequenas correções na documentação" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

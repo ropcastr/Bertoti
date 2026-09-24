@@ -36,11 +36,11 @@ Guia explicativo completo do projeto **Sistema Acadêmico** (Trabalho 1 da disci
    - [6.2. SburRestDemoApplicationTests.java (Teste de Carga do Contexto)](#62-sburrestdemoapplicationtestsjava-teste-de-carga-do-contexto)
 7. [Análise da Camada Frontend (Interface Web SPA)](#7-análise-da-camada-frontend-interface-web-spa)
    - [7.1. index.html (Estrutura e Elementos Visuais)](#71-indexhtml-estrutura-e-elementos-visuais)
-   - [7.2. index.js (Consumo Completo da API com Axios Comentado)](#72-indexjs-consumo-completo-da-api-com-axios-comentado)
+   - [7.2. index.js (Principais Fluxos da API com Axios)](#72-indexjs-principais-fluxos-da-api-com-axios)
    - [7.3. style.css (Estilização Customizada)](#73-stylecss-estilização-customizada)
 8. [Tabela Resumo das Anotações e Tecnologias](#8-tabela-resumo-das-anotações-e-tecnologias)
 9. [Guia de Resolução de Problemas Comuns (Troubleshooting para Estudantes)](#9-guia-de-resolução-de-problemas-comuns-troubleshooting-para-estudantes)
-10. [Guia de Estudo e Exercícios Práticos para Iniciantes](#10-guia-de-estudo-e-exercícios-práticos-para-iniciantes)
+10. [Guia de Estudo e Exercícios Práticos para Iniciantes](#10-guia-de-estudo-e-exercícios-práticos)
 
 ---
 
@@ -49,7 +49,7 @@ Guia explicativo completo do projeto **Sistema Acadêmico** (Trabalho 1 da disci
 Entender melhor alguns conceitos básicos e o funcionamento do backend em Java com Spring Boot e banco relacional.
 
 ### O que foi aplicado na prática:
-1. **Comandos SQL Reais:** Como estruturar comandos de banco de dados (`CREATE TABLE`, `INSERT`, `SELECT`, `UPDATE`, `DELETE`) de forma parametrizada e imune a ataques de SQL Injection.
+1. **Comandos SQL Reais:** Como estruturar comandos de banco de dados (`CREATE TABLE`, `INSERT`, `SELECT`, `UPDATE`, `DELETE`) e parametrizar valores com placeholders para evitar SQL Injection nesses valores. A proteção depende de não concatenar dados recebidos à string SQL.
 2. **Conexão Java + Banco de Dados:** Como o Spring Boot gerencia conexões através do pool **HikariCP** e como o `JdbcTemplate` abstrai a complexidade do driver JDBC.
 3. **Mapeamento Objeto-Relacional Manual:** Como transformar linhas do banco (`ResultSet`) em objetos Java em memória através da interface funcional `RowMapper`.
 4. **Arquitetura em Camadas (Layered Architecture):** O porquê e como separar **Controller** (Web/HTTP), **Service** (Regras de Negócio) e **Repository** (Persistência).
@@ -106,7 +106,7 @@ No Java tradicional (JDBC puro antigo), para executar uma simples consulta era n
 
 O **`JdbcTemplate` do Spring Boot** elimina todo esse código repetitivo, cuidando automaticamente de:
 1. Obter e devolver conexões do pool gerenciado pelo **HikariCP**;
-2. Criar e parametrizar o `PreparedStatement` com proteção nativa contra **SQL Injection**;
+2. Criar e parametrizar o `PreparedStatement`; os valores vinculados aos placeholders `?` são tratados como dados, o que evita que esses valores sejam interpretados como parte do SQL (desde que não sejam concatenados manualmente à consulta);
 3. Iterar sobre o `ResultSet` e delegar o mapeamento para o `RowMapper`;
 4. Fechar todos os recursos com segurança, mesmo se ocorrer uma exceção;
 5. Traduzir exceções de banco checadas (`SQLException`) em exceções consistentes de tempo de execução (`DataAccessException`).
@@ -166,8 +166,8 @@ A classe `Aluno` abstrai um estudante do mundo real, isolando somente as caracte
 ---
 
 ### 3.2. Encapsulamento e Modificadores de Acesso
-* **Atributos Privados (`private`):** O estado interno do objeto é protegido contra mutações arbitrárias e descontroladas.
-* **Métodos Públicos (`public` - Getters e Setters):** Fornecem uma interface pública controlada e segura para ler e atualizar as propriedades do aluno.
+* **Atributos Privados (`private`):** Impedem o acesso direto aos campos por outras classes; as alterações passam pelos métodos públicos, que neste modelo não validam os valores.
+* **Métodos Públicos (`public` - Getters e Setters):** Fornecem uma interface de acesso para ler e alterar as propriedades. Os setters atuais não fazem validação dos valores; portanto, o uso desses métodos, por si só, não garante que o estado seja válido.
 
 ---
 
@@ -176,7 +176,7 @@ A classe `Aluno` abstrai um estudante do mundo real, isolando somente as caracte
 Em Java, toda classe herda implicitamente da classe raiz **`java.lang.Object`**.
 
 No arquivo `Aluno.java`, sobrescrevemos (`@Override`) três métodos essenciais:
-1. **`equals(Object o)`:** Define que a identidade de dois alunos depende exclusivamente do seu `id` (chave de negócio).
+1. **`equals(Object o)`:** Define que a igualdade de dois alunos depende exclusivamente do seu `id` (chave de negócio). Como o código compara também IDs nulos, dois objetos ainda sem ID são considerados iguais.
 2. **`hashCode()`:** Gera um código hash numérico derivado do `id`, mantendo consistência estrita com o `equals` para que o aluno funcione corretamente em tabelas hash (`HashSet`, `HashMap`).
 3. **`toString()`:** Converte o estado do objeto em texto legível para logs e diagnóstico.
 
@@ -227,7 +227,8 @@ graph TD
     subgraph SpringBootApp ["Aplicação Spring Boot (Backend)"]
         Controller["1. Controller: AlunoController<br/><i>(Endpoints REST, HTTP Status, JSON)</i>"]
         Service["2. Service: AlunoService<br/><i>(Regras de Negócio e Validações)</i>"]
-        Repository["3. Repository: AlunoRepository<br/><i>(JdbcTemplate e SQL Parametrizado)</i>"]
+        Repository["3. Repository: AlunoRepository<br/><i>(Acesso a dados e SQL parametrizado)</i>"]
+        JdbcTemplate["JdbcTemplate<br/><i>(Execução SQL e RowMapper)</i>"]
     end
     subgraph Storage ["Camada de Persistência"]
         HikariPool["Pool de Conexões HikariCP"]
@@ -240,10 +241,12 @@ graph TD
     Service -->|"Retorno de Objetos / Optionals"| Controller
     Service -->|"Operações de Persistência"| Repository
     Repository -->|"Objetos Mapeados (Aluno)"| Service
-    Repository -->|"Execução de SQL (DML / DQL)"| HikariPool
-    HikariPool -->|"Driver JDBC (org.h2.Driver)"| H2DB
-    H2DB -->|"ResultSet Relacional"| HikariPool
-    HikariPool -->|"Conversão via RowMapper"| Repository
+    Repository -->|"Chamadas query / update"| JdbcTemplate
+    JdbcTemplate -->|"Obtém e devolve conexão"| HikariPool
+    HikariPool -->|"Conexão JDBC"| JdbcTemplate
+    JdbcTemplate -->|"Executa SQL pela conexão JDBC"| H2DB
+    H2DB -->|"Resultado SQL / ResultSet"| JdbcTemplate
+    JdbcTemplate -->|"Aplica RowMapper e devolve objetos"| Repository
 ```
 
 ---
@@ -260,6 +263,8 @@ sequenceDiagram
     participant Controller as AlunoController
     participant Service as AlunoService
     participant Repository as AlunoRepository
+    participant JdbcTemplate as Spring JdbcTemplate
+    participant Hikari as Pool HikariCP
     participant H2 as Banco H2 (academicodb)
 
     Usuario->>JS: Preenche formulário e clica em "Salvar"
@@ -268,11 +273,21 @@ sequenceDiagram
     Controller->>Controller: isInvalid(aluno) -> Valida campos obrigatórios
     Controller->>Service: alunoService.save(aluno)
     Service->>Repository: alunoRepository.save(aluno)
-    Repository->>Repository: aluno.ensureId() -> Gera UUID
-    Repository->>H2: SELECT COUNT(*) FROM aluno WHERE id = ?
-    H2-->>Repository: Retorna 0 (não existe)
-    Repository->>H2: INSERT INTO aluno (id, nome, email, curso) VALUES (?, ?, ?, ?)
-    H2-->>Repository: Confirma gravação da linha (1 linha afetada)
+    Repository->>Repository: aluno.ensureId() -> Gera UUID se ID ausente ou em branco
+    Repository->>JdbcTemplate: existsById(id)
+    JdbcTemplate->>Hikari: Obtém conexão JDBC
+    Hikari-->>JdbcTemplate: Entrega conexão disponível
+    JdbcTemplate->>H2: SELECT COUNT(*) FROM aluno WHERE id = ?
+    H2-->>JdbcTemplate: Retorna 0 (não existe)
+    JdbcTemplate->>Hikari: Devolve conexão ao pool
+    JdbcTemplate-->>Repository: Retorna resultado da consulta
+    Repository->>JdbcTemplate: INSERT INTO aluno (id, nome, email, curso) VALUES (?, ?, ?, ?)
+    JdbcTemplate->>Hikari: Obtém conexão JDBC
+    Hikari-->>JdbcTemplate: Entrega conexão disponível
+    JdbcTemplate->>H2: Executa INSERT parametrizado
+    H2-->>JdbcTemplate: Confirma gravação da linha (1 linha afetada)
+    JdbcTemplate->>Hikari: Devolve conexão ao pool
+    JdbcTemplate-->>Repository: Retorna resultado da gravação
     Repository-->>Service: Retorna objeto Aluno persistido
     Service-->>Controller: Retorna objeto Aluno persistido
     Controller-->>JS: Retorna HTTP 201 CREATED com Aluno em JSON
@@ -288,9 +303,9 @@ sequenceDiagram
 2. **Recepção no Controller:** O Spring MVC roteia a chamada para o método anotado com `@PostMapping`. A biblioteca Jackson faz o *parsing* do corpo JSON para a classe Java `Aluno`.
 3. **Validação e Repasse:** O controller verifica se os campos obrigatórios estão preenchidos; se estiverem válidos, delega o processamento ao `alunoService.save(aluno)`.
 4. **Execução no Repository (DAO):** O service encaminha a operação para `alunoRepository.save(aluno)`.
-   - É chamado `aluno.ensureId()`, garantindo que o registro possua um UUID único;
-   - O repositório faz a checagem via `existsById(...)`: se o ID já existisse, realizaria `UPDATE`; como não existe, monta o comando `INSERT INTO aluno (...) VALUES (?, ?, ?, ?)`;
-   - O `JdbcTemplate` obtém uma conexão do HikariCP e envia o SQL parametrizado ao driver H2.
+   - `aluno.ensureId()` gera um UUID se o ID estiver ausente ou em branco; se o cliente enviou um ID, ele é mantido;
+   - O repositório verifica `existsById(...)`: se o ID já existir, executa `UPDATE`; caso contrário, executa `INSERT INTO aluno (...) VALUES (?, ?, ?, ?)`;
+   - O `JdbcTemplate` obtém uma conexão do HikariCP, envia o SQL parametrizado ao H2 e processa o resultado. Nas consultas mapeadas, o `RowMapper` é aplicado pelo `JdbcTemplate` usando a implementação fornecida pelo repositório.
 5. **Gravação no H2:** O motor relacional do banco grava os dados na tabela em memória `aluno`.
 6. **Resposta ao Cliente:** O objeto salvo é empacotado em um `ResponseEntity<>(saved, HttpStatus.CREATED)` com código **201**, retornando pela rede ao cliente e disparando a renderização visual na página web.
 
@@ -392,7 +407,7 @@ public class Aluno {
 
     // ====================================================================
     // Métodos Getters e Setters (Encapsulamento)
-    // Permitem leitura e alteração controlada dos atributos privados
+    // Permitem leitura e alteração dos atributos privados; os setters não validam os valores
     // ====================================================================
 
     // Obtém o identificador do aluno
@@ -445,9 +460,9 @@ public class Aluno {
 * **Construtor padrão sem argumentos:** Necessário para serializadores JSON como Jackson.
 * **Construtor completo:** Inicializa todos os campos.
 * **Construtor com sobrecarga (`this(...)`):** Gera automaticamente um identificador UUID.
-* **`ensureId`:** Método de segurança defensiva: se o aluno foi instanciado sem ID, gera um UUID antes de enviar a query de inserção.
-* **Getters e Setters:** Métodos para leitura e alteração controlada.
-* **`equals` e `hashCode`:** Sobrescrita dos métodos de `Object` para comparação baseada no `id`.
+* **`ensureId`:** Se o aluno foi instanciado sem ID ou com ID em branco, gera um UUID antes de persistir o registro. Um ID já informado é mantido.
+* **Getters e Setters:** Métodos para leitura e alteração dos campos; os setters não validam os valores.
+* **`equals` e `hashCode`:** Sobrescrita dos métodos de `Object` para comparação baseada no `id`. Como IDs nulos também são comparados, dois objetos ainda sem ID são considerados iguais.
 * **`toString`:** Formata os dados do objeto em String para fácil visualização.
 
 ---
@@ -655,7 +670,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
-// @CrossOrigin habilita requisições vindas de outras origens/portas locais (CORS)
+// @CrossOrigin permite somente as origens listadas na anotação abaixo
 @CrossOrigin(origins = {"http://localhost:8080", "http://127.0.0.1:5500"})
 // @RestController combina @Controller e @ResponseBody: as respostas dos métodos serão serializadas em JSON
 @RestController
@@ -734,12 +749,12 @@ public class AlunoController {
 }
 ```
 
-* **`@CrossOrigin`:** Permite requisições originadas de outras portas locais (ex: Live Server `5500`).
+* **`@CrossOrigin`:** Permite requisições somente das origens configuradas no controller: `http://localhost:8080` e `http://127.0.0.1:5500` (por exemplo, Live Server nessa porta). Outras origens não estão liberadas por essa anotação.
 * **`@RestController`:** Combinação de `@Controller` com `@ResponseBody`, instruindo o Spring a serializar o retorno dos métodos em formato **JSON**.
 * **`@RequestMapping("/alunos")`:** Rota base para todas as operações.
 * **`GET /alunos`:** Lista todos os alunos cadastrados com status `200 OK`.
 * **`GET /alunos/{id}`:** Usa `@PathVariable` para extrair o ID da URL. Se encontrar, retorna `200 OK`; se não, retorna `404 NOT FOUND`.
-* **`POST /alunos`:** Converte o JSON em `Aluno`, valida os campos obrigatórios (`nome`, `email`, `curso`). Se válidos, salva no H2 e retorna status **201 CREATED**. Se inválidos ou vazios, retorna status **400 BAD REQUEST** com mensagem descritiva.
+* **`POST /alunos`:** Converte o JSON em `Aluno` e valida os campos obrigatórios (`nome`, `email`, `curso`). Se válidos, salva no H2 e retorna sempre **201 CREATED**; se inválidos ou vazios, retorna **400 BAD REQUEST** com mensagem descritiva. O formulário da SPA não envia ID no cadastro, então o repositório gera um UUID. Chamadas diretas à API podem enviar um ID: como `save` faz upsert, um ID já existente causa uma atualização, ainda respondida com `201 CREATED`.
 * **`PUT /alunos/{id}`:** Valida os campos obrigatórios. Se válidos e o ID já existia, atualiza e devolve `200 OK`. Se não existia, cria (*Upsert*) e devolve `201 CREATED`. Se inválidos, retorna `400 BAD REQUEST`.
 * **`DELETE /alunos/{id}`:** Opera sobre o ID informado na URL (não requer corpo no Postman). Se deletou com sucesso, retorna **204 NO CONTENT** (sem corpo); se o aluno não existia no banco, retorna **404 NOT FOUND**. Se invocado sem ID (`/alunos`), o Spring recusa com `405 Method Not Allowed`.
 * **`@ExceptionHandler`:** Intercepta exceções de violação de integridade relacional (`DataIntegrityViolationException`), convertendo potenciais erros `500` em respostas amigáveis com status **400 BAD REQUEST**.
@@ -1117,11 +1132,11 @@ Os arquivos estáticos ficam localizados em `src/main/resources/static/` e são 
 
 ---
 
-### 7.2. `index.js` (Consumo Completo da API com Axios Comentado)
+### 7.2. `index.js` (Principais Fluxos da API com Axios)
 
 Arquivo: `src/main/resources/static/index.js`
 
-Este arquivo exemplifica como uma Single Page Application (SPA) consome a API REST:
+Os trechos abaixo ilustram como a SPA consome a API REST; não são uma cópia completa do arquivo. A implementação de `renderizarAlunos`, incluindo a montagem dos itens da lista, os botões de edição e o evento de exclusão, foi omitida. No arquivo real, o handler de exclusão é registrado diretamente no botão de cada item; a função `excluirAluno` mostrada mais abaixo é uma forma resumida de apresentar essa chamada, não uma função existente com esse nome no projeto.
 
 ```javascript
 // Endpoint relativo da API REST disponibilizada pelo AlunoController
@@ -1277,7 +1292,7 @@ document.addEventListener("DOMContentLoaded", carregarAlunos);
 | `@SpringBootApplication` | `SburRestDemoApplication` | Inicializa autoconfiguração, escaneamento de pacotes e servidor Tomcat embutido. |
 | `@PostConstruct` | Métodos de Inicialização | Executa uma rotina logo após a injeção de dependências estar pronta (carga inicial de dados). |
 | `@Repository` | `AlunoRepository` | Registra a classe DAO de persistência no Spring IoC Container. |
-| `JdbcTemplate` | `AlunoRepository` | Executa comandos SQL parametrizados com segurança e tratamento automático de conexões. |
+| `JdbcTemplate` | `AlunoRepository` | Executa SQL e vincula como dados os valores fornecidos nos placeholders `?`; obtém e devolve conexões via `DataSource`/HikariCP e traduz exceções JDBC. SQL concatenado manualmente ainda pode ser vulnerável. |
 | `RowMapper<T>` | `AlunoRepository` | Converte linhas do `ResultSet` SQL em objetos da classe Java `Aluno`. |
 | `@Service` | `AlunoService` | Registra a classe que encapsula a lógica e regras de negócio da aplicação. |
 | `@RestController` | `AlunoController` | Define controlador web cujos retornos de métodos são serializados automaticamente em JSON. |
@@ -1288,7 +1303,7 @@ document.addEventListener("DOMContentLoaded", carregarAlunos);
 | `@DeleteMapping` | Métodos de Controller | Mapeia requisições HTTP do tipo `DELETE` (exclusão). |
 | `@PathVariable` | Parâmetros de Método | Captura variáveis passadas na URL (ex: `/alunos/{id}`). |
 | `@RequestBody` | Parâmetros de Método | Converte o corpo JSON da requisição em um objeto Java. |
-| `@CrossOrigin` | `AlunoController` | Permite chamadas de origens e portas externas (CORS). |
+| `@CrossOrigin` | `AlunoController` | Permite CORS somente para `http://localhost:8080` e `http://127.0.0.1:5500`, conforme a lista configurada na anotação. |
 | `@ExceptionHandler` | Métodos de Controller | Captura exceções específicas lançadas na execução dos endpoints e formata uma resposta HTTP amigável. |
 | `@SpringBootTest` | Classes de Teste | Sobe o contexto completo do Spring para testes de integração. |
 | `@AutoConfigureMockMvc` | Classes de Teste | Injeta o `MockMvc` para simular requisições HTTP sem abrir portas reais de rede. |
