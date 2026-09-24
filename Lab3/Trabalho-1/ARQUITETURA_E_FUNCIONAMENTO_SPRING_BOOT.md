@@ -1,6 +1,6 @@
-# 📖 Guia Definitivo de Arquitetura e Código: Spring Boot com JDBC do Zero ao Banco de Dados
+# 📖 Guia de Arquitetura e Código: Spring Boot e Banco de Dados com JDBC
 
-Este documento é o guia didático completo do projeto **Sistema Acadêmico** (Trabalho 1 da disciplina de Laboratório de Desenvolvimento em Banco de Dados III - Prof. Bertoti). Esta documentação serve de guia para entender o funcionamento completo do sistema, abordando os conceitos de **Java**, **Orientação a Objetos (POO)**, **Spring Boot**, **Spring JDBC** e **Banco de Dados Relacional (H2 / SQL)**, explicando cada classe, método, conceito teórico, comando SQL, construtor, herança, polimorfismo e encapsulamento.
+Guia explicativo completo do projeto **Sistema Acadêmico** (Trabalho 1 da disciplina de Laboratório de Desenvolvimento em Banco de Dados III - Prof. Bertoti). Esta documentação serve de guia para entender o funcionamento completo do sistema, abordando os conceitos de **Java**, **Orientação a Objetos (POO)**, **Spring Boot**, **Spring JDBC** e **Banco de Dados Relacional (H2 / SQL)**, explicando cada classe, método, conceito teórico, comando SQL, construtor, herança, polimorfismo e encapsulamento.
 
 ---
 
