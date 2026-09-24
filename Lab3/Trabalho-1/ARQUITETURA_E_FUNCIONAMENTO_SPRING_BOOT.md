@@ -1,6 +1,6 @@
 # 📖 Guia Definitivo de Arquitetura e Código: Spring Boot com JDBC do Zero ao Banco de Dados
 
-Este documento é o guia didático completo do projeto **Sistema Acadêmico** (Trabalho 1 da disciplina de Laboratório de Desenvolvimento em Banco de Dados III - Prof. Bertoti). Ele foi projetado para estudantes de **Java**, **Orientação a Objetos (POO)**, **Spring Boot**, **Spring JDBC** e **Banco de Dados Relacional (H2 / SQL)**, explicando exaustivamente cada classe, método, conceito teórico, comando SQL, construtor, herança, polimorfismo e encapsulamento.
+Este documento é o guia didático completo do projeto **Sistema Acadêmico** (Trabalho 1 da disciplina de Laboratório de Desenvolvimento em Banco de Dados III - Prof. Bertoti). Esta documentação serve de guia para entender o funcionamento completo do sistema, abordando os conceitos de **Java**, **Orientação a Objetos (POO)**, **Spring Boot**, **Spring JDBC** e **Banco de Dados Relacional (H2 / SQL)**, explicando cada classe, método, conceito teórico, comando SQL, construtor, herança, polimorfismo e encapsulamento.
 
 ---
 
@@ -46,9 +46,9 @@ Este documento é o guia didático completo do projeto **Sistema Acadêmico** (T
 
 ## 1. Visão Geral e Objetivos de Aprendizagem
 
-Este projeto foi construído para servir como o modelo pedagógico de referência da disciplina **Laboratório de Desenvolvimento em Banco de Dados III**, ensinando o funcionamento real do ecossistema backend em Java com Spring Boot e banco relacional.
+Entender melhor alguns conceitos básicos e o funcionamento do backend em Java com Spring Boot e banco relacional.
 
-### O que aprenderemos na prática:
+### O que foi aplicado na prática:
 1. **Comandos SQL Reais:** Como estruturar comandos de banco de dados (`CREATE TABLE`, `INSERT`, `SELECT`, `UPDATE`, `DELETE`) de forma parametrizada e imune a ataques de SQL Injection.
 2. **Conexão Java + Banco de Dados:** Como o Spring Boot gerencia conexões através do pool **HikariCP** e como o `JdbcTemplate` abstrai a complexidade do driver JDBC.
 3. **Mapeamento Objeto-Relacional Manual:** Como transformar linhas do banco (`ResultSet`) em objetos Java em memória através da interface funcional `RowMapper`.
@@ -1099,7 +1099,7 @@ class SburRestDemoApplicationTests {
 ```
 
 * **Por que esse teste existe se o método está vazio?**  
-  Todo estudante pergunta isso! Embora o corpo do método `contextLoads()` esteja vazio, a anotação `@SpringBootTest` acima da classe força o Spring Boot a instanciar todos os componentes do sistema. Se uma dependência estiver faltando, se uma query no `schema.sql` tiver erro de sintaxe, ou se houver dependências circulares entre os Beans, o teste falha imediatamente.
+  Embora o corpo do método `contextLoads()` esteja vazio, a anotação `@SpringBootTest` acima da classe força o Spring Boot a instanciar todos os componentes do sistema. Se uma dependência estiver faltando, se uma query no `schema.sql` tiver erro de sintaxe, ou se houver dependências circulares entre os Beans, o teste falha imediatamente.
 
 ---
 
@@ -1342,9 +1342,9 @@ Aqui estão as 4 dúvidas e erros mais frequentes encontrados por estudantes e c
 
 ---
 
-## 10. Guia de Estudo e Exercícios Práticos para Iniciantes
+## 10. Guia de Estudo e Exercícios Práticos
 
-Para fixar o aprendizado deste projeto, pratique os seguintes passos:
+Praticar os seguintes passos:
 
 1. **Inspecione o Banco pelo Console H2:**
    - Acesse [http://localhost:8080/h2-console](http://localhost:8080/h2-console).

@@ -16,13 +16,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63a7a11e-e592-4ec1-a9f3-758cb71a124e" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab3/Trabalho-1/ARQUITETURA_E_FUNCIONAMENTO_SPRING_BOOT.md" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/Trabalho-1/ARQUITETURA_E_FUNCIONAMENTO_SPRING_BOOT.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/controller/AlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/controller/AlunoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/model/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/model/Aluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/repository/AlunoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/Trabalho-1/src/main/java/com/thehecklers/sburrestdemo/repository/AlunoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/Trabalho-1/mvnw" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +46,7 @@
     </colors>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="25" />
-    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+    <option name="cachedIndexableFilesCount" value="37" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,22 +77,22 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000004222965289" />
-      <entry key="S60" value="1.0087123005353384" />
-      <entry key="M2" value="2.294152555151376" />
-      <entry key="M5" value="31.618833767043796" />
-      <entry key="M10" value="102.76955911659408" />
-      <entry key="M15" value="159.91950088208264" />
-      <entry key="M30" value="291.9754322013427" />
-      <entry key="H1" value="533.9881025069548" />
-      <entry key="H2" value="864.897411431652" />
-      <entry key="H4" value="1164.6864368317595" />
-      <entry key="D1" value="1537.767080529992" />
-      <entry key="W1" value="1617.2337996937715" />
+      <entry key="MS500" value="1.0000084653432622" />
+      <entry key="S2" value="1.0539400249829558" />
+      <entry key="S5" value="1.3110046685661143" />
+      <entry key="S10" value="1.5593314474635243" />
+      <entry key="S30" value="2.1159228582182745" />
+      <entry key="S60" value="3.6041725902400907" />
+      <entry key="M2" value="7.250520001511664" />
+      <entry key="M5" value="14.465271118857434" />
+      <entry key="M10" value="25.09876610623333" />
+      <entry key="M15" value="50.44750204333808" />
+      <entry key="M30" value="188.4917623277153" />
+      <entry key="H1" value="451.16205742314753" />
+      <entry key="H2" value="734.15384802772" />
+      <entry key="H4" value="950.7845210261121" />
+      <entry key="D1" value="1190.6980231922425" />
+      <entry key="W1" value="1238.7640116126233" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -105,37 +100,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="6.343732884088529E-150" />
-      <entry key="S60" value="3.533378545156813E-75" />
-      <entry key="M2" value="8.389252561879873E-38" />
-      <entry key="M5" value="2.238179591073465E-15" />
-      <entry key="M10" value="6.701361803576034E-8" />
-      <entry key="M15" value="2.105834821006651E-5" />
-      <entry key="M30" value="0.007212788553166421" />
-      <entry key="H1" value="0.1527373555996862" />
-      <entry key="H2" value="0.7565416427281991" />
-      <entry key="H4" value="1.7246050577381478" />
-      <entry key="D1" value="3.472436251420658" />
-      <entry key="W1" value="3.919871676917845" />
+      <entry key="S30" value="1.794423735521268E-114" />
+      <entry key="S60" value="1.8792312524222483E-57" />
+      <entry key="M2" value="6.118124333578716E-29" />
+      <entry key="M5" value="7.853313652423225E-12" />
+      <entry key="M10" value="3.9695572680049616E-6" />
+      <entry key="M15" value="3.19995329733064E-4" />
+      <entry key="M30" value="0.028116604334991857" />
+      <entry key="H1" value="0.3015609491298342" />
+      <entry key="H2" value="1.0630354688562356" />
+      <entry key="H4" value="2.0443116990571344" />
+      <entry key="D1" value="3.5722665580482307" />
+      <entry key="W1" value="3.9357758890576244" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.7845840978967508" />
-      <entry key="MS500" value="0.9526379980439373" />
-      <entry key="S2" value="0.987943197140516" />
-      <entry key="S5" value="0.9951597218200828" />
-      <entry key="S10" value="0.9975769252644544" />
-      <entry key="S30" value="0.9991920774265001" />
-      <entry key="S60" value="1.0083075718262693" />
-      <entry key="M2" value="2.2939151811155964" />
-      <entry key="M5" value="31.618414298477642" />
-      <entry key="M10" value="102.7689392002226" />
-      <entry key="M15" value="159.91887035861137" />
-      <entry key="M30" value="291.98199134314353" />
-      <entry key="H1" value="534.1400546354874" />
-      <entry key="H2" value="865.6530359685664" />
-      <entry key="H4" value="1166.410236091169" />
-      <entry key="D1" value="1541.2392866714401" />
-      <entry key="W1" value="1621.1536351094796" />
+      <entry key="MS100" value="0.8827029962906549" />
+      <entry key="MS500" value="0.9753637182464263" />
+      <entry key="S2" value="1.0473856703239626" />
+      <entry key="S5" value="1.3077373545492839" />
+      <entry key="S10" value="1.5573859328325375" />
+      <entry key="S30" value="2.114988999160372" />
+      <entry key="S60" value="3.6032475611828314" />
+      <entry key="M2" value="7.249376311369915" />
+      <entry key="M5" value="14.464158808854341" />
+      <entry key="M10" value="25.097939488017147" />
+      <entry key="M15" value="50.44709844621198" />
+      <entry key="M30" value="188.51910558122378" />
+      <entry key="H1" value="451.4626171401753" />
+      <entry key="H2" value="735.2158099968472" />
+      <entry key="H4" value="952.8279726365911" />
+      <entry key="D1" value="1194.2700673110871" />
+      <entry key="W1" value="1242.6997530980789" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -151,59 +146,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "CidrDebugProfileConversion": "true",
-    "Maven.sbur-rest-demo [clean].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.SburRestDemoApplication.executor": "Run",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.codeInspection.ui.actions.InspectionResultsExportActionProvider.location": "C:/Users/dasmi/IdeaProjects/Bertoti",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.33103448",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
-    "show.migrate.to.gradle.popup": "false",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
+    &quot;Maven.sbur-rest-demo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SburRestDemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.codeInspection.ui.actions.InspectionResultsExportActionProvider.location&quot;: &quot;C:/Users/dasmi/IdeaProjects/Bertoti&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33103448&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AcpAgentsConfigurable&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dasmi\IdeaProjects\Bertoti\Engenharia-de-Software" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SburRestDemoApplication">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="Application" factoryName="Application">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="quarkus-bot-db" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
@@ -245,7 +240,7 @@
       </method>
     </configuration>
     <configuration name="SburRestDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="/usr/java/jdk-26-oracle-x64" />
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-26.0.2.1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="sbur-rest-demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.thehecklers.sburrestdemo.SburRestDemoApplication" />
@@ -261,7 +256,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
       </set>
     </attachedChunks>
   </component>
