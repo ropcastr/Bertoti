@@ -15,9 +15,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63a7a11e-e592-4ec1-a9f3-758cb71a124e" name="Changes" comment="Atualização da documentação com melhorias e ajustes explicativos; revisões técnicas e correções para maior clareza e consistência.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="63a7a11e-e592-4ec1-a9f3-758cb71a124e" name="Changes" comment="Atualização da documentação com melhorias e ajustes explicativos; revisões técnicas e correções para maior clareza e consistência." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
